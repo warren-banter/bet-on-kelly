@@ -20,6 +20,7 @@ export default function Header() {
             ['/predictions/', 'Predictions'],
             ['/groups/', 'Groups'],
             ['/knockout/', 'Knockout'],
+            ['/methodology/', 'Method'],
           ].map(([href, label]) => (
             <Link
               key={href}

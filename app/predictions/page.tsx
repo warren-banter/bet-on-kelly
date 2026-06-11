@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import GameCard from '@/components/GameCard';
 import { matchesByDate, matches } from '@/content/matches';
 import { SITE_NAME } from '@/content/config';
@@ -40,6 +41,12 @@ export default function PredictionsPage() {
             group-stage matches. Open any game for the detail, then predict it
             yourself.
           </p>
+          <Link
+            href="/methodology/"
+            className="mt-4 inline-flex items-center text-sm font-semibold text-accent hover:underline"
+          >
+            How we make these predictions &rarr;
+          </Link>
         </div>
       </section>
 
