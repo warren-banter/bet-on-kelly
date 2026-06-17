@@ -65,7 +65,7 @@ export default function HomeHero() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
+              className="sheen inline-flex items-center justify-center rounded-full border border-accent/40 bg-surface px-6 py-3 text-sm font-semibold text-ink shadow-[0_0_16px_rgba(43,255,136,0.12)] transition-colors hover:border-accent hover:text-accent"
             >
               Make your prediction
             </a>

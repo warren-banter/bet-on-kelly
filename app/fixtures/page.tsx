@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import FixtureRow from '@/components/FixtureRow';
+import FixturesList from '@/components/FixturesList';
 import { fixturesByDate, matches } from '@/content/matches';
 
 export const metadata: Metadata = {
@@ -23,26 +23,15 @@ export default function FixturesPage() {
             Fixtures &amp; <span className="text-accent">kick-offs</span>
           </h1>
           <p className="mt-4 max-w-xl text-base text-ink-soft">
-            What is playing and when. Times are local to each venue. Open any
-            game for our prediction, or predict it yourself.
+            What is still to play and when. Times are local to each venue. Open
+            any game for our prediction, or predict it yourself.
           </p>
         </div>
       </section>
 
       {/* Schedule */}
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        {days.map((day) => (
-          <section key={day.date} className="mb-9 last:mb-0">
-            <h2 className="sticky top-[57px] z-10 -mx-4 mb-3 border-b border-line bg-page/95 px-4 py-2 text-sm font-bold uppercase tracking-wide text-ink-soft backdrop-blur sm:mx-0 sm:border-none sm:bg-transparent sm:px-0">
-              {day.label}
-            </h2>
-            <div className="space-y-3">
-              {day.matches.map((match) => (
-                <FixtureRow key={match.slug} match={match} />
-              ))}
-            </div>
-          </section>
-        ))}
+        <FixturesList days={days} />
       </div>
     </>
   );

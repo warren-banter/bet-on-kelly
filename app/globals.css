@@ -28,3 +28,43 @@ body {
   background-color: #2bff88;
   color: #070809;
 }
+
+/* Green sheen: a diagonal highlight that sweeps across periodically.
+   Uses ::before so it sits above the fill but below the label, and is
+   clipped to the rounded corners by overflow:hidden. */
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+.sheen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    120deg,
+    transparent 38%,
+    rgba(43, 255, 136, 0) 44%,
+    rgba(43, 255, 136, 0.55) 50%,
+    rgba(93, 255, 166, 0) 56%,
+    transparent 62%
+  );
+  background-repeat: no-repeat;
+  background-size: 250% 100%;
+  background-position: 150% 0;
+  pointer-events: none;
+  animation: sheen-sweep 3.4s ease-in-out infinite;
+}
+@keyframes sheen-sweep {
+  0% {
+    background-position: 150% 0;
+  }
+  55%,
+  100% {
+    background-position: -60% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheen::before {
+    animation: none;
+  }
+}

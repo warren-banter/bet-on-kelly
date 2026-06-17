@@ -1,0 +1,2112 @@
+{
+  "singles": [
+    {
+      "id": "2026-06-26-egypt-iran-double-chance-draw-or-iran",
+      "date": "2026-06-26",
+      "match": "Egypt vs Iran",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "market": "Double Chance",
+      "selection": "Draw or Iran",
+      "probability": 0.668,
+      "odds": 1.5
+    },
+    {
+      "id": "2026-06-21-uruguay-cape-verde-match-result-uruguay-to-win",
+      "date": "2026-06-21",
+      "match": "Uruguay vs Cape Verde",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "market": "Match Result",
+      "selection": "Uruguay to win",
+      "probability": 0.661,
+      "odds": 1.51
+    },
+    {
+      "id": "2026-06-25-paraguay-australia-double-chance-draw-or-australia",
+      "date": "2026-06-25",
+      "match": "Paraguay vs Australia",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "market": "Double Chance",
+      "selection": "Draw or Australia",
+      "probability": 0.661,
+      "odds": 1.51
+    },
+    {
+      "id": "2026-06-27-croatia-ghana-total-goals-over-1-5-goals",
+      "date": "2026-06-27",
+      "match": "Croatia vs Ghana",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.664,
+      "odds": 1.51
+    },
+    {
+      "id": "2026-06-21-belgium-iran-total-goals-under-3-5-goals",
+      "date": "2026-06-21",
+      "match": "Belgium vs Iran",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.659,
+      "odds": 1.52
+    },
+    {
+      "id": "2026-06-23-portugal-uzbekistan-match-result-portugal-to-win",
+      "date": "2026-06-23",
+      "match": "Portugal vs Uzbekistan",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "market": "Match Result",
+      "selection": "Portugal to win",
+      "probability": 0.659,
+      "odds": 1.52
+    },
+    {
+      "id": "2026-06-26-senegal-iraq-total-goals-over-1-5-goals",
+      "date": "2026-06-26",
+      "match": "Senegal vs Iraq",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.659,
+      "odds": 1.52
+    },
+    {
+      "id": "2026-06-17-ghana-panama-double-chance-ghana-or-draw",
+      "date": "2026-06-17",
+      "match": "Ghana vs Panama",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "market": "Double Chance",
+      "selection": "Ghana or Draw",
+      "probability": 0.653,
+      "odds": 1.53
+    },
+    {
+      "id": "2026-06-20-tunisia-japan-total-goals-over-1-5-goals",
+      "date": "2026-06-20",
+      "match": "Tunisia vs Japan",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.654,
+      "odds": 1.53
+    },
+    {
+      "id": "2026-06-25-cura-ao-ivory-coast-match-result-ivory-coast-to-win",
+      "date": "2026-06-25",
+      "match": "Curaçao vs Ivory Coast",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "market": "Match Result",
+      "selection": "Ivory Coast to win",
+      "probability": 0.651,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-06-26-egypt-iran-double-chance-egypt-or-draw",
+      "date": "2026-06-26",
+      "match": "Egypt vs Iran",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "market": "Double Chance",
+      "selection": "Egypt or Draw",
+      "probability": 0.651,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-06-26-new-zealand-belgium-total-goals-over-2-5-goals",
+      "date": "2026-06-26",
+      "match": "New Zealand vs Belgium",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.651,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-06-18-czech-republic-south-africa-total-goals-under-2-5-goals",
+      "date": "2026-06-18",
+      "match": "Czech Republic vs South Africa",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.644,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-06-19-scotland-morocco-both-teams-to-score-no",
+      "date": "2026-06-19",
+      "match": "Scotland vs Morocco",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.644,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-06-23-colombia-dr-congo-match-result-colombia-to-win",
+      "date": "2026-06-23",
+      "match": "Colombia vs DR Congo",
+      "home_team": "Colombia",
+      "away_team": "DR Congo",
+      "market": "Match Result",
+      "selection": "Colombia to win",
+      "probability": 0.644,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-06-25-paraguay-australia-total-goals-under-2-5-goals",
+      "date": "2026-06-25",
+      "match": "Paraguay vs Australia",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.644,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-06-26-cape-verde-saudi-arabia-total-goals-over-1-5-goals",
+      "date": "2026-06-26",
+      "match": "Cape Verde vs Saudi Arabia",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.646,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-06-21-uruguay-cape-verde-both-teams-to-score-no",
+      "date": "2026-06-21",
+      "match": "Uruguay vs Cape Verde",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.642,
+      "odds": 1.56
+    },
+    {
+      "id": "2026-06-24-canada-switzerland-double-chance-draw-or-switzerland",
+      "date": "2026-06-24",
+      "match": "Canada vs Switzerland",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "market": "Double Chance",
+      "selection": "Draw or Switzerland",
+      "probability": 0.641,
+      "odds": 1.56
+    },
+    {
+      "id": "2026-06-25-paraguay-australia-double-chance-paraguay-or-draw",
+      "date": "2026-06-25",
+      "match": "Paraguay vs Australia",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "market": "Double Chance",
+      "selection": "Paraguay or Draw",
+      "probability": 0.637,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-06-27-algeria-austria-total-goals-under-2-5-goals",
+      "date": "2026-06-27",
+      "match": "Algeria vs Austria",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.636,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-06-19-turkey-paraguay-total-goals-over-1-5-goals",
+      "date": "2026-06-19",
+      "match": "Turkey vs Paraguay",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.634,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-19-turkey-paraguay-total-goals-under-2-5-goals",
+      "date": "2026-06-19",
+      "match": "Turkey vs Paraguay",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.635,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-22-argentina-austria-match-result-argentina-to-win",
+      "date": "2026-06-22",
+      "match": "Argentina vs Austria",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "market": "Match Result",
+      "selection": "Argentina to win",
+      "probability": 0.632,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-23-colombia-dr-congo-both-teams-to-score-no",
+      "date": "2026-06-23",
+      "match": "Colombia vs DR Congo",
+      "home_team": "Colombia",
+      "away_team": "DR Congo",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.631,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-25-tunisia-netherlands-match-result-netherlands-to-win",
+      "date": "2026-06-25",
+      "match": "Tunisia vs Netherlands",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "market": "Match Result",
+      "selection": "Netherlands to win",
+      "probability": 0.631,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-27-algeria-austria-total-goals-over-1-5-goals",
+      "date": "2026-06-27",
+      "match": "Algeria vs Austria",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.633,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-27-jordan-argentina-total-goals-under-3-5-goals",
+      "date": "2026-06-27",
+      "match": "Jordan vs Argentina",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.632,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-27-dr-congo-uzbekistan-double-chance-dr-congo-or-draw",
+      "date": "2026-06-27",
+      "match": "DR Congo vs Uzbekistan",
+      "home_team": "DR Congo",
+      "away_team": "Uzbekistan",
+      "market": "Double Chance",
+      "selection": "DR Congo or Draw",
+      "probability": 0.632,
+      "odds": 1.58
+    },
+    {
+      "id": "2026-06-18-switzerland-bosnia-and-herzegovina-match-result-switzerland-to-win",
+      "date": "2026-06-18",
+      "match": "Switzerland vs Bosnia and Herzegovina",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "market": "Match Result",
+      "selection": "Switzerland to win",
+      "probability": 0.63,
+      "odds": 1.59
+    },
+    {
+      "id": "2026-06-24-morocco-haiti-both-teams-to-score-no",
+      "date": "2026-06-24",
+      "match": "Morocco vs Haiti",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.63,
+      "odds": 1.59
+    },
+    {
+      "id": "2026-06-26-egypt-iran-both-teams-to-score-no",
+      "date": "2026-06-26",
+      "match": "Egypt vs Iran",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.627,
+      "odds": 1.59
+    },
+    {
+      "id": "2026-06-26-new-zealand-belgium-match-result-belgium-to-win",
+      "date": "2026-06-26",
+      "match": "New Zealand vs Belgium",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "market": "Match Result",
+      "selection": "Belgium to win",
+      "probability": 0.628,
+      "odds": 1.59
+    },
+    {
+      "id": "2026-06-18-czech-republic-south-africa-total-goals-over-1-5-goals",
+      "date": "2026-06-18",
+      "match": "Czech Republic vs South Africa",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.626,
+      "odds": 1.6
+    },
+    {
+      "id": "2026-06-24-canada-switzerland-double-chance-canada-or-draw",
+      "date": "2026-06-24",
+      "match": "Canada vs Switzerland",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "market": "Double Chance",
+      "selection": "Canada or Draw",
+      "probability": 0.626,
+      "odds": 1.6
+    },
+    {
+      "id": "2026-06-25-paraguay-australia-total-goals-over-1-5-goals",
+      "date": "2026-06-25",
+      "match": "Paraguay vs Australia",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.625,
+      "odds": 1.6
+    },
+    {
+      "id": "2026-06-27-dr-congo-uzbekistan-both-teams-to-score-no",
+      "date": "2026-06-27",
+      "match": "DR Congo vs Uzbekistan",
+      "home_team": "DR Congo",
+      "away_team": "Uzbekistan",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.624,
+      "odds": 1.6
+    },
+    {
+      "id": "2026-06-21-spain-saudi-arabia-total-goals-over-2-5-goals",
+      "date": "2026-06-21",
+      "match": "Spain vs Saudi Arabia",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.621,
+      "odds": 1.61
+    },
+    {
+      "id": "2026-06-26-cape-verde-saudi-arabia-total-goals-under-2-5-goals",
+      "date": "2026-06-26",
+      "match": "Cape Verde vs Saudi Arabia",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.622,
+      "odds": 1.61
+    },
+    {
+      "id": "2026-06-26-cape-verde-saudi-arabia-double-chance-cape-verde-or-draw",
+      "date": "2026-06-26",
+      "match": "Cape Verde vs Saudi Arabia",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "market": "Double Chance",
+      "selection": "Cape Verde or Draw",
+      "probability": 0.617,
+      "odds": 1.62
+    },
+    {
+      "id": "2026-06-17-ghana-panama-double-chance-draw-or-panama",
+      "date": "2026-06-17",
+      "match": "Ghana vs Panama",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "market": "Double Chance",
+      "selection": "Draw or Panama",
+      "probability": 0.614,
+      "odds": 1.63
+    },
+    {
+      "id": "2026-06-20-tunisia-japan-total-goals-under-2-5-goals",
+      "date": "2026-06-20",
+      "match": "Tunisia vs Japan",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.613,
+      "odds": 1.63
+    },
+    {
+      "id": "2026-06-22-france-iraq-total-goals-under-3-5-goals",
+      "date": "2026-06-22",
+      "match": "France vs Iraq",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.614,
+      "odds": 1.63
+    },
+    {
+      "id": "2026-06-24-mexico-czech-republic-match-result-mexico-to-win",
+      "date": "2026-06-24",
+      "match": "Mexico vs Czech Republic",
+      "home_team": "Mexico",
+      "away_team": "Czech Republic",
+      "market": "Match Result",
+      "selection": "Mexico to win",
+      "probability": 0.613,
+      "odds": 1.63
+    },
+    {
+      "id": "2026-06-19-turkey-paraguay-double-chance-draw-or-paraguay",
+      "date": "2026-06-19",
+      "match": "Turkey vs Paraguay",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "market": "Double Chance",
+      "selection": "Draw or Paraguay",
+      "probability": 0.609,
+      "odds": 1.64
+    },
+    {
+      "id": "2026-06-22-france-iraq-total-goals-over-2-5-goals",
+      "date": "2026-06-22",
+      "match": "France vs Iraq",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.609,
+      "odds": 1.64
+    },
+    {
+      "id": "2026-06-26-senegal-iraq-total-goals-under-2-5-goals",
+      "date": "2026-06-26",
+      "match": "Senegal vs Iraq",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.608,
+      "odds": 1.64
+    },
+    {
+      "id": "2026-06-27-algeria-austria-double-chance-algeria-or-draw",
+      "date": "2026-06-27",
+      "match": "Algeria vs Austria",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "market": "Double Chance",
+      "selection": "Algeria or Draw",
+      "probability": 0.608,
+      "odds": 1.64
+    },
+    {
+      "id": "2026-06-17-uzbekistan-colombia-match-result-colombia-to-win",
+      "date": "2026-06-17",
+      "match": "Uzbekistan vs Colombia",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "market": "Match Result",
+      "selection": "Colombia to win",
+      "probability": 0.607,
+      "odds": 1.65
+    },
+    {
+      "id": "2026-06-20-tunisia-japan-both-teams-to-score-no",
+      "date": "2026-06-20",
+      "match": "Tunisia vs Japan",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.607,
+      "odds": 1.65
+    },
+    {
+      "id": "2026-06-26-senegal-iraq-both-teams-to-score-no",
+      "date": "2026-06-26",
+      "match": "Senegal vs Iraq",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.606,
+      "odds": 1.65
+    },
+    {
+      "id": "2026-06-17-uzbekistan-colombia-both-teams-to-score-no",
+      "date": "2026-06-17",
+      "match": "Uzbekistan vs Colombia",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.603,
+      "odds": 1.66
+    },
+    {
+      "id": "2026-06-21-spain-saudi-arabia-total-goals-under-3-5-goals",
+      "date": "2026-06-21",
+      "match": "Spain vs Saudi Arabia",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.602,
+      "odds": 1.66
+    },
+    {
+      "id": "2026-06-22-norway-senegal-double-chance-draw-or-senegal",
+      "date": "2026-06-22",
+      "match": "Norway vs Senegal",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "market": "Double Chance",
+      "selection": "Draw or Senegal",
+      "probability": 0.602,
+      "odds": 1.66
+    },
+    {
+      "id": "2026-06-27-croatia-ghana-total-goals-under-2-5-goals",
+      "date": "2026-06-27",
+      "match": "Croatia vs Ghana",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.602,
+      "odds": 1.66
+    },
+    {
+      "id": "2026-06-26-new-zealand-belgium-both-teams-to-score-yes",
+      "date": "2026-06-26",
+      "match": "New Zealand vs Belgium",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.6,
+      "odds": 1.67
+    },
+    {
+      "id": "2026-06-27-colombia-portugal-double-chance-colombia-or-draw",
+      "date": "2026-06-27",
+      "match": "Colombia vs Portugal",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "market": "Double Chance",
+      "selection": "Colombia or Draw",
+      "probability": 0.6,
+      "odds": 1.67
+    },
+    {
+      "id": "2026-06-18-mexico-south-korea-total-goals-under-2-5-goals",
+      "date": "2026-06-18",
+      "match": "Mexico vs South Korea",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.594,
+      "odds": 1.68
+    },
+    {
+      "id": "2026-06-23-colombia-dr-congo-total-goals-under-2-5-goals",
+      "date": "2026-06-23",
+      "match": "Colombia vs DR Congo",
+      "home_team": "Colombia",
+      "away_team": "DR Congo",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.594,
+      "odds": 1.68
+    },
+    {
+      "id": "2026-06-27-jordan-argentina-both-teams-to-score-no",
+      "date": "2026-06-27",
+      "match": "Jordan vs Argentina",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.595,
+      "odds": 1.68
+    },
+    {
+      "id": "2026-06-17-uzbekistan-colombia-total-goals-under-2-5-goals",
+      "date": "2026-06-17",
+      "match": "Uzbekistan vs Colombia",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.59,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-19-scotland-morocco-total-goals-over-1-5-goals",
+      "date": "2026-06-19",
+      "match": "Scotland vs Morocco",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.59,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-20-germany-ivory-coast-match-result-germany-to-win",
+      "date": "2026-06-20",
+      "match": "Germany vs Ivory Coast",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "market": "Match Result",
+      "selection": "Germany to win",
+      "probability": 0.593,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-20-ecuador-cura-ao-both-teams-to-score-no",
+      "date": "2026-06-20",
+      "match": "Ecuador vs Curaçao",
+      "home_team": "Ecuador",
+      "away_team": "Curaçao",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.591,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-21-uruguay-cape-verde-total-goals-under-2-5-goals",
+      "date": "2026-06-21",
+      "match": "Uruguay vs Cape Verde",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.592,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-22-argentina-austria-both-teams-to-score-no",
+      "date": "2026-06-22",
+      "match": "Argentina vs Austria",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.591,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-24-south-africa-south-korea-total-goals-under-2-5-goals",
+      "date": "2026-06-24",
+      "match": "South Africa vs South Korea",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.592,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-27-jordan-argentina-total-goals-over-2-5-goals",
+      "date": "2026-06-27",
+      "match": "Jordan vs Argentina",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.592,
+      "odds": 1.69
+    },
+    {
+      "id": "2026-06-17-portugal-dr-congo-both-teams-to-score-no",
+      "date": "2026-06-17",
+      "match": "Portugal vs DR Congo",
+      "home_team": "Portugal",
+      "away_team": "DR Congo",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.587,
+      "odds": 1.7
+    },
+    {
+      "id": "2026-06-17-england-croatia-total-goals-under-2-5-goals",
+      "date": "2026-06-17",
+      "match": "England vs Croatia",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.587,
+      "odds": 1.7
+    },
+    {
+      "id": "2026-06-18-czech-republic-south-africa-both-teams-to-score-no",
+      "date": "2026-06-18",
+      "match": "Czech Republic vs South Africa",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.583,
+      "odds": 1.71
+    },
+    {
+      "id": "2026-06-26-senegal-iraq-match-result-senegal-to-win",
+      "date": "2026-06-26",
+      "match": "Senegal vs Iraq",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "market": "Match Result",
+      "selection": "Senegal to win",
+      "probability": 0.585,
+      "odds": 1.71
+    },
+    {
+      "id": "2026-06-20-netherlands-sweden-match-result-netherlands-to-win",
+      "date": "2026-06-20",
+      "match": "Netherlands vs Sweden",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "market": "Match Result",
+      "selection": "Netherlands to win",
+      "probability": 0.58,
+      "odds": 1.72
+    },
+    {
+      "id": "2026-06-24-mexico-czech-republic-both-teams-to-score-no",
+      "date": "2026-06-24",
+      "match": "Mexico vs Czech Republic",
+      "home_team": "Mexico",
+      "away_team": "Czech Republic",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.58,
+      "odds": 1.72
+    },
+    {
+      "id": "2026-06-27-croatia-ghana-both-teams-to-score-no",
+      "date": "2026-06-27",
+      "match": "Croatia vs Ghana",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.58,
+      "odds": 1.72
+    },
+    {
+      "id": "2026-06-20-tunisia-japan-match-result-japan-to-win",
+      "date": "2026-06-20",
+      "match": "Tunisia vs Japan",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "market": "Match Result",
+      "selection": "Japan to win",
+      "probability": 0.577,
+      "odds": 1.73
+    },
+    {
+      "id": "2026-06-25-cura-ao-ivory-coast-both-teams-to-score-no",
+      "date": "2026-06-25",
+      "match": "Curaçao vs Ivory Coast",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.58,
+      "odds": 1.73
+    },
+    {
+      "id": "2026-06-24-scotland-brazil-both-teams-to-score-no",
+      "date": "2026-06-24",
+      "match": "Scotland vs Brazil",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.576,
+      "odds": 1.74
+    },
+    {
+      "id": "2026-06-25-paraguay-australia-both-teams-to-score-no",
+      "date": "2026-06-25",
+      "match": "Paraguay vs Australia",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.573,
+      "odds": 1.74
+    },
+    {
+      "id": "2026-06-23-england-ghana-both-teams-to-score-no",
+      "date": "2026-06-23",
+      "match": "England vs Ghana",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.572,
+      "odds": 1.75
+    },
+    {
+      "id": "2026-06-18-mexico-south-korea-both-teams-to-score-no",
+      "date": "2026-06-18",
+      "match": "Mexico vs South Korea",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.567,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-19-brazil-haiti-total-goals-over-3-5-goals",
+      "date": "2026-06-19",
+      "match": "Brazil vs Haiti",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "market": "Total Goals",
+      "selection": "Over 3.5 goals",
+      "probability": 0.57,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-19-turkey-paraguay-both-teams-to-score-no",
+      "date": "2026-06-19",
+      "match": "Turkey vs Paraguay",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.567,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-25-united-states-turkey-both-teams-to-score-yes",
+      "date": "2026-06-25",
+      "match": "United States vs Turkey",
+      "home_team": "United States",
+      "away_team": "Turkey",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.569,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-26-new-zealand-belgium-total-goals-under-3-5-goals",
+      "date": "2026-06-26",
+      "match": "New Zealand vs Belgium",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.569,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-27-algeria-austria-both-teams-to-score-no",
+      "date": "2026-06-27",
+      "match": "Algeria vs Austria",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.568,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-27-dr-congo-uzbekistan-total-goals-over-1-5-goals",
+      "date": "2026-06-27",
+      "match": "DR Congo vs Uzbekistan",
+      "home_team": "DR Congo",
+      "away_team": "Uzbekistan",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.568,
+      "odds": 1.76
+    },
+    {
+      "id": "2026-06-17-england-croatia-both-teams-to-score-no",
+      "date": "2026-06-17",
+      "match": "England vs Croatia",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.565,
+      "odds": 1.77
+    },
+    {
+      "id": "2026-06-21-belgium-iran-total-goals-over-2-5-goals",
+      "date": "2026-06-21",
+      "match": "Belgium vs Iran",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.565,
+      "odds": 1.77
+    },
+    {
+      "id": "2026-06-21-new-zealand-egypt-total-goals-under-2-5-goals",
+      "date": "2026-06-21",
+      "match": "New Zealand vs Egypt",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.564,
+      "odds": 1.77
+    },
+    {
+      "id": "2026-06-18-switzerland-bosnia-and-herzegovina-both-teams-to-score-no",
+      "date": "2026-06-18",
+      "match": "Switzerland vs Bosnia and Herzegovina",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.56,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-21-spain-saudi-arabia-both-teams-to-score-no",
+      "date": "2026-06-21",
+      "match": "Spain vs Saudi Arabia",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.562,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-22-argentina-austria-total-goals-under-2-5-goals",
+      "date": "2026-06-22",
+      "match": "Argentina vs Austria",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.561,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-24-mexico-czech-republic-total-goals-under-2-5-goals",
+      "date": "2026-06-24",
+      "match": "Mexico vs Czech Republic",
+      "home_team": "Mexico",
+      "away_team": "Czech Republic",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.562,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-25-japan-sweden-total-goals-under-2-5-goals",
+      "date": "2026-06-25",
+      "match": "Japan vs Sweden",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.563,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-26-egypt-iran-total-goals-over-1-5-goals",
+      "date": "2026-06-26",
+      "match": "Egypt vs Iran",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.563,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-26-uruguay-spain-total-goals-under-2-5-goals",
+      "date": "2026-06-26",
+      "match": "Uruguay vs Spain",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.561,
+      "odds": 1.78
+    },
+    {
+      "id": "2026-06-21-belgium-iran-match-result-belgium-to-win",
+      "date": "2026-06-21",
+      "match": "Belgium vs Iran",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "market": "Match Result",
+      "selection": "Belgium to win",
+      "probability": 0.559,
+      "odds": 1.79
+    },
+    {
+      "id": "2026-06-21-belgium-iran-both-teams-to-score-yes",
+      "date": "2026-06-21",
+      "match": "Belgium vs Iran",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.558,
+      "odds": 1.79
+    },
+    {
+      "id": "2026-06-22-france-iraq-both-teams-to-score-no",
+      "date": "2026-06-22",
+      "match": "France vs Iraq",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.558,
+      "odds": 1.79
+    },
+    {
+      "id": "2026-06-23-panama-croatia-match-result-croatia-to-win",
+      "date": "2026-06-23",
+      "match": "Panama vs Croatia",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "market": "Match Result",
+      "selection": "Croatia to win",
+      "probability": 0.56,
+      "odds": 1.79
+    },
+    {
+      "id": "2026-06-24-south-africa-south-korea-both-teams-to-score-no",
+      "date": "2026-06-24",
+      "match": "South Africa vs South Korea",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.56,
+      "odds": 1.79
+    },
+    {
+      "id": "2026-06-18-czech-republic-south-africa-double-chance-draw-or-south-africa",
+      "date": "2026-06-18",
+      "match": "Czech Republic vs South Africa",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "market": "Double Chance",
+      "selection": "Draw or South Africa",
+      "probability": 0.556,
+      "odds": 1.8
+    },
+    {
+      "id": "2026-06-21-new-zealand-egypt-double-chance-new-zealand-or-draw",
+      "date": "2026-06-21",
+      "match": "New Zealand vs Egypt",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "market": "Double Chance",
+      "selection": "New Zealand or Draw",
+      "probability": 0.555,
+      "odds": 1.8
+    },
+    {
+      "id": "2026-06-22-norway-senegal-total-goals-under-2-5-goals",
+      "date": "2026-06-22",
+      "match": "Norway vs Senegal",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.556,
+      "odds": 1.8
+    },
+    {
+      "id": "2026-06-26-cape-verde-saudi-arabia-both-teams-to-score-no",
+      "date": "2026-06-26",
+      "match": "Cape Verde vs Saudi Arabia",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.555,
+      "odds": 1.8
+    },
+    {
+      "id": "2026-06-27-panama-england-both-teams-to-score-no",
+      "date": "2026-06-27",
+      "match": "Panama vs England",
+      "home_team": "Panama",
+      "away_team": "England",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.554,
+      "odds": 1.8
+    },
+    {
+      "id": "2026-06-18-canada-qatar-total-goals-over-2-5-goals",
+      "date": "2026-06-18",
+      "match": "Canada vs Qatar",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.552,
+      "odds": 1.81
+    },
+    {
+      "id": "2026-06-18-canada-qatar-both-teams-to-score-no",
+      "date": "2026-06-18",
+      "match": "Canada vs Qatar",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.553,
+      "odds": 1.81
+    },
+    {
+      "id": "2026-06-22-jordan-algeria-total-goals-under-2-5-goals",
+      "date": "2026-06-22",
+      "match": "Jordan vs Algeria",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.551,
+      "odds": 1.81
+    },
+    {
+      "id": "2026-06-25-united-states-turkey-total-goals-over-2-5-goals",
+      "date": "2026-06-25",
+      "match": "United States vs Turkey",
+      "home_team": "United States",
+      "away_team": "Turkey",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.551,
+      "odds": 1.81
+    },
+    {
+      "id": "2026-06-27-colombia-portugal-total-goals-under-2-5-goals",
+      "date": "2026-06-27",
+      "match": "Colombia vs Portugal",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.551,
+      "odds": 1.81
+    },
+    {
+      "id": "2026-06-23-portugal-uzbekistan-total-goals-over-2-5-goals",
+      "date": "2026-06-23",
+      "match": "Portugal vs Uzbekistan",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.545,
+      "odds": 1.83
+    },
+    {
+      "id": "2026-06-24-bosnia-and-herzegovina-qatar-both-teams-to-score-yes",
+      "date": "2026-06-24",
+      "match": "Bosnia and Herzegovina vs Qatar",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.546,
+      "odds": 1.83
+    },
+    {
+      "id": "2026-06-25-tunisia-netherlands-both-teams-to-score-no",
+      "date": "2026-06-25",
+      "match": "Tunisia vs Netherlands",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.547,
+      "odds": 1.83
+    },
+    {
+      "id": "2026-06-26-norway-france-match-result-france-to-win",
+      "date": "2026-06-26",
+      "match": "Norway vs France",
+      "home_team": "Norway",
+      "away_team": "France",
+      "market": "Match Result",
+      "selection": "France to win",
+      "probability": 0.544,
+      "odds": 1.84
+    },
+    {
+      "id": "2026-06-27-croatia-ghana-match-result-croatia-to-win",
+      "date": "2026-06-27",
+      "match": "Croatia vs Ghana",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "market": "Match Result",
+      "selection": "Croatia to win",
+      "probability": 0.543,
+      "odds": 1.84
+    },
+    {
+      "id": "2026-06-17-england-croatia-match-result-england-to-win",
+      "date": "2026-06-17",
+      "match": "England vs Croatia",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "market": "Match Result",
+      "selection": "England to win",
+      "probability": 0.539,
+      "odds": 1.85
+    },
+    {
+      "id": "2026-06-24-bosnia-and-herzegovina-qatar-double-chance-draw-or-qatar",
+      "date": "2026-06-24",
+      "match": "Bosnia and Herzegovina vs Qatar",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "market": "Double Chance",
+      "selection": "Draw or Qatar",
+      "probability": 0.542,
+      "odds": 1.85
+    },
+    {
+      "id": "2026-06-26-norway-france-total-goals-under-2-5-goals",
+      "date": "2026-06-26",
+      "match": "Norway vs France",
+      "home_team": "Norway",
+      "away_team": "France",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.541,
+      "odds": 1.85
+    },
+    {
+      "id": "2026-06-23-panama-croatia-total-goals-under-2-5-goals",
+      "date": "2026-06-23",
+      "match": "Panama vs Croatia",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.539,
+      "odds": 1.86
+    },
+    {
+      "id": "2026-06-25-japan-sweden-both-teams-to-score-no",
+      "date": "2026-06-25",
+      "match": "Japan vs Sweden",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.538,
+      "odds": 1.86
+    },
+    {
+      "id": "2026-06-25-ecuador-germany-total-goals-under-2-5-goals",
+      "date": "2026-06-25",
+      "match": "Ecuador vs Germany",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.538,
+      "odds": 1.86
+    },
+    {
+      "id": "2026-06-26-uruguay-spain-both-teams-to-score-no",
+      "date": "2026-06-26",
+      "match": "Uruguay vs Spain",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.539,
+      "odds": 1.86
+    },
+    {
+      "id": "2026-06-24-canada-switzerland-total-goals-under-2-5-goals",
+      "date": "2026-06-24",
+      "match": "Canada vs Switzerland",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.534,
+      "odds": 1.87
+    },
+    {
+      "id": "2026-06-27-panama-england-total-goals-over-2-5-goals",
+      "date": "2026-06-27",
+      "match": "Panama vs England",
+      "home_team": "Panama",
+      "away_team": "England",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.534,
+      "odds": 1.87
+    },
+    {
+      "id": "2026-06-17-ghana-panama-total-goals-under-2-5-goals",
+      "date": "2026-06-17",
+      "match": "Ghana vs Panama",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.532,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-20-ecuador-cura-ao-total-goals-over-2-5-goals",
+      "date": "2026-06-20",
+      "match": "Ecuador vs Curaçao",
+      "home_team": "Ecuador",
+      "away_team": "Curaçao",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.533,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-20-netherlands-sweden-total-goals-over-2-5-goals",
+      "date": "2026-06-20",
+      "match": "Netherlands vs Sweden",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.532,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-23-panama-croatia-both-teams-to-score-no",
+      "date": "2026-06-23",
+      "match": "Panama vs Croatia",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.531,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-25-cura-ao-ivory-coast-total-goals-under-2-5-goals",
+      "date": "2026-06-25",
+      "match": "Curaçao vs Ivory Coast",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.533,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-26-uruguay-spain-match-result-spain-to-win",
+      "date": "2026-06-26",
+      "match": "Uruguay vs Spain",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "market": "Match Result",
+      "selection": "Spain to win",
+      "probability": 0.532,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-06-18-mexico-south-korea-match-result-mexico-to-win",
+      "date": "2026-06-18",
+      "match": "Mexico vs South Korea",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "market": "Match Result",
+      "selection": "Mexico to win",
+      "probability": 0.528,
+      "odds": 1.89
+    },
+    {
+      "id": "2026-06-18-switzerland-bosnia-and-herzegovina-total-goals-under-2-5-goals",
+      "date": "2026-06-18",
+      "match": "Switzerland vs Bosnia and Herzegovina",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.528,
+      "odds": 1.89
+    },
+    {
+      "id": "2026-06-24-morocco-haiti-total-goals-under-2-5-goals",
+      "date": "2026-06-24",
+      "match": "Morocco vs Haiti",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.528,
+      "odds": 1.89
+    },
+    {
+      "id": "2026-06-19-scotland-morocco-match-result-morocco-to-win",
+      "date": "2026-06-19",
+      "match": "Scotland vs Morocco",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "market": "Match Result",
+      "selection": "Morocco to win",
+      "probability": 0.526,
+      "odds": 1.9
+    },
+    {
+      "id": "2026-06-26-norway-france-both-teams-to-score-no",
+      "date": "2026-06-26",
+      "match": "Norway vs France",
+      "home_team": "Norway",
+      "away_team": "France",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.526,
+      "odds": 1.9
+    },
+    {
+      "id": "2026-06-22-jordan-algeria-both-teams-to-score-no",
+      "date": "2026-06-22",
+      "match": "Jordan vs Algeria",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.523,
+      "odds": 1.91
+    },
+    {
+      "id": "2026-06-23-england-ghana-total-goals-over-2-5-goals",
+      "date": "2026-06-23",
+      "match": "England vs Ghana",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.524,
+      "odds": 1.91
+    },
+    {
+      "id": "2026-06-25-japan-sweden-match-result-japan-to-win",
+      "date": "2026-06-25",
+      "match": "Japan vs Sweden",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "market": "Match Result",
+      "selection": "Japan to win",
+      "probability": 0.524,
+      "odds": 1.91
+    },
+    {
+      "id": "2026-06-19-united-states-australia-double-chance-draw-or-australia",
+      "date": "2026-06-19",
+      "match": "United States vs Australia",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "market": "Double Chance",
+      "selection": "Draw or Australia",
+      "probability": 0.52,
+      "odds": 1.92
+    },
+    {
+      "id": "2026-06-19-united-states-australia-total-goals-under-2-5-goals",
+      "date": "2026-06-19",
+      "match": "United States vs Australia",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.52,
+      "odds": 1.92
+    },
+    {
+      "id": "2026-06-20-netherlands-sweden-both-teams-to-score-yes",
+      "date": "2026-06-20",
+      "match": "Netherlands vs Sweden",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.521,
+      "odds": 1.92
+    },
+    {
+      "id": "2026-06-17-ghana-panama-both-teams-to-score-yes",
+      "date": "2026-06-17",
+      "match": "Ghana vs Panama",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.518,
+      "odds": 1.93
+    },
+    {
+      "id": "2026-06-24-canada-switzerland-both-teams-to-score-yes",
+      "date": "2026-06-24",
+      "match": "Canada vs Switzerland",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.517,
+      "odds": 1.93
+    },
+    {
+      "id": "2026-06-21-new-zealand-egypt-both-teams-to-score-no",
+      "date": "2026-06-21",
+      "match": "New Zealand vs Egypt",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.515,
+      "odds": 1.94
+    },
+    {
+      "id": "2026-06-24-south-africa-south-korea-match-result-south-korea-to-win",
+      "date": "2026-06-24",
+      "match": "South Africa vs South Korea",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "market": "Match Result",
+      "selection": "South Korea to win",
+      "probability": 0.516,
+      "odds": 1.94
+    },
+    {
+      "id": "2026-06-19-united-states-australia-both-teams-to-score-yes",
+      "date": "2026-06-19",
+      "match": "United States vs Australia",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.513,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-20-germany-ivory-coast-both-teams-to-score-no",
+      "date": "2026-06-20",
+      "match": "Germany vs Ivory Coast",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.512,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-22-jordan-algeria-match-result-algeria-to-win",
+      "date": "2026-06-22",
+      "match": "Jordan vs Algeria",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "market": "Match Result",
+      "selection": "Algeria to win",
+      "probability": 0.513,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-23-portugal-uzbekistan-both-teams-to-score-no",
+      "date": "2026-06-23",
+      "match": "Portugal vs Uzbekistan",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.513,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-2-5-goals",
+      "date": "2026-06-24",
+      "match": "Bosnia and Herzegovina vs Qatar",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.513,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-24-scotland-brazil-total-goals-over-2-5-goals",
+      "date": "2026-06-24",
+      "match": "Scotland vs Brazil",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.514,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-25-tunisia-netherlands-total-goals-under-2-5-goals",
+      "date": "2026-06-25",
+      "match": "Tunisia vs Netherlands",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.513,
+      "odds": 1.95
+    },
+    {
+      "id": "2026-06-19-brazil-haiti-both-teams-to-score-no",
+      "date": "2026-06-19",
+      "match": "Brazil vs Haiti",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.511,
+      "odds": 1.96
+    },
+    {
+      "id": "2026-06-25-ecuador-germany-both-teams-to-score-no",
+      "date": "2026-06-25",
+      "match": "Ecuador vs Germany",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.51,
+      "odds": 1.96
+    },
+    {
+      "id": "2026-06-25-united-states-turkey-double-chance-draw-or-turkey",
+      "date": "2026-06-25",
+      "match": "United States vs Turkey",
+      "home_team": "United States",
+      "away_team": "Turkey",
+      "market": "Double Chance",
+      "selection": "Draw or Turkey",
+      "probability": 0.509,
+      "odds": 1.96
+    },
+    {
+      "id": "2026-06-25-ecuador-germany-match-result-germany-to-win",
+      "date": "2026-06-25",
+      "match": "Ecuador vs Germany",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "market": "Match Result",
+      "selection": "Germany to win",
+      "probability": 0.507,
+      "odds": 1.97
+    },
+    {
+      "id": "2026-06-17-portugal-dr-congo-total-goals-under-2-5-goals",
+      "date": "2026-06-17",
+      "match": "Portugal vs DR Congo",
+      "home_team": "Portugal",
+      "away_team": "DR Congo",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.502,
+      "odds": 1.99
+    },
+    {
+      "id": "2026-06-20-germany-ivory-coast-total-goals-over-2-5-goals",
+      "date": "2026-06-20",
+      "match": "Germany vs Ivory Coast",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.502,
+      "odds": 1.99
+    },
+    {
+      "id": "2026-06-22-norway-senegal-both-teams-to-score-no",
+      "date": "2026-06-22",
+      "match": "Norway vs Senegal",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.502,
+      "odds": 1.99
+    },
+    {
+      "id": "2026-06-27-colombia-portugal-both-teams-to-score-yes",
+      "date": "2026-06-27",
+      "match": "Colombia vs Portugal",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.501,
+      "odds": 1.99
+    }
+  ],
+  "multis": [
+    {
+      "id": "multi_2026-06-17-ghana-panama-total-goals-under-3-5-goals-2026-06-18-canada-qatar-double-chance-canada-or-draw",
+      "legs": [
+        {
+          "id": "2026-06-18-canada-qatar-double-chance-canada-or-draw",
+          "date": "2026-06-18",
+          "match": "Canada vs Qatar",
+          "home_team": "Canada",
+          "away_team": "Qatar",
+          "market": "Double Chance",
+          "selection": "Canada or Draw",
+          "odds": 1.12
+        },
+        {
+          "id": "2026-06-17-ghana-panama-total-goals-under-3-5-goals",
+          "date": "2026-06-17",
+          "match": "Ghana vs Panama",
+          "home_team": "Ghana",
+          "away_team": "Panama",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.67
+    },
+    {
+      "id": "multi_2026-06-25-tunisia-netherlands-double-chance-draw-or-netherlands-2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+      "legs": [
+        {
+          "id": "2026-06-25-tunisia-netherlands-double-chance-draw-or-netherlands",
+          "date": "2026-06-25",
+          "match": "Tunisia vs Netherlands",
+          "home_team": "Tunisia",
+          "away_team": "Netherlands",
+          "market": "Double Chance",
+          "selection": "Draw or Netherlands",
+          "odds": 1.18
+        },
+        {
+          "id": "2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+          "date": "2026-06-26",
+          "match": "Uruguay vs Spain",
+          "home_team": "Uruguay",
+          "away_team": "Spain",
+          "market": "Double Chance",
+          "selection": "Draw or Spain",
+          "odds": 1.27
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.67
+    },
+    {
+      "id": "multi_2026-06-17-ghana-panama-total-goals-under-3-5-goals-2026-06-23-england-ghana-double-chance-england-or-draw",
+      "legs": [
+        {
+          "id": "2026-06-23-england-ghana-double-chance-england-or-draw",
+          "date": "2026-06-23",
+          "match": "England vs Ghana",
+          "home_team": "England",
+          "away_team": "Ghana",
+          "market": "Double Chance",
+          "selection": "England or Draw",
+          "odds": 1.12
+        },
+        {
+          "id": "2026-06-17-ghana-panama-total-goals-under-3-5-goals",
+          "date": "2026-06-17",
+          "match": "Ghana vs Panama",
+          "home_team": "Ghana",
+          "away_team": "Panama",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.669
+    },
+    {
+      "id": "multi_2026-06-20-netherlands-sweden-double-chance-netherlands-or-draw-2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Algeria vs Austria",
+          "home_team": "Algeria",
+          "away_team": "Austria",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.21
+        },
+        {
+          "id": "2026-06-20-netherlands-sweden-double-chance-netherlands-or-draw",
+          "date": "2026-06-20",
+          "match": "Netherlands vs Sweden",
+          "home_team": "Netherlands",
+          "away_team": "Sweden",
+          "market": "Double Chance",
+          "selection": "Netherlands or Draw",
+          "odds": 1.24
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.668
+    },
+    {
+      "id": "multi_2026-06-18-canada-qatar-double-chance-canada-or-draw-2026-06-19-united-states-australia-double-chance-united-states-or-australia",
+      "legs": [
+        {
+          "id": "2026-06-18-canada-qatar-double-chance-canada-or-draw",
+          "date": "2026-06-18",
+          "match": "Canada vs Qatar",
+          "home_team": "Canada",
+          "away_team": "Qatar",
+          "market": "Double Chance",
+          "selection": "Canada or Draw",
+          "odds": 1.12
+        },
+        {
+          "id": "2026-06-19-united-states-australia-double-chance-united-states-or-australia",
+          "date": "2026-06-19",
+          "match": "United States vs Australia",
+          "home_team": "United States",
+          "away_team": "Australia",
+          "market": "Double Chance",
+          "selection": "United States or Australia",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.667
+    },
+    {
+      "id": "multi_2026-06-18-switzerland-bosnia-and-herzegovina-double-chance-switzerland-or-draw-2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-18-switzerland-bosnia-and-herzegovina-double-chance-switzerland-or-draw",
+          "date": "2026-06-18",
+          "match": "Switzerland vs Bosnia and Herzegovina",
+          "home_team": "Switzerland",
+          "away_team": "Bosnia and Herzegovina",
+          "market": "Double Chance",
+          "selection": "Switzerland or Draw",
+          "odds": 1.17
+        },
+        {
+          "id": "2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
+          "date": "2026-06-25",
+          "match": "United States vs Turkey",
+          "home_team": "United States",
+          "away_team": "Turkey",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.28
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.667
+    },
+    {
+      "id": "multi_2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals-2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Algeria vs Austria",
+          "home_team": "Algeria",
+          "away_team": "Austria",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.21
+        },
+        {
+          "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
+          "date": "2026-06-24",
+          "match": "Bosnia and Herzegovina vs Qatar",
+          "home_team": "Bosnia and Herzegovina",
+          "away_team": "Qatar",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.32
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.628
+    },
+    {
+      "id": "multi_2026-06-19-turkey-paraguay-total-goals-under-3-5-goals-2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-19-turkey-paraguay-total-goals-under-3-5-goals",
+          "date": "2026-06-19",
+          "match": "Turkey vs Paraguay",
+          "home_team": "Turkey",
+          "away_team": "Paraguay",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.21
+        },
+        {
+          "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
+          "date": "2026-06-24",
+          "match": "Bosnia and Herzegovina vs Qatar",
+          "home_team": "Bosnia and Herzegovina",
+          "away_team": "Qatar",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.32
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.627
+    },
+    {
+      "id": "multi_2026-06-20-germany-ivory-coast-double-chance-germany-or-draw-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-20-germany-ivory-coast-double-chance-germany-or-draw",
+          "date": "2026-06-20",
+          "match": "Germany vs Ivory Coast",
+          "home_team": "Germany",
+          "away_team": "Ivory Coast",
+          "market": "Double Chance",
+          "selection": "Germany or Draw",
+          "odds": 1.22
+        },
+        {
+          "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Colombia vs Portugal",
+          "home_team": "Colombia",
+          "away_team": "Portugal",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.31
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.627
+    },
+    {
+      "id": "multi_2026-06-22-jordan-algeria-double-chance-draw-or-algeria-2026-06-25-ecuador-germany-double-chance-draw-or-germany",
+      "legs": [
+        {
+          "id": "2026-06-22-jordan-algeria-double-chance-draw-or-algeria",
+          "date": "2026-06-22",
+          "match": "Jordan vs Algeria",
+          "home_team": "Jordan",
+          "away_team": "Algeria",
+          "market": "Double Chance",
+          "selection": "Draw or Algeria",
+          "odds": 1.3
+        },
+        {
+          "id": "2026-06-25-ecuador-germany-double-chance-draw-or-germany",
+          "date": "2026-06-25",
+          "match": "Ecuador vs Germany",
+          "home_team": "Ecuador",
+          "away_team": "Germany",
+          "market": "Double Chance",
+          "selection": "Draw or Germany",
+          "odds": 1.31
+        }
+      ],
+      "combined_odds": 1.7,
+      "combined_probability": 0.588
+    },
+    {
+      "id": "multi_2026-06-22-jordan-algeria-double-chance-draw-or-algeria-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-22-jordan-algeria-double-chance-draw-or-algeria",
+          "date": "2026-06-22",
+          "match": "Jordan vs Algeria",
+          "home_team": "Jordan",
+          "away_team": "Algeria",
+          "market": "Double Chance",
+          "selection": "Draw or Algeria",
+          "odds": 1.3
+        },
+        {
+          "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Colombia vs Portugal",
+          "home_team": "Colombia",
+          "away_team": "Portugal",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.31
+        }
+      ],
+      "combined_odds": 1.7,
+      "combined_probability": 0.588
+    },
+    {
+      "id": "multi_2026-06-19-united-states-australia-double-chance-united-states-or-australia-2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+      "legs": [
+        {
+          "id": "2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+          "date": "2026-06-26",
+          "match": "Uruguay vs Spain",
+          "home_team": "Uruguay",
+          "away_team": "Spain",
+          "market": "Double Chance",
+          "selection": "Draw or Spain",
+          "odds": 1.27
+        },
+        {
+          "id": "2026-06-19-united-states-australia-double-chance-united-states-or-australia",
+          "date": "2026-06-19",
+          "match": "United States vs Australia",
+          "home_team": "United States",
+          "away_team": "Australia",
+          "market": "Double Chance",
+          "selection": "United States or Australia",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.7,
+      "combined_probability": 0.586
+    }
+  ]
+}

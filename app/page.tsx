@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import HomeHero from '@/components/hero/HomeHero';
 import PredictionsBoard from '@/components/PredictionsBoard';
+import PreviousPredictions from '@/components/PreviousPredictions';
 import Multis from '@/components/Multis';
 import { betDaysByDate, remainingFixtures } from '@/content/bets';
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/content/config';
@@ -31,6 +32,7 @@ export default function HomePage() {
 
       <HomeHero />
       <PredictionsBoard days={days} />
+      <PreviousPredictions />
       <Multis />
     </>
   );

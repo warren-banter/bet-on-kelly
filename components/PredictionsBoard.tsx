@@ -105,7 +105,6 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
   // fallback) lists every match chronologically — crawlers see all of them.
   const [today, setToday] = useState<string | null>(null);
   const [weeksRevealed, setWeeksRevealed] = useState(0);
-  const [showPrevious, setShowPrevious] = useState(false);
 
   useEffect(() => {
     setToday(localISO(new Date()));
@@ -127,9 +126,9 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
     );
   }
 
-  // Partition the calendar relative to the visitor's "today".
+  // Partition the calendar relative to the visitor's "today". Past fixtures
+  // drop off the board entirely — their outcomes live in the track record.
   const todayDay = days.find((d) => d.date === today) ?? null;
-  const previousDays = days.filter((d) => d.date < today);
   const futureDays = days.filter((d) => d.date > today);
 
   const thisWeekEnd = addDaysISO(weekStartISO(today), 7); // exclusive
@@ -172,11 +171,6 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
         ? `See ${shortDate(nextBucket[0].date)} – ${shortDate(nextBucket[nextBucket.length - 1].date)}`
         : 'See more';
 
-  const previousCount = previousDays.reduce(
-    (n, d) => n + d.matches.length,
-    0,
-  );
-
   return (
     <section
       id="predictions"
@@ -193,41 +187,6 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
             ))}
           </div>
         </Group>
-      )}
-
-      {/* Previous predictions — collapsed by default */}
-      {previousDays.length > 0 && (
-        <div className="mb-10">
-          <button
-            type="button"
-            onClick={() => setShowPrevious((v) => !v)}
-            aria-expanded={showPrevious}
-            className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
-          >
-            {showPrevious
-              ? 'Hide previous predictions'
-              : `Show previous predictions (${previousCount} games)`}
-            <svg
-              className={`h-4 w-4 transition-transform ${showPrevious ? 'rotate-180' : ''}`}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </button>
-          {showPrevious && (
-            <div className="mt-6">
-              {previousDays.map((day) => (
-                <DaySection key={day.date} day={day} />
-              ))}
-            </div>
-          )}
-        </div>
       )}
 
       {/* Rest of this week */}
