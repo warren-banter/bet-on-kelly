@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-17T20:05:28.152Z",
+  "updated": "2026-06-17T22:42:39.999Z",
   "summary": {
-    "settled": 22,
-    "won": 11,
-    "lost": 11,
-    "hitRate": 0.5
+    "settled": 25,
+    "won": 12,
+    "lost": 13,
+    "hitRate": 0.48
   },
   "singles": [
     {
@@ -847,7 +847,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.587,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-18-czech-republic-south-africa-both-teams-to-score-no",
@@ -1063,7 +1065,9 @@
       "selection": "No",
       "probability": 0.565,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-21-belgium-iran-total-goals-over-2-5-goals",
@@ -1423,7 +1427,9 @@
       "selection": "England to win",
       "probability": 0.539,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-24-bosnia-and-herzegovina-qatar-double-chance-draw-or-qatar",
