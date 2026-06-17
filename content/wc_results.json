@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-17T17:47:32.324Z",
+  "updated": "2026-06-17T20:05:28.152Z",
   "summary": {
-    "settled": 20,
-    "won": 10,
-    "lost": 10,
+    "settled": 22,
+    "won": 11,
+    "lost": 11,
     "hitRate": 0.5
   },
   "singles": [
@@ -833,7 +833,9 @@
       "selection": "No",
       "probability": 0.587,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-17-england-croatia-total-goals-under-2-5-goals",
@@ -1913,7 +1915,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.502,
       "odds": 1.99,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-20-germany-ivory-coast-total-goals-over-2-5-goals",
