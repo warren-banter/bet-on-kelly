@@ -4,19 +4,15 @@
 //   1. Archive the picks currently in content/wc_bets.json into
 //      content/placed_picks.json (so a pick is kept even after its fixture
 //      drops off the upcoming feed).
-//   2. Fetch finished World Cup fixtures + scores from API-Football.
+//   2. Fetch finished World Cup fixtures + scores from ESPN's public
+//      scoreboard (no API key required, covers the current tournament).
 //   3. Grade every archived pick against the final score.
 //   4. Write content/wc_results.json (graded picks + a summary record).
 //
-// Designed to fail safe: with no API key (or on a fetch error) it still
-// archives picks and leaves the existing results file untouched, so the
-// site always builds. Intended to run on a schedule (GitHub Action), which
-// commits the changed JSON and triggers a Vercel rebuild.
-//
-// Env:
-//   API_FOOTBALL_KEY   API-Football key (header x-apisports-key). Required to grade.
-//   WC_LEAGUE_ID       League id for the World Cup (default 1).
-//   WC_SEASON          Season year (default 2026).
+// Designed to fail safe: on a fetch error it still archives picks and leaves
+// the existing results file untouched, so the site always builds. Intended to
+// run on a schedule (GitHub Action), which commits the changed JSON and
+// triggers a Vercel rebuild.
 //
 // Flags:
 //   --selftest         Run the grading unit checks and exit.
@@ -113,18 +109,15 @@ function selftest() {
   process.exit(pass === cases.length ? 0 : 1);
 }
 
-// --- API-Football ------------------------------------------------------------
+// --- ESPN scoreboard ---------------------------------------------------------
 
-// API team name -> our canonical name (normalised keys). Extend if a fixture
+// ESPN team name -> our canonical name (normalised keys). Extend if a fixture
 // fails to match (the script logs any it can't resolve).
 const TEAM_ALIASES = {
-  usa: 'United States',
-  korearepublic: 'South Korea',
-  czechia: 'Czech Republic',
-  cotedivoire: 'Ivory Coast',
-  caboverde: 'Cape Verde',
+  bosniaherzegovina: 'Bosnia and Herzegovina',
   congodr: 'DR Congo',
-  drcongo: 'DR Congo',
+  czechia: 'Czech Republic',
+  turkiye: 'Turkey',
 };
 
 function canonicalApiTeam(name) {
@@ -137,41 +130,42 @@ function pairKey(a, b) {
   return [a, b].sort().join('::');
 }
 
-async function fetchFinishedFixtures(key) {
-  const league = process.env.WC_LEAGUE_ID || '1';
-  const season = process.env.WC_SEASON || '2026';
-  const base = 'https://v3.football.api-sports.io/fixtures';
-  const headers = { 'x-apisports-key': key };
+// ISO yyyy-mm-dd -> compact yyyymmdd, shifted by `days` (UTC).
+function isoToCompact(iso, days = 0) {
+  const d = new Date(`${iso}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10).replace(/-/g, '');
+}
+
+// ESPN buckets fixtures by UTC kickoff, so a venue-local date can land a day
+// either side — query a window padded by a day and match on the team pair
+// (each pair meets only once in the group stage).
+async function fetchFinishedFixtures(minDate, maxDate) {
+  const from = isoToCompact(minDate, -1);
+  const to = isoToCompact(maxDate, 1);
+  const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=${from}-${to}&limit=500`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`ESPN HTTP ${res.status}`);
+  const data = await res.json();
 
   const finished = new Map(); // pairKey -> { hs, as, date }
-  let page = 1;
-  let totalPages = 1;
-  do {
-    const url = `${base}?league=${league}&season=${season}&page=${page}`;
-    const res = await fetch(url, { headers });
-    if (!res.ok) throw new Error(`API-Football HTTP ${res.status}`);
-    const data = await res.json();
-    if (Array.isArray(data.errors) ? data.errors.length : Object.keys(data.errors || {}).length) {
-      throw new Error(`API-Football error: ${JSON.stringify(data.errors)}`);
-    }
-    totalPages = data.paging?.total || 1;
-    for (const item of data.response || []) {
-      const short = item.fixture?.status?.short;
-      if (!['FT', 'AET', 'PEN'].includes(short)) continue;
-      const home = canonicalApiTeam(item.teams.home.name);
-      const away = canonicalApiTeam(item.teams.away.name);
-      const hs = item.goals.home;
-      const as = item.goals.away;
-      if (hs == null || as == null) continue;
-      finished.set(pairKey(home, away), {
-        hs,
-        as,
-        date: item.fixture.date,
-      });
-    }
-    page++;
-  } while (page <= totalPages);
-
+  for (const event of data.events || []) {
+    if (!event.status?.type?.completed) continue;
+    const competitors = event.competitions?.[0]?.competitors || [];
+    const home = competitors.find((c) => c.homeAway === 'home');
+    const away = competitors.find((c) => c.homeAway === 'away');
+    if (!home || !away) continue;
+    const hs = Number(home.score);
+    const as = Number(away.score);
+    if (Number.isNaN(hs) || Number.isNaN(as)) continue;
+    finished.set(
+      pairKey(
+        canonicalApiTeam(home.team.displayName),
+        canonicalApiTeam(away.team.displayName),
+      ),
+      { hs, as, date: event.date },
+    );
+  }
   return finished;
 }
 
@@ -242,13 +236,18 @@ function lookupScore(finished, home, away) {
   return finished.get(pairKey(norm(home), norm(away)));
 }
 
-function gradeArchive(archive, finished) {
+function gradeArchive(archive, finished, today) {
   const unmatched = new Set();
+  // Only flag a missing score as a problem once the fixture is in the past —
+  // future fixtures are simply pending, not a matching failure.
+  const flagMissing = (date, home, away) => {
+    if (date < today) unmatched.add(`${date} ${home} v ${away}`);
+  };
 
   const singles = archive.singles.map((s) => {
     const score = lookupScore(finished, s.home_team, s.away_team);
     if (!score) {
-      unmatched.add(`${s.home_team} v ${s.away_team}`);
+      flagMissing(s.date, s.home_team, s.away_team);
       return { ...s, result: 'pending' };
     }
     return {
@@ -266,6 +265,7 @@ function gradeArchive(archive, finished) {
       const score = lookupScore(finished, leg.home_team, leg.away_team);
       if (!score) {
         anyPending = true;
+        flagMissing(leg.date, leg.home_team, leg.away_team);
         return { ...leg, result: 'pending' };
       }
       const r = gradeSelection(leg.market, leg.selection, leg.home_team, leg.away_team, score.hs, score.as);
@@ -314,15 +314,15 @@ async function main() {
     `archived ${archive.singles.length} singles (${historical.length} historical), ${archive.multis.length} multis`,
   );
 
-  const key = process.env.API_FOOTBALL_KEY;
-  if (!key) {
-    console.warn('API_FOOTBALL_KEY not set — archived picks only, results not regraded.');
+  const dates = archive.singles.map((s) => s.date).sort();
+  if (dates.length === 0) {
+    console.warn('No picks to grade.');
     return;
   }
 
   let finished;
   try {
-    finished = await fetchFinishedFixtures(key);
+    finished = await fetchFinishedFixtures(dates[0], dates[dates.length - 1]);
   } catch (err) {
     console.error(`Results fetch failed: ${err.message}. Leaving existing results file unchanged.`);
     process.exitCode = 0;
@@ -330,9 +330,10 @@ async function main() {
   }
   console.log(`fetched ${finished.size} finished fixtures`);
 
-  const graded = gradeArchive(archive, finished);
+  const today = new Date().toISOString().slice(0, 10);
+  const graded = gradeArchive(archive, finished, today);
   if (graded.unmatched.length) {
-    console.warn(`Unmatched fixtures (no score yet, or add a TEAM_ALIASES entry):`);
+    console.warn(`Past fixtures with no matched score (add a TEAM_ALIASES entry?):`);
     for (const u of graded.unmatched) console.warn(`  - ${u}`);
   }
 

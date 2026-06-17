@@ -26,10 +26,6 @@ jobs:
           node-version: 20
 
       - name: Archive picks, fetch scores, grade
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          WC_LEAGUE_ID: '1'
-          WC_SEASON: '2026'
         run: node scripts/update-results.mjs
 
       - name: Commit updated data
