@@ -3,7 +3,7 @@ import { SITE_NAME } from '@/content/config';
 
 const footerLinks = [
   ['/fixtures/', 'Fixtures'],
-  ['/predictions/', 'Predictions'],
+  ['/#predictions', 'Predictions'],
   ['/groups/', 'Groups'],
   ['/knockout/', 'Knockout'],
   ['/methodology/', 'How we predict'],

@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { champions } from '@/content/champions';
+import { AFFILIATE_URL } from '@/content/config';
 
 const SoccerBall = dynamic(() => import('./SoccerBall'), {
   ssr: false,
@@ -46,28 +46,29 @@ export default function HomeHero() {
           <p className="text-sm font-semibold uppercase tracking-widest text-accent">
             World Cup 2026
           </p>
-          <h1 className="mt-3 text-4xl font-extrabold leading-[1.02] tracking-tight text-ink sm:text-6xl">
-            Every game.
-            <br />
-            <span className="text-accent">Every prediction.</span>
+          <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-5xl">
+            You miss <span className="text-accent">100%</span> of the shots you
+            don&rsquo;t take.
           </h1>
           <p className="mt-5 max-w-md text-base text-ink-soft">
-            Data-led predictions, predicted scorelines and group tables for all
-            72 group-stage matches. Find the call, then predict it yourself.
+            Data-led predicted scorelines and win probabilities for all 72
+            group-stage matches. See the call, then make it yourself.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/predictions/"
+            <a
+              href="#predictions"
               className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-bold text-black shadow-[0_0_16px_rgba(43,255,136,0.35)] transition-colors hover:bg-accent-bright"
             >
-              See predictions
-            </Link>
-            <Link
-              href="/fixtures/"
+              Kelly&rsquo;s predictions
+            </a>
+            <a
+              href={AFFILIATE_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
               className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
             >
-              Fixtures
-            </Link>
+              Make your prediction
+            </a>
           </div>
         </div>
 

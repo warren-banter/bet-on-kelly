@@ -496,7 +496,7 @@ export default function MethodologyPage() {
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-3">
               <Link
-                href="/predictions/"
+                href="/#predictions"
                 className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-bold text-black transition-colors hover:bg-accent-bright"
               >
                 See predictions

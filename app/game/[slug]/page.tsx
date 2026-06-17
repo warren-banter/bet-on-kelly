@@ -6,6 +6,11 @@ import {
   getMatchBySlug,
   formatMatchDate,
 } from '@/content/matches';
+import {
+  getMatchBets,
+  formatProbability,
+  formatOdds,
+} from '@/content/bets';
 import { SITE_NAME, SITE_URL } from '@/content/config';
 import Flag from '@/components/Flag';
 import PredictButton from '@/components/PredictButton';
@@ -23,8 +28,11 @@ export async function generateMetadata({
   const match = getMatchBySlug(slug);
   if (!match) return {};
 
-  const title = `${match.home} vs ${match.away} prediction`;
-  const description = `Our World Cup 2026 prediction for ${match.home} vs ${match.away}: ${match.tip} to win (${match.probability}%), predicted score ${match.homeScore}-${match.awayScore}.`;
+  const top = getMatchBets(match)[0];
+  const title = `${match.home} vs ${match.away} betting prediction`;
+  const description = top
+    ? `Our World Cup 2026 pick for ${match.home} vs ${match.away}: ${top.selection} (${top.market}) at ${formatOdds(top.odds)} — ${formatProbability(top.probability)} probability.`
+    : `World Cup 2026 match details for ${match.home} vs ${match.away}: kick-off time, venue and group-stage information.`;
   const url = `/game/${match.slug}/`;
 
   return {
@@ -73,6 +81,8 @@ export default async function GamePage({
   if (!match) notFound();
 
   const dateLabel = formatMatchDate(match.date);
+  const bets = getMatchBets(match);
+  const top = bets[0];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -114,41 +124,74 @@ export default async function GamePage({
         <div className="mt-6 rounded-2xl border border-line bg-surface p-6 shadow-sm">
           <div className="flex items-center gap-4">
             <TeamBlock name={match.home} />
-            <div className="flex flex-col items-center">
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-ink-soft">
-                Predicted
-              </span>
-              <span className="text-4xl font-bold tabular-nums leading-none text-ink">
-                {match.homeScore}
-                <span className="mx-1.5 text-ink-soft">-</span>
-                {match.awayScore}
-              </span>
-            </div>
+            <span className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
+              v
+            </span>
             <TeamBlock name={match.away} />
           </div>
 
-          {/* Tip / confidence block */}
-          <div className="mt-6 rounded-xl border border-accent/20 bg-accent/10 p-4 text-center">
-            <p className="text-sm text-ink-soft">Our tip</p>
-            <p className="mt-1 text-xl font-extrabold text-accent">
-              {match.tip} to win
-            </p>
-            <div className="mt-3 flex items-center justify-center gap-3">
-              <div className="h-2 w-40 overflow-hidden rounded-full bg-raised">
-                <div
-                  className="h-full rounded-full bg-accent"
-                  style={{ width: `${match.probability}%` }}
-                />
+          {/* Top pick */}
+          {top ? (
+            <div className="mt-6 rounded-xl border border-accent/20 bg-accent/10 p-4 text-center">
+              <p className="text-sm text-ink-soft">
+                Top pick &middot; {top.market}
+              </p>
+              <p className="mt-1 text-xl font-extrabold text-accent">
+                {top.selection}
+              </p>
+              <div className="mt-3 flex items-center justify-center gap-3">
+                <span className="rounded-full bg-accent px-3 py-1 text-sm font-bold tabular-nums text-black">
+                  {formatOdds(top.odds)}
+                </span>
+                <span className="text-sm font-semibold tabular-nums text-ink-soft">
+                  {formatProbability(top.probability)} probability
+                </span>
               </div>
-              <span className="text-sm font-bold tabular-nums text-accent">
-                {match.probability}%
-              </span>
             </div>
-            <p className="mt-1 text-xs text-ink-soft">Win probability</p>
-          </div>
+          ) : (
+            <div className="mt-6 rounded-xl border border-line bg-page p-4 text-center">
+              <p className="text-sm text-ink-soft">
+                No active bets for this fixture.
+              </p>
+            </div>
+          )}
 
           <PredictButton size="lg" className="mt-6 w-full" />
         </div>
+
+        {/* All picks */}
+        {bets.length > 1 && (
+          <section className="mt-8">
+            <h2 className="mb-2 text-base font-bold text-ink">
+              All picks ({bets.length})
+            </h2>
+            <div className="space-y-2">
+              {bets.map((bet) => (
+                <div
+                  key={bet.id}
+                  className="flex items-center justify-between gap-3 rounded-xl border border-line bg-surface px-4 py-3 shadow-sm"
+                >
+                  <div className="min-w-0">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-ink-soft">
+                      {bet.market}
+                    </p>
+                    <p className="truncate text-sm font-semibold text-ink">
+                      {bet.selection}
+                    </p>
+                  </div>
+                  <div className="flex shrink-0 items-center gap-3">
+                    <span className="text-xs font-medium tabular-nums text-ink-soft">
+                      {formatProbability(bet.probability)}
+                    </span>
+                    <span className="rounded-full bg-accent/15 px-2.5 py-1 text-sm font-bold tabular-nums text-accent">
+                      {formatOdds(bet.odds)}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Structured facts */}
         <section className="mt-8">
@@ -161,12 +204,12 @@ export default async function GamePage({
             <Fact label="Venue" value={match.venue} />
             <Fact label="Home" value={match.home} />
             <Fact label="Away" value={match.away} />
-            <Fact
-              label="Predicted score"
-              value={`${match.home} ${match.homeScore}-${match.awayScore} ${match.away}`}
-            />
-            <Fact label="Predicted winner" value={match.tip} />
-            <Fact label="Win probability" value={`${match.probability}%`} />
+            {top && (
+              <Fact
+                label="Top pick"
+                value={`${top.selection} @ ${formatOdds(top.odds)}`}
+              />
+            )}
           </dl>
         </section>
       </article>

@@ -55,7 +55,7 @@ export default function KnockoutPage() {
               See group predictions
             </Link>
             <Link
-              href="/predictions/"
+              href="/#predictions"
               className="inline-flex items-center justify-center rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
             >
               All predictions

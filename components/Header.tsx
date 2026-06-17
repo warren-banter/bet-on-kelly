@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="-mx-1 flex items-center gap-0.5 overflow-x-auto text-sm font-semibold sm:gap-1">
           {[
             ['/fixtures/', 'Fixtures'],
-            ['/predictions/', 'Predictions'],
+            ['/#predictions', 'Predictions'],
             ['/groups/', 'Groups'],
             ['/knockout/', 'Knockout'],
             ['/methodology/', 'Method'],
