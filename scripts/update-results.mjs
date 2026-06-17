@@ -30,6 +30,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const CONTENT = join(ROOT, 'content');
 const BETS_FILE = join(CONTENT, 'wc_bets.json');
+const MATCHES_FILE = join(CONTENT, 'matches.ts');
 const ARCHIVE_FILE = join(CONTENT, 'placed_picks.json');
 const RESULTS_FILE = join(CONTENT, 'wc_results.json');
 
@@ -174,6 +175,51 @@ async function fetchFinishedFixtures(key) {
   return finished;
 }
 
+// --- Historical predictions --------------------------------------------------
+
+function slugify(value) {
+  return value
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// The betting feed only covers upcoming fixtures, but content/matches.ts holds
+// our predicted winner (`tip`) for every game. For fixtures that predate the
+// feed (already played), turn that tip into a "Match Result" pick so the games
+// we predicted before the feed existed still get graded into the track record.
+async function historicalPredictions(beforeDate) {
+  let text;
+  try {
+    text = await readFile(MATCHES_FILE, 'utf8');
+  } catch {
+    return [];
+  }
+  const re =
+    /date: '([^']+)', home: '([^']+)', away: '([^']+)', homeScore: \d+, awayScore: \d+, tip: '([^']+)', probability: (\d+)/g;
+  const picks = [];
+  let m;
+  while ((m = re.exec(text))) {
+    const [, date, home, away, tip, probStr] = m;
+    if (beforeDate && date >= beforeDate) continue;
+    const probability = Number(probStr) / 100;
+    picks.push({
+      id: `${date}-${slugify(home)}-vs-${slugify(away)}-match-result-${slugify(tip)}-to-win`,
+      date,
+      match: `${home} vs ${away}`,
+      home_team: home,
+      away_team: away,
+      market: 'Match Result',
+      selection: `${tip} to win`,
+      probability,
+      odds: Math.round((1 / probability) * 100) / 100,
+    });
+  }
+  return picks;
+}
+
 // --- Archive + grade ---------------------------------------------------------
 
 async function readJson(file, fallback) {
@@ -250,9 +296,23 @@ async function main() {
 
   const bets = await readJson(BETS_FILE, { singles: [], multis: [] });
   const prevArchive = await readJson(ARCHIVE_FILE, { singles: [], multis: [] });
-  const archive = archivePicks(bets, prevArchive);
+
+  // Earliest fixture in the betting feed — anything before it is a past game
+  // whose only record is our predicted winner in matches.ts.
+  const minBetDate = bets.singles.reduce(
+    (min, s) => (!min || s.date < min ? s.date : min),
+    null,
+  );
+  const historical = await historicalPredictions(minBetDate);
+
+  const archive = archivePicks(
+    { singles: [...bets.singles, ...historical], multis: bets.multis },
+    prevArchive,
+  );
   await writeFile(ARCHIVE_FILE, JSON.stringify(archive, null, 2) + '\n');
-  console.log(`archived ${archive.singles.length} singles, ${archive.multis.length} multis`);
+  console.log(
+    `archived ${archive.singles.length} singles (${historical.length} historical), ${archive.multis.length} multis`,
+  );
 
   const key = process.env.API_FOOTBALL_KEY;
   if (!key) {
