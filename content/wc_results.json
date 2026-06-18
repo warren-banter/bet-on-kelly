@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-18T02:55:08.029Z",
+  "updated": "2026-06-18T07:30:16.860Z",
   "summary": {
-    "settled": 29,
-    "won": 14,
-    "lost": 15,
-    "hitRate": 0.4827586206896552
+    "settled": 32,
+    "won": 15,
+    "lost": 17,
+    "hitRate": 0.46875
   },
   "singles": [
     {
@@ -597,7 +597,9 @@
       "selection": "Colombia to win",
       "probability": 0.607,
       "odds": 1.65,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-20-tunisia-japan-both-teams-to-score-no",
@@ -633,7 +635,9 @@
       "selection": "No",
       "probability": 0.603,
       "odds": 1.66,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-21-spain-saudi-arabia-total-goals-under-3-5-goals",
@@ -741,7 +745,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.59,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-19-scotland-morocco-total-goals-over-1-5-goals",
