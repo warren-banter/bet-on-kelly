@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-17T22:42:39.999Z",
+  "updated": "2026-06-18T02:55:08.029Z",
   "summary": {
-    "settled": 25,
-    "won": 12,
-    "lost": 13,
-    "hitRate": 0.48
+    "settled": 29,
+    "won": 14,
+    "lost": 15,
+    "hitRate": 0.4827586206896552
   },
   "singles": [
     {
@@ -101,7 +101,9 @@
       "selection": "Ghana or Draw",
       "probability": 0.653,
       "odds": 1.53,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-20-tunisia-japan-total-goals-over-1-5-goals",
@@ -497,7 +499,9 @@
       "selection": "Draw or Panama",
       "probability": 0.614,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-20-tunisia-japan-total-goals-under-2-5-goals",
@@ -1537,7 +1541,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.532,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-20-ecuador-cura-ao-total-goals-over-2-5-goals",
@@ -1741,7 +1747,9 @@
       "selection": "Yes",
       "probability": 0.518,
       "odds": 1.93,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-canada-switzerland-both-teams-to-score-yes",
@@ -2266,7 +2274,9 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.34,
-          "result": "pending"
+          "homeScore": 1,
+          "awayScore": 0,
+          "result": "won"
         }
       ],
       "combined_odds": 1.5,
@@ -2326,7 +2336,9 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.34,
-          "result": "pending"
+          "homeScore": 1,
+          "awayScore": 0,
+          "result": "won"
         }
       ],
       "combined_odds": 1.5,
