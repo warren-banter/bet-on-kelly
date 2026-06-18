@@ -1,0 +1,4 @@
+{
+  "note": "Pick/multi ids to suppress everywhere — board, game pages, archive and results. Each game yields two pick ids: '<game-id>-winner' and '<game-id>-other' (game ids are in content/wc_bets.json). Multis use their own id. Add any id here to pull it from the site.",
+  "ids": []
+}

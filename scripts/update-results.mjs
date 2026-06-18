@@ -29,6 +29,22 @@ const BETS_FILE = join(CONTENT, 'wc_bets.json');
 const MATCHES_FILE = join(CONTENT, 'matches.ts');
 const ARCHIVE_FILE = join(CONTENT, 'placed_picks.json');
 const RESULTS_FILE = join(CONTENT, 'wc_results.json');
+const EXCLUDED_FILE = join(CONTENT, 'excluded_picks.json');
+
+// Flatten a feed game into its two picks (winner + other). Ids mirror the
+// scheme in content/bets.ts so exclusion and grading line up across both.
+function gameToBets(game) {
+  const base = {
+    date: game.date,
+    match: game.match,
+    home_team: game.home_team,
+    away_team: game.away_team,
+  };
+  return [
+    { id: `${game.id}-winner`, ...base, ...game.winner },
+    { id: `${game.id}-other`, ...base, ...game.other },
+  ];
+}
 
 // --- Grading -----------------------------------------------------------------
 
@@ -294,20 +310,32 @@ function summarise(singles) {
 async function main() {
   if (process.argv.includes('--selftest')) return selftest();
 
-  const bets = await readJson(BETS_FILE, { singles: [], multis: [] });
+  const bets = await readJson(BETS_FILE, { games: [], multis: [] });
   const prevArchive = await readJson(ARCHIVE_FILE, { singles: [], multis: [] });
+  const excludedDoc = await readJson(EXCLUDED_FILE, { ids: [] });
+  const excluded = new Set(excludedDoc.ids || []);
+  const keep = (item) => !excluded.has(item.id);
+
+  const feedSingles = (bets.games || []).flatMap(gameToBets);
 
   // Earliest fixture in the betting feed — anything before it is a past game
   // whose only record is our predicted winner in matches.ts.
-  const minBetDate = bets.singles.reduce(
+  const minBetDate = feedSingles.reduce(
     (min, s) => (!min || s.date < min ? s.date : min),
     null,
   );
   const historical = await historicalPredictions(minBetDate);
 
+  // Drop excluded picks everywhere, including any already in the archive.
   const archive = archivePicks(
-    { singles: [...bets.singles, ...historical], multis: bets.multis },
-    prevArchive,
+    {
+      singles: [...feedSingles, ...historical].filter(keep),
+      multis: (bets.multis || []).filter(keep),
+    },
+    {
+      singles: prevArchive.singles.filter(keep),
+      multis: prevArchive.multis.filter(keep),
+    },
   );
   await writeFile(ARCHIVE_FILE, JSON.stringify(archive, null, 2) + '\n');
   console.log(
