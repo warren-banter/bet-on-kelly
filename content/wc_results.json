@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-18T20:24:40.885Z",
+  "updated": "2026-06-18T22:53:29.243Z",
   "summary": {
-    "settled": 28,
-    "won": 14,
+    "settled": 30,
+    "won": 16,
     "lost": 14,
-    "hitRate": 0.5
+    "hitRate": 0.5333333333333333
   },
   "singles": [
     {
@@ -153,7 +153,9 @@
       "selection": "Czech Republic or Draw",
       "probability": 0.735,
       "odds": 1.36,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-18-czech-republic-south-africa-other",
@@ -165,7 +167,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-18-mexico-south-korea-winner",
