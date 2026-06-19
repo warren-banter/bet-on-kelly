@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-18T22:53:29.243Z",
+  "updated": "2026-06-19T03:41:32.273Z",
   "summary": {
-    "settled": 30,
-    "won": 16,
-    "lost": 14,
-    "hitRate": 0.5333333333333333
+    "settled": 36,
+    "won": 21,
+    "lost": 15,
+    "hitRate": 0.5833333333333334
   },
   "singles": [
     {
@@ -129,7 +129,9 @@
       "selection": "Canada to win",
       "probability": 0.717,
       "odds": 1.4,
-      "result": "pending"
+      "homeScore": 6,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-18-canada-qatar-other",
@@ -141,7 +143,9 @@
       "selection": "No",
       "probability": 0.553,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 6,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-18-czech-republic-south-africa-winner",
@@ -181,7 +185,9 @@
       "selection": "Mexico to win",
       "probability": 0.528,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-18-mexico-south-korea-other",
@@ -193,7 +199,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.594,
       "odds": 1.68,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-18-switzerland-bosnia-and-herzegovina-winner",
@@ -205,7 +213,9 @@
       "selection": "Switzerland to win",
       "probability": 0.63,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-18-switzerland-bosnia-and-herzegovina-other",
@@ -217,7 +227,9 @@
       "selection": "No",
       "probability": 0.56,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-19-brazil-haiti-winner",
@@ -1569,7 +1581,9 @@
           "market": "Double Chance",
           "selection": "Canada or Draw",
           "odds": 1.12,
-          "result": "pending"
+          "homeScore": 6,
+          "awayScore": 0,
+          "result": "won"
         },
         {
           "id": "2026-06-17-ghana-panama-total-goals-under-3-5-goals",
@@ -1587,7 +1601,7 @@
       ],
       "combined_odds": 1.5,
       "combined_probability": 0.67,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-25-tunisia-netherlands-double-chance-draw-or-netherlands-2026-06-26-uruguay-spain-double-chance-draw-or-spain",
@@ -1693,7 +1707,9 @@
           "market": "Double Chance",
           "selection": "Canada or Draw",
           "odds": 1.12,
-          "result": "pending"
+          "homeScore": 6,
+          "awayScore": 0,
+          "result": "won"
         },
         {
           "id": "2026-06-19-united-states-australia-double-chance-united-states-or-australia",
@@ -1723,7 +1739,9 @@
           "market": "Double Chance",
           "selection": "Switzerland or Draw",
           "odds": 1.17,
-          "result": "pending"
+          "homeScore": 4,
+          "awayScore": 1,
+          "result": "won"
         },
         {
           "id": "2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
