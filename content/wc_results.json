@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-20T02:45:12.405Z",
+  "updated": "2026-06-20T06:57:18.440Z",
   "summary": {
-    "settled": 42,
-    "won": 26,
-    "lost": 16,
-    "hitRate": 0.6190476190476191
+    "settled": 44,
+    "won": 27,
+    "lost": 17,
+    "hitRate": 0.6136363636363636
   },
   "singles": [
     {
@@ -297,7 +297,9 @@
       "selection": "Turkey or Draw",
       "probability": 0.685,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-19-turkey-paraguay-other",
@@ -309,7 +311,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.635,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-19-united-states-australia-winner",
@@ -1815,7 +1819,9 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.21,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 1,
+          "result": "won"
         },
         {
           "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
