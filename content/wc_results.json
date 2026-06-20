@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-19T21:59:50.079Z",
+  "updated": "2026-06-20T02:45:12.405Z",
   "summary": {
-    "settled": 38,
-    "won": 23,
-    "lost": 15,
-    "hitRate": 0.6052631578947368
+    "settled": 42,
+    "won": 26,
+    "lost": 16,
+    "hitRate": 0.6190476190476191
   },
   "singles": [
     {
@@ -241,7 +241,9 @@
       "selection": "Brazil to win",
       "probability": 0.861,
       "odds": 1.16,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-19-brazil-haiti-other",
@@ -253,7 +255,9 @@
       "selection": "Over 3.5 goals",
       "probability": 0.57,
       "odds": 1.76,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-19-scotland-morocco-winner",
@@ -265,7 +269,9 @@
       "selection": "Morocco to win",
       "probability": 0.526,
       "odds": 1.9,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-19-scotland-morocco-other",
@@ -277,7 +283,9 @@
       "selection": "No",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-19-turkey-paraguay-winner",
