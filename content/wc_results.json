@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-20T16:13:18.644Z",
+  "updated": "2026-06-20T19:15:15.323Z",
   "summary": {
-    "settled": 44,
-    "won": 27,
+    "settled": 46,
+    "won": 29,
     "lost": 17,
-    "hitRate": 0.6136363636363636
+    "hitRate": 0.6304347826086957
   },
   "singles": [
     {
@@ -401,7 +401,9 @@
       "selection": "Netherlands to win",
       "probability": 0.58,
       "odds": 1.72,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-20-netherlands-sweden-other",
@@ -413,7 +415,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.532,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-20-tunisia-japan-winner",
@@ -1704,7 +1708,9 @@
           "market": "Double Chance",
           "selection": "Netherlands or Draw",
           "odds": 1.24,
-          "result": "pending"
+          "homeScore": 5,
+          "awayScore": 1,
+          "result": "won"
         }
       ],
       "combined_odds": 1.5,
