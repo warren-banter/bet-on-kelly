@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-21T03:27:07.217Z",
+  "updated": "2026-06-21T09:40:44.789Z",
   "summary": {
-    "settled": 50,
-    "won": 31,
+    "settled": 52,
+    "won": 33,
     "lost": 19,
-    "hitRate": 0.62
+    "hitRate": 0.6346153846153846
   },
   "singles": [
     {
@@ -437,7 +437,9 @@
       "selection": "Japan to win",
       "probability": 0.577,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 4,
+      "result": "won"
     },
     {
       "id": "2026-06-20-tunisia-japan-other",
@@ -449,7 +451,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.654,
       "odds": 1.53,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 4,
+      "result": "won"
     },
     {
       "id": "2026-06-21-belgium-iran-winner",
