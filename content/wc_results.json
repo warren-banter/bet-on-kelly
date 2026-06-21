@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-20T22:01:37.281Z",
+  "updated": "2026-06-21T03:27:07.217Z",
   "summary": {
-    "settled": 46,
-    "won": 29,
-    "lost": 17,
-    "hitRate": 0.6304347826086957
+    "settled": 50,
+    "won": 31,
+    "lost": 19,
+    "hitRate": 0.62
   },
   "singles": [
     {
@@ -353,7 +353,9 @@
       "selection": "Ecuador to win",
       "probability": 0.737,
       "odds": 1.36,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-20-ecuador-cura-ao-other",
@@ -365,7 +367,9 @@
       "selection": "No",
       "probability": 0.591,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-20-germany-ivory-coast-winner",
@@ -377,7 +381,9 @@
       "selection": "Germany to win",
       "probability": 0.593,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-20-germany-ivory-coast-other",
@@ -389,7 +395,9 @@
       "selection": "No",
       "probability": 0.512,
       "odds": 1.95,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-20-netherlands-sweden-winner",
@@ -1857,7 +1865,9 @@
           "market": "Double Chance",
           "selection": "Germany or Draw",
           "odds": 1.22,
-          "result": "pending"
+          "homeScore": 2,
+          "awayScore": 1,
+          "result": "won"
         },
         {
           "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
