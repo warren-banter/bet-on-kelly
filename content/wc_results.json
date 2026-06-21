@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-21T19:21:15.973Z",
+  "updated": "2026-06-21T22:09:07.072Z",
   "summary": {
-    "settled": 54,
-    "won": 35,
-    "lost": 19,
-    "hitRate": 0.6481481481481481
+    "settled": 56,
+    "won": 36,
+    "lost": 20,
+    "hitRate": 0.6428571428571429
   },
   "singles": [
     {
@@ -465,7 +465,9 @@
       "selection": "Belgium to win",
       "probability": 0.559,
       "odds": 1.79,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-21-belgium-iran-other",
@@ -477,7 +479,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.659,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-21-new-zealand-egypt-winner",
