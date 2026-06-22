@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-22T16:47:11.368Z",
+  "updated": "2026-06-22T20:37:48.751Z",
   "summary": {
-    "settled": 60,
-    "won": 37,
+    "settled": 62,
+    "won": 39,
     "lost": 23,
-    "hitRate": 0.6166666666666667
+    "hitRate": 0.6290322580645161
   },
   "singles": [
     {
@@ -577,7 +577,9 @@
       "selection": "Argentina to win",
       "probability": 0.632,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-22-argentina-austria-other",
@@ -589,7 +591,9 @@
       "selection": "No",
       "probability": 0.591,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-22-france-iraq-winner",
