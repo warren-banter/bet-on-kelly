@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-21T22:09:07.072Z",
+  "updated": "2026-06-22T03:33:02.526Z",
   "summary": {
-    "settled": 56,
-    "won": 36,
-    "lost": 20,
-    "hitRate": 0.6428571428571429
+    "settled": 60,
+    "won": 37,
+    "lost": 23,
+    "hitRate": 0.6166666666666667
   },
   "singles": [
     {
@@ -493,7 +493,9 @@
       "selection": "Egypt or Draw",
       "probability": 0.715,
       "odds": 1.4,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-21-new-zealand-egypt-other",
@@ -505,7 +507,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.564,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-21-spain-saudi-arabia-winner",
@@ -545,7 +549,9 @@
       "selection": "Uruguay to win",
       "probability": 0.661,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-21-uruguay-cape-verde-other",
@@ -557,7 +563,9 @@
       "selection": "No",
       "probability": 0.642,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-22-argentina-austria-winner",
