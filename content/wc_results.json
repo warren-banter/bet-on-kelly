@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-22T22:43:32.731Z",
+  "updated": "2026-06-23T02:39:07.955Z",
   "summary": {
-    "settled": 62,
-    "won": 39,
-    "lost": 23,
-    "hitRate": 0.6290322580645161
+    "settled": 66,
+    "won": 42,
+    "lost": 24,
+    "hitRate": 0.6363636363636364
   },
   "singles": [
     {
@@ -605,7 +605,9 @@
       "selection": "France to win",
       "probability": 0.774,
       "odds": 1.29,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-22-france-iraq-other",
@@ -617,7 +619,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.614,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-22-jordan-algeria-winner",
@@ -653,7 +657,9 @@
       "selection": "Norway or Draw",
       "probability": 0.671,
       "odds": 1.49,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-22-norway-senegal-other",
@@ -665,7 +671,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.556,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-23-colombia-dr-congo-winner",
