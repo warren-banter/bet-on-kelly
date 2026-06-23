@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-23T17:12:30.745Z",
+  "updated": "2026-06-23T19:53:08.137Z",
   "summary": {
-    "settled": 68,
-    "won": 43,
+    "settled": 70,
+    "won": 45,
     "lost": 25,
-    "hitRate": 0.6323529411764706
+    "hitRate": 0.6428571428571429
   },
   "singles": [
     {
@@ -761,7 +761,9 @@
       "selection": "Portugal to win",
       "probability": 0.659,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-23-portugal-uzbekistan-other",
@@ -773,7 +775,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.545,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-24-bosnia-and-herzegovina-qatar-winner",
