@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-23T02:39:07.955Z",
+  "updated": "2026-06-23T06:43:50.133Z",
   "summary": {
-    "settled": 66,
-    "won": 42,
-    "lost": 24,
-    "hitRate": 0.6363636363636364
+    "settled": 68,
+    "won": 43,
+    "lost": 25,
+    "hitRate": 0.6323529411764706
   },
   "singles": [
     {
@@ -633,7 +633,9 @@
       "selection": "Algeria to win",
       "probability": 0.513,
       "odds": 1.95,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-22-jordan-algeria-other",
@@ -645,7 +647,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.551,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-22-norway-senegal-winner",
@@ -1929,7 +1933,9 @@
           "market": "Double Chance",
           "selection": "Draw or Algeria",
           "odds": 1.3,
-          "result": "pending"
+          "homeScore": 1,
+          "awayScore": 2,
+          "result": "won"
         },
         {
           "id": "2026-06-25-ecuador-germany-double-chance-draw-or-germany",
@@ -1959,7 +1965,9 @@
           "market": "Double Chance",
           "selection": "Draw or Algeria",
           "odds": 1.3,
-          "result": "pending"
+          "homeScore": 1,
+          "awayScore": 2,
+          "result": "won"
         },
         {
           "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
