@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24T19:28:47.706Z",
+  "updated": "2026-06-24T22:11:31.989Z",
   "summary": {
-    "settled": 76,
-    "won": 50,
-    "lost": 26,
-    "hitRate": 0.6578947368421053
+    "settled": 80,
+    "won": 52,
+    "lost": 28,
+    "hitRate": 0.65
   },
   "singles": [
     {
@@ -801,7 +801,9 @@
       "selection": "Bosnia and Herzegovina or Draw",
       "probability": 0.71,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-24-bosnia-and-herzegovina-qatar-other",
@@ -813,7 +815,9 @@
       "selection": "Yes",
       "probability": 0.546,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-24-canada-switzerland-winner",
@@ -825,7 +829,9 @@
       "selection": "Switzerland or Draw",
       "probability": 0.641,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-canada-switzerland-other",
@@ -837,7 +843,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.534,
       "odds": 1.87,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-mexico-czech-republic-winner",
@@ -1868,7 +1876,9 @@
           "market": "Total Goals",
           "selection": "Over 1.5 goals",
           "odds": 1.32,
-          "result": "pending"
+          "homeScore": 3,
+          "awayScore": 1,
+          "result": "won"
         }
       ],
       "combined_odds": 1.6,
@@ -1900,12 +1910,14 @@
           "market": "Total Goals",
           "selection": "Over 1.5 goals",
           "odds": 1.32,
-          "result": "pending"
+          "homeScore": 3,
+          "awayScore": 1,
+          "result": "won"
         }
       ],
       "combined_odds": 1.6,
       "combined_probability": 0.627,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-20-germany-ivory-coast-double-chance-germany-or-draw-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
