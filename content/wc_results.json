@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-23T22:08:41.762Z",
+  "updated": "2026-06-24T02:39:37.066Z",
   "summary": {
-    "settled": 70,
-    "won": 45,
-    "lost": 25,
-    "hitRate": 0.6428571428571429
+    "settled": 74,
+    "won": 48,
+    "lost": 26,
+    "hitRate": 0.6486486486486487
   },
   "singles": [
     {
@@ -713,7 +713,9 @@
       "selection": "England to win",
       "probability": 0.709,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-23-england-ghana-other",
@@ -725,7 +727,9 @@
       "selection": "No",
       "probability": 0.572,
       "odds": 1.75,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-23-panama-croatia-winner",
@@ -737,7 +741,9 @@
       "selection": "Croatia to win",
       "probability": 0.56,
       "odds": 1.79,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-23-panama-croatia-other",
@@ -749,7 +755,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.539,
       "odds": 1.86,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-23-portugal-uzbekistan-winner",
@@ -1713,7 +1721,9 @@
           "market": "Double Chance",
           "selection": "England or Draw",
           "odds": 1.12,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 0,
+          "result": "won"
         },
         {
           "id": "2026-06-17-ghana-panama-total-goals-under-3-5-goals",
@@ -1731,7 +1741,7 @@
       ],
       "combined_odds": 1.5,
       "combined_probability": 0.669,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-20-netherlands-sweden-double-chance-netherlands-or-draw-2026-06-27-algeria-austria-total-goals-under-3-5-goals",
