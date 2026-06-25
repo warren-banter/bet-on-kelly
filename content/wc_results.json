@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-25T02:40:55.591Z",
+  "updated": "2026-06-25T06:42:45.662Z",
   "summary": {
-    "settled": 84,
-    "won": 55,
-    "lost": 29,
-    "hitRate": 0.6547619047619048
+    "settled": 88,
+    "won": 57,
+    "lost": 31,
+    "hitRate": 0.6477272727272727
   },
   "singles": [
     {
@@ -857,7 +857,9 @@
       "selection": "Mexico to win",
       "probability": 0.613,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-mexico-czech-republic-other",
@@ -869,7 +871,9 @@
       "selection": "No",
       "probability": 0.58,
       "odds": 1.72,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-24-morocco-haiti-winner",
@@ -937,7 +941,9 @@
       "selection": "South Korea to win",
       "probability": 0.516,
       "odds": 1.94,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-south-africa-south-korea-other",
@@ -949,7 +955,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.592,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-25-cura-ao-ivory-coast-winner",
