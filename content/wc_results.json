@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-25T19:49:56.742Z",
+  "updated": "2026-06-25T22:17:27.854Z",
   "summary": {
-    "settled": 88,
-    "won": 57,
-    "lost": 31,
-    "hitRate": 0.6477272727272727
+    "settled": 92,
+    "won": 59,
+    "lost": 33,
+    "hitRate": 0.6413043478260869
   },
   "singles": [
     {
@@ -969,7 +969,9 @@
       "selection": "Ivory Coast to win",
       "probability": 0.651,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-25-cura-ao-ivory-coast-other",
@@ -981,7 +983,9 @@
       "selection": "No",
       "probability": 0.58,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-25-ecuador-germany-winner",
@@ -993,7 +997,9 @@
       "selection": "Germany to win",
       "probability": 0.507,
       "odds": 1.97,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-25-ecuador-germany-other",
@@ -1005,7 +1011,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.538,
       "odds": 1.86,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-25-japan-sweden-winner",
@@ -1992,12 +2000,14 @@
           "market": "Double Chance",
           "selection": "Draw or Germany",
           "odds": 1.31,
-          "result": "pending"
+          "homeScore": 2,
+          "awayScore": 1,
+          "result": "lost"
         }
       ],
       "combined_odds": 1.7,
       "combined_probability": 0.588,
-      "result": "pending"
+      "result": "lost"
     },
     {
       "id": "multi_2026-06-22-jordan-algeria-double-chance-draw-or-algeria-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
