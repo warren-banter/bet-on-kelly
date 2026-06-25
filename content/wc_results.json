@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24T22:11:31.989Z",
+  "updated": "2026-06-25T02:40:55.591Z",
   "summary": {
-    "settled": 80,
-    "won": 52,
-    "lost": 28,
-    "hitRate": 0.65
+    "settled": 84,
+    "won": 55,
+    "lost": 29,
+    "hitRate": 0.6547619047619048
   },
   "singles": [
     {
@@ -881,7 +881,9 @@
       "selection": "Morocco to win",
       "probability": 0.717,
       "odds": 1.39,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-24-morocco-haiti-other",
@@ -893,7 +895,9 @@
       "selection": "No",
       "probability": 0.63,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-06-24-scotland-brazil-winner",
@@ -905,7 +909,9 @@
       "selection": "Brazil to win",
       "probability": 0.701,
       "odds": 1.43,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-24-scotland-brazil-other",
@@ -917,7 +923,9 @@
       "selection": "No",
       "probability": 0.576,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-24-south-africa-south-korea-winner",
