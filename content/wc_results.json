@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-26T19:39:48.696Z",
+  "updated": "2026-06-26T22:06:35.390Z",
   "summary": {
-    "settled": 100,
-    "won": 65,
-    "lost": 35,
-    "hitRate": 0.65
+    "settled": 104,
+    "won": 68,
+    "lost": 36,
+    "hitRate": 0.6538461538461539
   },
   "singles": [
     {
@@ -1209,7 +1209,9 @@
       "selection": "France to win",
       "probability": 0.544,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 4,
+      "result": "won"
     },
     {
       "id": "2026-06-26-norway-france-other",
@@ -1221,7 +1223,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.541,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 4,
+      "result": "lost"
     },
     {
       "id": "2026-06-26-senegal-iraq-winner",
@@ -1233,7 +1237,9 @@
       "selection": "Senegal to win",
       "probability": 0.585,
       "odds": 1.71,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-26-senegal-iraq-other",
@@ -1245,7 +1251,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.659,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-26-uruguay-spain-winner",
