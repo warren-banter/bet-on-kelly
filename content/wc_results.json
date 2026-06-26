@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-26T02:44:09.613Z",
+  "updated": "2026-06-26T06:49:08.677Z",
   "summary": {
-    "settled": 96,
-    "won": 61,
+    "settled": 100,
+    "won": 65,
     "lost": 35,
-    "hitRate": 0.6354166666666666
+    "hitRate": 0.65
   },
   "singles": [
     {
@@ -1053,7 +1053,9 @@
       "selection": "Australia or Draw",
       "probability": 0.661,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-25-paraguay-australia-other",
@@ -1065,7 +1067,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-25-tunisia-netherlands-winner",
@@ -1105,7 +1109,9 @@
       "selection": "United States or Draw",
       "probability": 0.731,
       "odds": 1.37,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-25-united-states-turkey-other",
@@ -1117,7 +1123,9 @@
       "selection": "Yes",
       "probability": 0.569,
       "odds": 1.76,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-26-cape-verde-saudi-arabia-winner",
@@ -1880,12 +1888,14 @@
           "market": "Total Goals",
           "selection": "Over 1.5 goals",
           "odds": 1.28,
-          "result": "pending"
+          "homeScore": 3,
+          "awayScore": 2,
+          "result": "won"
         }
       ],
       "combined_odds": 1.5,
       "combined_probability": 0.667,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals-2026-06-27-algeria-austria-total-goals-under-3-5-goals",
