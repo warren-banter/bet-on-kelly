@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-25T22:17:27.854Z",
+  "updated": "2026-06-26T02:44:09.613Z",
   "summary": {
-    "settled": 92,
-    "won": 59,
-    "lost": 33,
-    "hitRate": 0.6413043478260869
+    "settled": 96,
+    "won": 61,
+    "lost": 35,
+    "hitRate": 0.6354166666666666
   },
   "singles": [
     {
@@ -1025,7 +1025,9 @@
       "selection": "Japan to win",
       "probability": 0.524,
       "odds": 1.91,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-25-japan-sweden-other",
@@ -1037,7 +1039,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.563,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-25-paraguay-australia-winner",
@@ -1073,7 +1077,9 @@
       "selection": "Netherlands to win",
       "probability": 0.631,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-25-tunisia-netherlands-other",
@@ -1085,7 +1091,9 @@
       "selection": "No",
       "probability": 0.547,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-25-united-states-turkey-winner",
@@ -1727,7 +1735,9 @@
           "market": "Double Chance",
           "selection": "Draw or Netherlands",
           "odds": 1.18,
-          "result": "pending"
+          "homeScore": 1,
+          "awayScore": 3,
+          "result": "won"
         },
         {
           "id": "2026-06-26-uruguay-spain-double-chance-draw-or-spain",
