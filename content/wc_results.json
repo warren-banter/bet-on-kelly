@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-27T06:25:47.236Z",
+  "updated": "2026-06-27T10:54:32.846Z",
   "summary": {
-    "settled": 108,
-    "won": 71,
-    "lost": 37,
-    "hitRate": 0.6574074074074074
+    "settled": 112,
+    "won": 74,
+    "lost": 38,
+    "hitRate": 0.6607142857142857
   },
   "singles": [
     {
@@ -1165,7 +1165,9 @@
       "selection": "Iran or Draw",
       "probability": 0.668,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-26-egypt-iran-other",
@@ -1177,7 +1179,9 @@
       "selection": "No",
       "probability": 0.627,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-26-new-zealand-belgium-winner",
@@ -1189,7 +1193,9 @@
       "selection": "Belgium to win",
       "probability": 0.628,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 5,
+      "result": "won"
     },
     {
       "id": "2026-06-26-new-zealand-belgium-other",
@@ -1201,7 +1207,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.651,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 5,
+      "result": "won"
     },
     {
       "id": "2026-06-26-norway-france-winner",
