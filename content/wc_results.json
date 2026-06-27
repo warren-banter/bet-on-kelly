@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-26T22:06:35.390Z",
+  "updated": "2026-06-27T02:36:00.501Z",
   "summary": {
-    "settled": 104,
-    "won": 68,
-    "lost": 36,
-    "hitRate": 0.6538461538461539
+    "settled": 108,
+    "won": 71,
+    "lost": 37,
+    "hitRate": 0.6574074074074074
   },
   "singles": [
     {
@@ -1137,7 +1137,9 @@
       "selection": "Saudi Arabia or Draw",
       "probability": 0.674,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-26-cape-verde-saudi-arabia-other",
@@ -1149,7 +1151,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.646,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-06-26-egypt-iran-winner",
@@ -1265,7 +1269,9 @@
       "selection": "Spain to win",
       "probability": 0.532,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-26-uruguay-spain-other",
@@ -1277,7 +1283,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.561,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-27-algeria-austria-winner",
@@ -1764,12 +1772,14 @@
           "market": "Double Chance",
           "selection": "Draw or Spain",
           "odds": 1.27,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 1,
+          "result": "won"
         }
       ],
       "combined_odds": 1.5,
       "combined_probability": 0.67,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-17-ghana-panama-total-goals-under-3-5-goals-2026-06-23-england-ghana-double-chance-england-or-draw",
@@ -2081,7 +2091,9 @@
           "market": "Double Chance",
           "selection": "Draw or Spain",
           "odds": 1.27,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 1,
+          "result": "won"
         },
         {
           "id": "2026-06-19-united-states-australia-double-chance-united-states-or-australia",
@@ -2099,7 +2111,7 @@
       ],
       "combined_odds": 1.7,
       "combined_probability": 0.586,
-      "result": "pending"
+      "result": "won"
     }
   ]
 }
