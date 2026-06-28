@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-28T19:08:53.698Z",
+  "updated": "2026-06-28T21:57:51.191Z",
   "summary": {
-    "settled": 124,
-    "won": 82,
+    "settled": 126,
+    "won": 84,
     "lost": 42,
-    "hitRate": 0.6612903225806451
+    "hitRate": 0.6666666666666666
   },
   "singles": [
     {
@@ -1753,7 +1753,9 @@
       "selection": "Canada to win",
       "probability": 0.574,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-28-south-africa-canada-other",
@@ -1765,7 +1767,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-29-brazil-japan-winner",
