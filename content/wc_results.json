@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-28T02:49:44.973Z",
+  "updated": "2026-06-28T06:58:08.775Z",
   "summary": {
-    "settled": 120,
-    "won": 80,
-    "lost": 40,
-    "hitRate": 0.6666666666666666
+    "settled": 124,
+    "won": 82,
+    "lost": 42,
+    "hitRate": 0.6612903225806451
   },
   "singles": [
     {
@@ -1305,7 +1305,9 @@
       "selection": "Austria or Draw",
       "probability": 0.686,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-27-algeria-austria-other",
@@ -1317,7 +1319,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.636,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-27-colombia-portugal-winner",
@@ -1413,7 +1417,9 @@
       "selection": "Argentina to win",
       "probability": 0.79,
       "odds": 1.27,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-06-27-jordan-argentina-other",
@@ -1425,7 +1431,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.632,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-06-27-panama-england-winner",
@@ -1851,7 +1859,9 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.21,
-          "result": "pending"
+          "homeScore": 3,
+          "awayScore": 3,
+          "result": "lost"
         },
         {
           "id": "2026-06-20-netherlands-sweden-double-chance-netherlands-or-draw",
@@ -1869,7 +1879,7 @@
       ],
       "combined_odds": 1.5,
       "combined_probability": 0.668,
-      "result": "pending"
+      "result": "lost"
     },
     {
       "id": "multi_2026-06-18-canada-qatar-double-chance-canada-or-draw-2026-06-19-united-states-australia-double-chance-united-states-or-australia",
@@ -1951,7 +1961,9 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.21,
-          "result": "pending"
+          "homeScore": 3,
+          "awayScore": 3,
+          "result": "lost"
         },
         {
           "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
@@ -1969,7 +1981,7 @@
       ],
       "combined_odds": 1.6,
       "combined_probability": 0.628,
-      "result": "pending"
+      "result": "lost"
     },
     {
       "id": "multi_2026-06-19-turkey-paraguay-total-goals-under-3-5-goals-2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
