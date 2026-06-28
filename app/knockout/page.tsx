@@ -1,12 +1,18 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { knockoutMatchesByDate } from '@/content/matches';
+import { hasBets } from '@/content/bets';
+import GameCard from '@/components/GameCard';
 
 export const metadata: Metadata = {
-  title: 'Knockout bracket',
+  title: 'Knockout predictions',
   description:
-    'The World Cup 2026 knockout bracket — predicted route to the final. Coming soon.',
+    'World Cup 2026 knockout predictions — our Round of 32 betting picks, tie by tie, with the rest of the bracket added as it fills out.',
   alternates: { canonical: '/knockout/' },
 };
+
+// 16 ties make up the Round of 32; we publish each as its half of the bracket is set.
+const ROUND_OF_32_TIES = 16;
 
 const rounds = [
   { name: 'Round of 32', games: 16 },
@@ -17,6 +23,11 @@ const rounds = [
 ];
 
 export default function KnockoutPage() {
+  const days = knockoutMatchesByDate()
+    .map((day) => ({ ...day, matches: day.matches.filter(hasBets) }))
+    .filter((day) => day.matches.length > 0);
+  const published = days.reduce((n, day) => n + day.matches.length, 0);
+
   return (
     <>
       {/* Hero */}
@@ -26,70 +37,100 @@ export default function KnockoutPage() {
             World Cup 2026
           </p>
           <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-5xl">
-            Knockout <span className="text-accent">bracket</span>
+            Knockout <span className="text-accent">predictions</span>
           </h1>
           <p className="mt-4 max-w-xl text-base text-ink-soft">
-            The predicted route through the knockouts — from the Round of 32 to
-            the final. The full bracket lands once the knockout predictions are
-            in.
+            Our betting picks for the Round of 32 — a headline call plus one other
+            bet per tie. {published} of {ROUND_OF_32_TIES} ties are live; the rest
+            land as the bracket fills out.
           </p>
         </div>
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        {/* Coming soon notice */}
-        <div className="rounded-2xl border border-accent/30 bg-accent/10 p-6">
-          <p className="text-sm font-bold uppercase tracking-wider text-accent">
-            Coming soon
-          </p>
-          <p className="mt-2 max-w-2xl text-ink">
-            We are finalising the knockout predictions. When they are ready, this
-            page shows the full tree: who tops each group, the Round of 32
-            pairings, and our predicted winner all the way to the final.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/groups/"
-              className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-black transition-colors hover:bg-accent-bright"
-            >
-              See group predictions
-            </Link>
+        {/* Live ties */}
+        <section className="mb-12">
+          <div className="mb-6">
+            <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+              Round of 32
+            </p>
+            <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+              Our picks
+            </h2>
+          </div>
+
+          {days.length > 0 ? (
+            days.map((day) => (
+              <div key={day.date} className="mb-7 last:mb-0">
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wide text-ink-soft">
+                  {day.label}
+                </h3>
+                <div className="space-y-3">
+                  {day.matches.map((match) => (
+                    <GameCard key={match.slug} match={match} />
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="max-w-xl text-sm text-ink-soft">
+              The Round of 32 ties are being finalised. Picks show here as each one
+              is set.
+            </p>
+          )}
+        </section>
+
+        {/* Road to the final */}
+        <section>
+          <div className="mb-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+              The bracket
+            </p>
+            <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+              Road to the final
+            </h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {rounds.map((r, i) => {
+              const live = i === 0;
+              return (
+                <div
+                  key={r.name}
+                  className={`rounded-2xl border p-5 ${
+                    live ? 'border-accent/30 bg-accent/10' : 'border-line bg-surface'
+                  }`}
+                >
+                  <p className="text-sm font-bold text-ink">{r.name}</p>
+                  <p className="mt-1 text-xs text-ink-soft">
+                    {r.games} {r.games === 1 ? 'game' : 'games'}
+                  </p>
+                  <p
+                    className={`mt-4 text-xs font-semibold uppercase tracking-wider ${
+                      live ? 'text-accent' : 'text-ink-soft'
+                    }`}
+                  >
+                    {live ? `${published} of ${r.games} live` : 'Pending'}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/#predictions"
-              className="inline-flex items-center justify-center rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-black transition-colors hover:bg-accent-bright"
             >
               All predictions
             </Link>
-          </div>
-        </div>
-
-        {/* Bracket structure preview */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {rounds.map((r) => (
-            <div
-              key={r.name}
-              className="rounded-2xl border border-line bg-surface p-5"
+            <Link
+              href="/groups/"
+              className="inline-flex items-center justify-center rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
             >
-              <p className="text-sm font-bold text-ink">{r.name}</p>
-              <p className="mt-1 text-xs text-ink-soft">
-                {r.games} {r.games === 1 ? 'game' : 'games'}
-              </p>
-              <div className="mt-4 space-y-2">
-                {Array.from({ length: Math.min(r.games, 4) }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="h-7 rounded-md border border-dashed border-line"
-                  />
-                ))}
-                {r.games > 4 && (
-                  <p className="text-xs text-ink-soft">
-                    + {r.games - 4} more
-                  </p>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+              See group predictions
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

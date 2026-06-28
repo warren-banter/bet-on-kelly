@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
-  matches,
+  allMatches,
   getMatchBySlug,
   formatMatchDate,
 } from '@/content/matches';
@@ -16,7 +16,7 @@ import Flag from '@/components/Flag';
 import PredictButton from '@/components/PredictButton';
 
 export function generateStaticParams() {
-  return matches.map((m) => ({ slug: m.slug }));
+  return allMatches.map((m) => ({ slug: m.slug }));
 }
 
 export async function generateMetadata({
@@ -198,7 +198,7 @@ export default async function GamePage({
           <h2 className="mb-2 text-base font-bold text-ink">Match facts</h2>
           <dl className="rounded-2xl border border-line bg-surface px-5 py-2 shadow-sm">
             <Fact label="Competition" value="FIFA World Cup 2026" />
-            <Fact label="Stage" value="Group stage" />
+            <Fact label="Stage" value={match.round ?? 'Group stage'} />
             <Fact label="Date" value={dateLabel} />
             <Fact label="Kick-off" value={match.time} />
             <Fact label="Venue" value={match.venue} />

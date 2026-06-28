@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next';
-import { matches, allTeams, teamSlug } from '@/content/matches';
+import { allMatches, allTeams, teamSlug } from '@/content/matches';
 import { SITE_URL } from '@/content/config';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const games = matches.map((m) => ({
+  const games = allMatches.map((m) => ({
     url: `${SITE_URL}/game/${m.slug}/`,
     changeFrequency: 'weekly' as const,
     priority: 0.7,

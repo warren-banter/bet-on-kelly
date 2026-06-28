@@ -5,7 +5,7 @@
 
 import data from './wc_bets.json';
 import excluded from './excluded_picks.json';
-import { type Match, type MatchDay, matchesByDate } from './matches';
+import { type Match, type MatchDay, knockoutMatchesByDate } from './matches';
 
 // Picks/multis pulled from the site (by id). Single source of truth for
 // suppression — also honoured by scripts/update-results.mjs.
@@ -61,7 +61,7 @@ export interface Multi {
 export const betsGeneratedOn: string = data.generated;
 export const remainingFixtures: number = data.remaining_fixtures;
 
-export const multis: Multi[] = (data.multis as Multi[]).filter(
+export const multis: Multi[] = ((data.multis ?? []) as Multi[]).filter(
   (m) => !EXCLUDED.has(m.id),
 );
 
@@ -109,9 +109,11 @@ export function hasBets(match: Match): boolean {
   return byFixture.has(fixtureKey(match.date, match.home, match.away));
 }
 
-// Match days restricted to fixtures that still have active bets, in date order.
+// Match days shown on the front-page board: the current (knockout) fixtures that
+// still carry active bets, in date order. Group-stage picks stay in the feed for
+// the graded track record, but the board leads with the live round only.
 export function betDaysByDate(): MatchDay[] {
-  return matchesByDate()
+  return knockoutMatchesByDate()
     .map((day) => ({ ...day, matches: day.matches.filter(hasBets) }))
     .filter((day) => day.matches.length > 0);
 }

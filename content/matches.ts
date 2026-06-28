@@ -12,6 +12,7 @@ export interface Match {
   probability: number; // win probability for the tipped team, as a percentage
   time: string; // local kickoff, e.g. "1:00 PM CST"
   venue: string; // host city, e.g. "Mexico City"
+  round?: string; // knockout round, e.g. "Round of 32"; undefined for the group stage
 }
 
 // Country name -> ISO 3166-1 alpha-2 (or flag-icons sub-region code).
@@ -268,8 +269,50 @@ export const matches: Match[] = raw.map((m) => {
   };
 });
 
+// Knockout fixtures. Kept separate from `matches` (the group-stage array) so the
+// group-table derivation in groups() — which treats every fixture as a same-group
+// meeting — is never fed a cross-group knockout tie. Picks live in wc_bets.json,
+// joined by date + teams, exactly as for the group stage. Kick-off times and
+// venues are filled in as the official schedule is confirmed.
+interface RawKnockout {
+  date: string;
+  home: string;
+  away: string;
+  round: string;
+}
+
+const knockoutRaw: RawKnockout[] = [
+  { date: '2026-06-28', home: 'South Africa', away: 'Canada', round: 'Round of 32' },
+  { date: '2026-06-29', home: 'Brazil', away: 'Japan', round: 'Round of 32' },
+  { date: '2026-06-29', home: 'Germany', away: 'Paraguay', round: 'Round of 32' },
+  { date: '2026-06-29', home: 'Netherlands', away: 'Morocco', round: 'Round of 32' },
+  { date: '2026-06-30', home: 'France', away: 'Sweden', round: 'Round of 32' },
+  { date: '2026-06-30', home: 'Ivory Coast', away: 'Norway', round: 'Round of 32' },
+  { date: '2026-07-01', home: 'United States', away: 'Bosnia and Herzegovina', round: 'Round of 32' },
+  { date: '2026-07-03', home: 'Argentina', away: 'Cape Verde', round: 'Round of 32' },
+  { date: '2026-07-03', home: 'Australia', away: 'Egypt', round: 'Round of 32' },
+];
+
+// Knockout fixtures carry no score or group-stage tip — the pick is in the feed.
+export const knockoutMatches: Match[] = knockoutRaw.map((m) => ({
+  date: m.date,
+  home: m.home,
+  away: m.away,
+  homeScore: 0,
+  awayScore: 0,
+  tip: '',
+  probability: 0,
+  slug: `${m.date}-${slugify(m.home)}-vs-${slugify(m.away)}`,
+  time: 'TBC',
+  venue: 'TBC',
+  round: m.round,
+}));
+
+// Every fixture that has a static match page (group stage + knockouts).
+export const allMatches: Match[] = [...matches, ...knockoutMatches];
+
 export function getMatchBySlug(slug: string): Match | undefined {
-  return matches.find((m) => m.slug === slug);
+  return allMatches.find((m) => m.slug === slug);
 }
 
 export interface MatchDay {
@@ -417,12 +460,12 @@ export function groups(): Group[] {
   });
 }
 
-export function matchesByDate(): MatchDay[] {
+function groupByDate(list: Match[]): MatchDay[] {
   const days = new Map<string, Match[]>();
-  for (const m of matches) {
-    const list = days.get(m.date) ?? [];
-    list.push(m);
-    days.set(m.date, list);
+  for (const m of list) {
+    const dayList = days.get(m.date) ?? [];
+    dayList.push(m);
+    days.set(m.date, dayList);
   }
   return Array.from(days.keys())
     .sort()
@@ -431,6 +474,14 @@ export function matchesByDate(): MatchDay[] {
       label: formatMatchDate(date),
       matches: days.get(date)!,
     }));
+}
+
+export function matchesByDate(): MatchDay[] {
+  return groupByDate(matches);
+}
+
+export function knockoutMatchesByDate(): MatchDay[] {
+  return groupByDate(knockoutMatches);
 }
 
 // Approximate minutes-from-midnight (venue-local, normalised to UTC) for ordering
