@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-27T21:57:55.980Z",
+  "updated": "2026-06-28T02:49:44.973Z",
   "summary": {
-    "settled": 112,
-    "won": 74,
-    "lost": 38,
-    "hitRate": 0.6607142857142857
+    "settled": 120,
+    "won": 80,
+    "lost": 40,
+    "hitRate": 0.6666666666666666
   },
   "singles": [
     {
@@ -1329,7 +1329,9 @@
       "selection": "Portugal or Draw",
       "probability": 0.671,
       "odds": 1.49,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-27-colombia-portugal-other",
@@ -1341,7 +1343,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.551,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-27-croatia-ghana-winner",
@@ -1353,7 +1357,9 @@
       "selection": "Croatia to win",
       "probability": 0.543,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-27-croatia-ghana-other",
@@ -1365,7 +1371,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.664,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-27-dr-congo-uzbekistan-winner",
@@ -1377,7 +1385,9 @@
       "selection": "Uzbekistan or Draw",
       "probability": 0.685,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-27-dr-congo-uzbekistan-other",
@@ -1389,7 +1399,9 @@
       "selection": "No",
       "probability": 0.624,
       "odds": 1.6,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-27-jordan-argentina-winner",
@@ -1425,7 +1437,9 @@
       "selection": "England to win",
       "probability": 0.698,
       "odds": 1.43,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-27-panama-england-other",
@@ -1437,7 +1451,9 @@
       "selection": "No",
       "probability": 0.554,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-11-mexico-vs-south-africa-match-result-mexico-to-win",
@@ -2014,12 +2030,14 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.31,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 0,
+          "result": "won"
         }
       ],
       "combined_odds": 1.6,
       "combined_probability": 0.627,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-22-jordan-algeria-double-chance-draw-or-algeria-2026-06-25-ecuador-germany-double-chance-draw-or-germany",
@@ -2080,12 +2098,14 @@
           "market": "Total Goals",
           "selection": "Under 3.5 goals",
           "odds": 1.31,
-          "result": "pending"
+          "homeScore": 0,
+          "awayScore": 0,
+          "result": "won"
         }
       ],
       "combined_odds": 1.7,
       "combined_probability": 0.588,
-      "result": "pending"
+      "result": "won"
     },
     {
       "id": "multi_2026-06-19-united-states-australia-double-chance-united-states-or-australia-2026-06-26-uruguay-spain-double-chance-draw-or-spain",
