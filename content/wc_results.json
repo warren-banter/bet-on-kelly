@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-29T19:48:16.833Z",
+  "updated": "2026-06-29T22:05:55.637Z",
   "summary": {
-    "settled": 126,
-    "won": 84,
-    "lost": 42,
-    "hitRate": 0.6666666666666666
+    "settled": 128,
+    "won": 85,
+    "lost": 43,
+    "hitRate": 0.6640625
   },
   "singles": [
     {
@@ -1781,7 +1781,9 @@
       "selection": "Brazil to win",
       "probability": 0.533,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-29-brazil-japan-other",
@@ -1793,7 +1795,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.59,
       "odds": 1.69,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-29-germany-paraguay-winner",
