@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-30T02:44:26.774Z",
+  "updated": "2026-06-30T06:52:04.218Z",
   "summary": {
-    "settled": 130,
-    "won": 85,
+    "settled": 132,
+    "won": 87,
     "lost": 45,
-    "hitRate": 0.6538461538461539
+    "hitRate": 0.6590909090909091
   },
   "singles": [
     {
@@ -1837,7 +1837,9 @@
       "selection": "Netherlands or Draw",
       "probability": 0.687,
       "odds": 1.45,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-29-netherlands-morocco-other",
@@ -1849,7 +1851,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.656,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-06-30-france-sweden-winner",
