@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-29T22:05:55.637Z",
+  "updated": "2026-06-30T02:44:26.774Z",
   "summary": {
-    "settled": 128,
+    "settled": 130,
     "won": 85,
-    "lost": 43,
-    "hitRate": 0.6640625
+    "lost": 45,
+    "hitRate": 0.6538461538461539
   },
   "singles": [
     {
@@ -1809,7 +1809,9 @@
       "selection": "Germany to win",
       "probability": 0.639,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-29-germany-paraguay-other",
@@ -1821,7 +1823,9 @@
       "selection": "No",
       "probability": 0.526,
       "odds": 1.9,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-29-netherlands-morocco-winner",
