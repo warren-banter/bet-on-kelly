@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-30T17:01:18.392Z",
+  "updated": "2026-06-30T19:46:07.282Z",
   "summary": {
-    "settled": 132,
-    "won": 87,
-    "lost": 45,
-    "hitRate": 0.6590909090909091
+    "settled": 134,
+    "won": 88,
+    "lost": 46,
+    "hitRate": 0.6567164179104478
   },
   "singles": [
     {
@@ -1889,7 +1889,9 @@
       "selection": "Norway or Draw",
       "probability": 0.698,
       "odds": 1.43,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-06-30-ivory-coast-norway-other",
@@ -1901,7 +1903,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.582,
       "odds": 1.72,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-07-01-united-states-bosnia-and-herzegovina-winner",
