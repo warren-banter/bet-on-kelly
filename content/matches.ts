@@ -1,5 +1,7 @@
-// All World Cup 2026 group-stage predictions.
-// Source: Predictions.txt. Encoded statically at build time — no runtime parsing.
+// World Cup 2026 fixtures. Group-stage games are encoded statically below
+// (source: Predictions.txt); knockout fixtures are derived from the betting feed
+// (content/wc_bets.json), so any tie added to the feed shows up automatically.
+import betsData from './wc_bets.json';
 
 export interface Match {
   slug: string;
@@ -269,44 +271,46 @@ export const matches: Match[] = raw.map((m) => {
   };
 });
 
-// Knockout fixtures. Kept separate from `matches` (the group-stage array) so the
+// Knockout fixtures, derived from the betting feed (the games flagged
+// stage: "knockout"). Kept separate from `matches` (the group-stage array) so the
 // group-table derivation in groups() — which treats every fixture as a same-group
-// meeting — is never fed a cross-group knockout tie. Picks live in wc_bets.json,
-// joined by date + teams, exactly as for the group stage. Kick-off times and
-// venues are filled in as the official schedule is confirmed.
-interface RawKnockout {
+// meeting — is never fed a cross-group knockout tie. Picks join by date + teams,
+// exactly as for the group stage. Adding a tie to wc_bets.json surfaces it here
+// automatically; kick-off times and venues follow once the schedule is confirmed.
+interface RawFeedGame {
+  id: string;
   date: string;
-  home: string;
-  away: string;
-  round: string;
+  home_team: string;
+  away_team: string;
+  stage?: string;
 }
 
-const knockoutRaw: RawKnockout[] = [
-  { date: '2026-06-28', home: 'South Africa', away: 'Canada', round: 'Round of 32' },
-  { date: '2026-06-29', home: 'Brazil', away: 'Japan', round: 'Round of 32' },
-  { date: '2026-06-29', home: 'Germany', away: 'Paraguay', round: 'Round of 32' },
-  { date: '2026-06-29', home: 'Netherlands', away: 'Morocco', round: 'Round of 32' },
-  { date: '2026-06-30', home: 'France', away: 'Sweden', round: 'Round of 32' },
-  { date: '2026-06-30', home: 'Ivory Coast', away: 'Norway', round: 'Round of 32' },
-  { date: '2026-07-01', home: 'United States', away: 'Bosnia and Herzegovina', round: 'Round of 32' },
-  { date: '2026-07-03', home: 'Argentina', away: 'Cape Verde', round: 'Round of 32' },
-  { date: '2026-07-03', home: 'Australia', away: 'Egypt', round: 'Round of 32' },
-];
+// Knockout round name for a date, by the 2026 FIFA schedule windows.
+function knockoutRound(date: string): string {
+  if (date <= '2026-07-03') return 'Round of 32';
+  if (date <= '2026-07-07') return 'Round of 16';
+  if (date <= '2026-07-11') return 'Quarter-final';
+  if (date <= '2026-07-15') return 'Semi-final';
+  return 'Final';
+}
 
 // Knockout fixtures carry no score or group-stage tip — the pick is in the feed.
-export const knockoutMatches: Match[] = knockoutRaw.map((m) => ({
-  date: m.date,
-  home: m.home,
-  away: m.away,
-  homeScore: 0,
-  awayScore: 0,
-  tip: '',
-  probability: 0,
-  slug: `${m.date}-${slugify(m.home)}-vs-${slugify(m.away)}`,
-  time: 'TBC',
-  venue: 'TBC',
-  round: m.round,
-}));
+export const knockoutMatches: Match[] = (betsData.games as RawFeedGame[])
+  .filter((g) => g.stage === 'knockout')
+  .map((g) => ({
+    date: g.date,
+    home: g.home_team,
+    away: g.away_team,
+    homeScore: 0,
+    awayScore: 0,
+    tip: '',
+    probability: 0,
+    slug: `${g.date}-${slugify(g.home_team)}-vs-${slugify(g.away_team)}`,
+    time: 'TBC',
+    venue: 'TBC',
+    round: knockoutRound(g.date),
+  }))
+  .sort((a, b) => a.date.localeCompare(b.date) || a.slug.localeCompare(b.slug));
 
 // Every fixture that has a static match page (group stage + knockouts).
 export const allMatches: Match[] = [...matches, ...knockoutMatches];

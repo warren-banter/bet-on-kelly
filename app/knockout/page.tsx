@@ -1,25 +1,24 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { knockoutMatchesByDate } from '@/content/matches';
+import { knockoutMatches, knockoutMatchesByDate } from '@/content/matches';
 import { hasBets } from '@/content/bets';
 import GameCard from '@/components/GameCard';
 
 export const metadata: Metadata = {
   title: 'Knockout predictions',
   description:
-    'World Cup 2026 knockout predictions — our Round of 32 betting picks, tie by tie, with the rest of the bracket added as it fills out.',
+    'World Cup 2026 knockout predictions — our betting picks for every tie, from the Round of 32 to the final, added as the bracket fills out.',
   alternates: { canonical: '/knockout/' },
 };
 
-// 16 ties make up the Round of 32; we publish each as its half of the bracket is set.
-const ROUND_OF_32_TIES = 16;
-
-const rounds = [
-  { name: 'Round of 32', games: 16 },
-  { name: 'Round of 16', games: 8 },
-  { name: 'Quarter-finals', games: 4 },
-  { name: 'Semi-finals', games: 2 },
-  { name: 'Final', games: 1 },
+// The knockout bracket, with how many ties each round holds. Round names match
+// the labels derived in content/matches.ts (knockoutRound).
+const ROUNDS = [
+  { key: 'Round of 32', label: 'Round of 32', total: 16 },
+  { key: 'Round of 16', label: 'Round of 16', total: 8 },
+  { key: 'Quarter-final', label: 'Quarter-finals', total: 4 },
+  { key: 'Semi-final', label: 'Semi-finals', total: 2 },
+  { key: 'Final', label: 'Final', total: 1 },
 ];
 
 export default function KnockoutPage() {
@@ -27,6 +26,12 @@ export default function KnockoutPage() {
     .map((day) => ({ ...day, matches: day.matches.filter(hasBets) }))
     .filter((day) => day.matches.length > 0);
   const published = days.reduce((n, day) => n + day.matches.length, 0);
+
+  // Published ties per round, keyed by the round label on each fixture.
+  const liveByRound = new Map<string, number>();
+  for (const m of knockoutMatches) {
+    if (m.round) liveByRound.set(m.round, (liveByRound.get(m.round) ?? 0) + 1);
+  }
 
   return (
     <>
@@ -40,9 +45,9 @@ export default function KnockoutPage() {
             Knockout <span className="text-accent">predictions</span>
           </h1>
           <p className="mt-4 max-w-xl text-base text-ink-soft">
-            Our betting picks for the Round of 32 — a headline call plus one other
-            bet per tie. {published} of {ROUND_OF_32_TIES} ties are live; the rest
-            land as the bracket fills out.
+            Our betting picks for the knockouts — a headline call plus one other
+            bet per tie. {published} ties are live; more land as each round is
+            set.
           </p>
         </div>
       </section>
@@ -52,10 +57,10 @@ export default function KnockoutPage() {
         <section className="mb-12">
           <div className="mb-6">
             <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-              Round of 32
+              The picks
             </p>
             <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-              Our picks
+              Every tie, match by match
             </h2>
           </div>
 
@@ -74,7 +79,7 @@ export default function KnockoutPage() {
             ))
           ) : (
             <p className="max-w-xl text-sm text-ink-soft">
-              The Round of 32 ties are being finalised. Picks show here as each one
+              The knockout ties are being finalised. Picks show here as each one
               is set.
             </p>
           )}
@@ -91,25 +96,27 @@ export default function KnockoutPage() {
             </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            {rounds.map((r, i) => {
-              const live = i === 0;
+            {ROUNDS.map((r) => {
+              const live = liveByRound.get(r.key) ?? 0;
               return (
                 <div
-                  key={r.name}
+                  key={r.key}
                   className={`rounded-2xl border p-5 ${
-                    live ? 'border-accent/30 bg-accent/10' : 'border-line bg-surface'
+                    live > 0
+                      ? 'border-accent/30 bg-accent/10'
+                      : 'border-line bg-surface'
                   }`}
                 >
-                  <p className="text-sm font-bold text-ink">{r.name}</p>
+                  <p className="text-sm font-bold text-ink">{r.label}</p>
                   <p className="mt-1 text-xs text-ink-soft">
-                    {r.games} {r.games === 1 ? 'game' : 'games'}
+                    {r.total} {r.total === 1 ? 'game' : 'games'}
                   </p>
                   <p
                     className={`mt-4 text-xs font-semibold uppercase tracking-wider ${
-                      live ? 'text-accent' : 'text-ink-soft'
+                      live > 0 ? 'text-accent' : 'text-ink-soft'
                     }`}
                   >
-                    {live ? `${published} of ${r.games} live` : 'Pending'}
+                    {live > 0 ? `${live} of ${r.total} live` : 'Pending'}
                   </p>
                 </div>
               );
