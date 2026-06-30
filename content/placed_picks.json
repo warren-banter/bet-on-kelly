@@ -1561,6 +1561,182 @@
       "selection": "No",
       "probability": 0.662,
       "odds": 1.51
+    },
+    {
+      "id": "2026-06-30-mexico-ecuador-winner",
+      "date": "2026-06-30",
+      "match": "Mexico vs Ecuador",
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "market": "Double Chance",
+      "selection": "Mexico or Draw",
+      "probability": 0.75,
+      "odds": 1.33
+    },
+    {
+      "id": "2026-06-30-mexico-ecuador-other",
+      "date": "2026-06-30",
+      "match": "Mexico vs Ecuador",
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.502,
+      "odds": 1.99
+    },
+    {
+      "id": "2026-07-01-belgium-senegal-winner",
+      "date": "2026-07-01",
+      "match": "Belgium vs Senegal",
+      "home_team": "Belgium",
+      "away_team": "Senegal",
+      "market": "Double Chance",
+      "selection": "Belgium or Draw",
+      "probability": 0.731,
+      "odds": 1.37
+    },
+    {
+      "id": "2026-07-01-belgium-senegal-other",
+      "date": "2026-07-01",
+      "match": "Belgium vs Senegal",
+      "home_team": "Belgium",
+      "away_team": "Senegal",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.65,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-07-01-england-dr-congo-winner",
+      "date": "2026-07-01",
+      "match": "England vs DR Congo",
+      "home_team": "England",
+      "away_team": "DR Congo",
+      "market": "Match Result",
+      "selection": "England to win",
+      "probability": 0.68,
+      "odds": 1.47
+    },
+    {
+      "id": "2026-07-01-england-dr-congo-other",
+      "date": "2026-07-01",
+      "match": "England vs DR Congo",
+      "home_team": "England",
+      "away_team": "DR Congo",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.642,
+      "odds": 1.56
+    },
+    {
+      "id": "2026-07-02-portugal-croatia-winner",
+      "date": "2026-07-02",
+      "match": "Portugal vs Croatia",
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "market": "Match Result",
+      "selection": "Portugal to win",
+      "probability": 0.543,
+      "odds": 1.84
+    },
+    {
+      "id": "2026-07-02-portugal-croatia-other",
+      "date": "2026-07-02",
+      "match": "Portugal vs Croatia",
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.648,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-07-02-spain-austria-winner",
+      "date": "2026-07-02",
+      "match": "Spain vs Austria",
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "market": "Match Result",
+      "selection": "Spain to win",
+      "probability": 0.731,
+      "odds": 1.37
+    },
+    {
+      "id": "2026-07-02-spain-austria-other",
+      "date": "2026-07-02",
+      "match": "Spain vs Austria",
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.607,
+      "odds": 1.65
+    },
+    {
+      "id": "2026-07-02-switzerland-algeria-winner",
+      "date": "2026-07-02",
+      "match": "Switzerland vs Algeria",
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "market": "Double Chance",
+      "selection": "Switzerland or Draw",
+      "probability": 0.742,
+      "odds": 1.35
+    },
+    {
+      "id": "2026-07-02-switzerland-algeria-other",
+      "date": "2026-07-02",
+      "match": "Switzerland vs Algeria",
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.638,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-07-03-colombia-ghana-winner",
+      "date": "2026-07-03",
+      "match": "Colombia vs Ghana",
+      "home_team": "Colombia",
+      "away_team": "Ghana",
+      "market": "Match Result",
+      "selection": "Colombia to win",
+      "probability": 0.67,
+      "odds": 1.49
+    },
+    {
+      "id": "2026-07-03-colombia-ghana-other",
+      "date": "2026-07-03",
+      "match": "Colombia vs Ghana",
+      "home_team": "Colombia",
+      "away_team": "Ghana",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.637,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-07-04-canada-morocco-winner",
+      "date": "2026-07-04",
+      "match": "Canada vs Morocco",
+      "home_team": "Canada",
+      "away_team": "Morocco",
+      "market": "Match Result",
+      "selection": "Morocco to win",
+      "probability": 0.501,
+      "odds": 1.99
+    },
+    {
+      "id": "2026-07-04-canada-morocco-other",
+      "date": "2026-07-04",
+      "match": "Canada vs Morocco",
+      "home_team": "Canada",
+      "away_team": "Morocco",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.66,
+      "odds": 1.51
     }
   ],
   "multis": [
