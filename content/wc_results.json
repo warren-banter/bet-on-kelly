@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-01T02:50:09.825Z",
+  "updated": "2026-07-01T07:06:44.451Z",
   "summary": {
-    "settled": 136,
-    "won": 90,
+    "settled": 138,
+    "won": 92,
     "lost": 46,
-    "hitRate": 0.6617647058823529
+    "hitRate": 0.6666666666666666
   },
   "singles": [
     {
@@ -1993,7 +1993,9 @@
       "selection": "Mexico or Draw",
       "probability": 0.75,
       "odds": 1.33,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-30-mexico-ecuador-other",
@@ -2005,7 +2007,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.502,
       "odds": 1.99,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-01-belgium-senegal-winner",
