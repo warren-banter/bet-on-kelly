@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-01T17:09:17.194Z",
+  "updated": "2026-07-01T19:44:10.640Z",
   "summary": {
-    "settled": 138,
-    "won": 92,
-    "lost": 46,
-    "hitRate": 0.6666666666666666
+    "settled": 140,
+    "won": 93,
+    "lost": 47,
+    "hitRate": 0.6642857142857143
   },
   "singles": [
     {
@@ -2045,7 +2045,9 @@
       "selection": "England to win",
       "probability": 0.68,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-01-england-dr-congo-other",
@@ -2057,7 +2059,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.642,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-07-02-portugal-croatia-winner",
