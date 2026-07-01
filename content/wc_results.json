@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-30T22:11:50.646Z",
+  "updated": "2026-07-01T02:50:09.825Z",
   "summary": {
-    "settled": 134,
-    "won": 88,
+    "settled": 136,
+    "won": 90,
     "lost": 46,
-    "hitRate": 0.6567164179104478
+    "hitRate": 0.6617647058823529
   },
   "singles": [
     {
@@ -1865,7 +1865,9 @@
       "selection": "France to win",
       "probability": 0.704,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-30-france-sweden-other",
@@ -1877,7 +1879,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.635,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-06-30-ivory-coast-norway-winner",
