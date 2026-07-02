@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-01T22:14:09.345Z",
+  "updated": "2026-07-02T02:40:12.064Z",
   "summary": {
-    "settled": 140,
-    "won": 93,
-    "lost": 47,
-    "hitRate": 0.6642857142857143
+    "settled": 144,
+    "won": 96,
+    "lost": 48,
+    "hitRate": 0.6666666666666666
   },
   "singles": [
     {
@@ -1921,7 +1921,9 @@
       "selection": "United States to win",
       "probability": 0.707,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-01-united-states-bosnia-and-herzegovina-other",
@@ -1933,7 +1935,9 @@
       "selection": "No",
       "probability": 0.581,
       "odds": 1.72,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-03-argentina-cape-verde-winner",
@@ -2021,7 +2025,9 @@
       "selection": "Belgium or Draw",
       "probability": 0.731,
       "odds": 1.37,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-01-belgium-senegal-other",
@@ -2033,7 +2039,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.65,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-07-01-england-dr-congo-winner",
