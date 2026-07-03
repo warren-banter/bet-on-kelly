@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-02T22:01:45.715Z",
+  "updated": "2026-07-03T02:22:00.914Z",
   "summary": {
-    "settled": 144,
-    "won": 96,
+    "settled": 148,
+    "won": 100,
     "lost": 48,
-    "hitRate": 0.6666666666666666
+    "hitRate": 0.6756756756756757
   },
   "singles": [
     {
@@ -2081,7 +2081,9 @@
       "selection": "Portugal to win",
       "probability": 0.543,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-02-portugal-croatia-other",
@@ -2093,7 +2095,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.648,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-02-spain-austria-winner",
@@ -2105,7 +2109,9 @@
       "selection": "Spain to win",
       "probability": 0.731,
       "odds": 1.37,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-02-spain-austria-other",
@@ -2117,7 +2123,9 @@
       "selection": "No",
       "probability": 0.607,
       "odds": 1.65,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-02-switzerland-algeria-winner",
