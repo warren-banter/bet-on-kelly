@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-03T02:22:00.914Z",
+  "updated": "2026-07-03T06:25:29.998Z",
   "summary": {
-    "settled": 148,
-    "won": 100,
+    "settled": 150,
+    "won": 102,
     "lost": 48,
-    "hitRate": 0.6756756756756757
+    "hitRate": 0.68
   },
   "singles": [
     {
@@ -2137,7 +2137,9 @@
       "selection": "Switzerland or Draw",
       "probability": 0.742,
       "odds": 1.35,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-02-switzerland-algeria-other",
@@ -2149,7 +2151,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.638,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-03-colombia-ghana-winner",
