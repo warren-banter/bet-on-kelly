@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T06:14:00.282Z",
+  "updated": "2026-07-04T10:50:30.532Z",
   "summary": {
     "settled": 156,
     "won": 106,
@@ -2213,6 +2213,126 @@
       "selection": "No",
       "probability": 0.66,
       "odds": 1.51,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-04-paraguay-france-winner",
+      "date": "2026-07-04",
+      "match": "Paraguay vs France",
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "market": "Match Result",
+      "selection": "France to win",
+      "probability": 0.7,
+      "odds": 1.43,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-04-paraguay-france-other",
+      "date": "2026-07-04",
+      "match": "Paraguay vs France",
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.622,
+      "odds": 1.61,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-05-brazil-norway-winner",
+      "date": "2026-07-05",
+      "match": "Brazil vs Norway",
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "market": "Match Result",
+      "selection": "Brazil to win",
+      "probability": 0.613,
+      "odds": 1.63,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-05-brazil-norway-other",
+      "date": "2026-07-05",
+      "match": "Brazil vs Norway",
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.565,
+      "odds": 1.77,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-05-mexico-england-winner",
+      "date": "2026-07-05",
+      "match": "Mexico vs England",
+      "home_team": "Mexico",
+      "away_team": "England",
+      "market": "Double Chance",
+      "selection": "England or Draw",
+      "probability": 0.68,
+      "odds": 1.47,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-05-mexico-england-other",
+      "date": "2026-07-05",
+      "match": "Mexico vs England",
+      "home_team": "Mexico",
+      "away_team": "England",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.625,
+      "odds": 1.6,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-06-portugal-spain-winner",
+      "date": "2026-07-06",
+      "match": "Portugal vs Spain",
+      "home_team": "Portugal",
+      "away_team": "Spain",
+      "market": "Double Chance",
+      "selection": "Spain or Draw",
+      "probability": 0.758,
+      "odds": 1.32,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-06-portugal-spain-other",
+      "date": "2026-07-06",
+      "match": "Portugal vs Spain",
+      "home_team": "Portugal",
+      "away_team": "Spain",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.587,
+      "odds": 1.7,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-06-united-states-belgium-winner",
+      "date": "2026-07-06",
+      "match": "United States vs Belgium",
+      "home_team": "United States",
+      "away_team": "Belgium",
+      "market": "Double Chance",
+      "selection": "Belgium or Draw",
+      "probability": 0.646,
+      "odds": 1.55,
+      "result": "pending"
+    },
+    {
+      "id": "2026-07-06-united-states-belgium-other",
+      "date": "2026-07-06",
+      "match": "United States vs Belgium",
+      "home_team": "United States",
+      "away_team": "Belgium",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.654,
+      "odds": 1.53,
       "result": "pending"
     }
   ],
