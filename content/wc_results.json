@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-04T02:13:37.051Z",
+  "updated": "2026-07-04T06:14:00.282Z",
   "summary": {
-    "settled": 154,
-    "won": 105,
-    "lost": 49,
-    "hitRate": 0.6818181818181818
+    "settled": 156,
+    "won": 106,
+    "lost": 50,
+    "hitRate": 0.6794871794871795
   },
   "singles": [
     {
@@ -2173,7 +2173,9 @@
       "selection": "Colombia to win",
       "probability": 0.67,
       "odds": 1.49,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-03-colombia-ghana-other",
@@ -2185,7 +2187,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.637,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-07-04-canada-morocco-winner",
