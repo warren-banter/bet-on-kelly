@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-03T22:00:07.972Z",
+  "updated": "2026-07-04T02:13:37.051Z",
   "summary": {
-    "settled": 150,
-    "won": 102,
-    "lost": 48,
-    "hitRate": 0.68
+    "settled": 154,
+    "won": 105,
+    "lost": 49,
+    "hitRate": 0.6818181818181818
   },
   "singles": [
     {
@@ -1949,7 +1949,9 @@
       "selection": "Argentina to win",
       "probability": 0.833,
       "odds": 1.2,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-03-argentina-cape-verde-other",
@@ -1961,7 +1963,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.553,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-03-australia-egypt-winner",
@@ -1973,7 +1977,9 @@
       "selection": "Australia or Draw",
       "probability": 0.681,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-03-australia-egypt-other",
@@ -1985,7 +1991,9 @@
       "selection": "No",
       "probability": 0.662,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-06-30-mexico-ecuador-winner",
