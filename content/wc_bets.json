@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "tournament": "FIFA World Cup 2026",
-  "generated": "2026-06-30",
+  "generated": "2026-07-04",
   "odds_band": [
     1.5,
     2
   ],
   "note": "Model/market-blended picks. Each game has one winner pick + one other bet. Odds are fair (1/probability); a book's priced odds will sit slightly lower. No scorelines exposed. Knockout ties added as the bracket is published.",
-  "remaining_fixtures": 13,
+  "remaining_fixtures": 6,
   "games": [
     {
       "id": "2026-06-17-england-croatia",
@@ -1087,14 +1087,14 @@
       "winner": {
         "market": "Match Result",
         "selection": "France to win",
-        "probability": 0.716,
-        "odds": 1.4
+        "probability": 0.704,
+        "odds": 1.42
       },
       "other": {
         "market": "Total Goals",
         "selection": "Under 3.5 goals",
-        "probability": 0.667,
-        "odds": 1.5
+        "probability": 0.635,
+        "odds": 1.58
       }
     },
     {
@@ -1107,14 +1107,14 @@
       "winner": {
         "market": "Double Chance",
         "selection": "Norway or Draw",
-        "probability": 0.697,
+        "probability": 0.698,
         "odds": 1.43
       },
       "other": {
         "market": "Total Goals",
         "selection": "Under 2.5 goals",
-        "probability": 0.643,
-        "odds": 1.56
+        "probability": 0.582,
+        "odds": 1.72
       }
     },
     {
@@ -1187,14 +1187,14 @@
       "winner": {
         "market": "Match Result",
         "selection": "United States to win",
-        "probability": 0.74,
-        "odds": 1.35
+        "probability": 0.707,
+        "odds": 1.42
       },
       "other": {
         "market": "Both Teams To Score",
         "selection": "No",
-        "probability": 0.6,
-        "odds": 1.67
+        "probability": 0.581,
+        "odds": 1.72
       }
     },
     {
@@ -1267,14 +1267,14 @@
       "winner": {
         "market": "Match Result",
         "selection": "Argentina to win",
-        "probability": 0.814,
-        "odds": 1.23
+        "probability": 0.833,
+        "odds": 1.2
       },
       "other": {
         "market": "Total Goals",
         "selection": "Over 2.5 goals",
-        "probability": 0.511,
-        "odds": 1.96
+        "probability": 0.553,
+        "odds": 1.81
       }
     },
     {
@@ -1287,14 +1287,14 @@
       "winner": {
         "market": "Double Chance",
         "selection": "Australia or Draw",
-        "probability": 0.685,
-        "odds": 1.46
+        "probability": 0.681,
+        "odds": 1.47
       },
       "other": {
-        "market": "Total Goals",
-        "selection": "Under 1.5 goals",
-        "probability": 0.507,
-        "odds": 1.97
+        "market": "Both Teams To Score",
+        "selection": "No",
+        "probability": 0.662,
+        "odds": 1.51
       }
     },
     {
@@ -1325,16 +1325,116 @@
       "away_team": "Morocco",
       "stage": "knockout",
       "winner": {
+        "market": "Double Chance",
+        "selection": "Morocco or Draw",
+        "probability": 0.804,
+        "odds": 1.24
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Over 1.5 goals",
+        "probability": 0.516,
+        "odds": 1.94
+      }
+    },
+    {
+      "id": "2026-07-04-paraguay-france",
+      "date": "2026-07-04",
+      "match": "Paraguay vs France",
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "stage": "knockout",
+      "winner": {
         "market": "Match Result",
-        "selection": "Morocco to win",
-        "probability": 0.501,
-        "odds": 1.99
+        "selection": "France to win",
+        "probability": 0.7,
+        "odds": 1.43
       },
       "other": {
         "market": "Both Teams To Score",
         "selection": "No",
-        "probability": 0.66,
-        "odds": 1.51
+        "probability": 0.622,
+        "odds": 1.61
+      }
+    },
+    {
+      "id": "2026-07-05-brazil-norway",
+      "date": "2026-07-05",
+      "match": "Brazil vs Norway",
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "stage": "knockout",
+      "winner": {
+        "market": "Match Result",
+        "selection": "Brazil to win",
+        "probability": 0.613,
+        "odds": 1.63
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "No",
+        "probability": 0.565,
+        "odds": 1.77
+      }
+    },
+    {
+      "id": "2026-07-05-mexico-england",
+      "date": "2026-07-05",
+      "match": "Mexico vs England",
+      "home_team": "Mexico",
+      "away_team": "England",
+      "stage": "knockout",
+      "winner": {
+        "market": "Double Chance",
+        "selection": "England or Draw",
+        "probability": 0.68,
+        "odds": 1.47
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "No",
+        "probability": 0.625,
+        "odds": 1.6
+      }
+    },
+    {
+      "id": "2026-07-06-portugal-spain",
+      "date": "2026-07-06",
+      "match": "Portugal vs Spain",
+      "home_team": "Portugal",
+      "away_team": "Spain",
+      "stage": "knockout",
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Spain or Draw",
+        "probability": 0.758,
+        "odds": 1.32
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 2.5 goals",
+        "probability": 0.587,
+        "odds": 1.7
+      }
+    },
+    {
+      "id": "2026-07-06-united-states-belgium",
+      "date": "2026-07-06",
+      "match": "United States vs Belgium",
+      "home_team": "United States",
+      "away_team": "Belgium",
+      "stage": "knockout",
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Belgium or Draw",
+        "probability": 0.646,
+        "odds": 1.55
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Over 1.5 goals",
+        "probability": 0.654,
+        "odds": 1.53
       }
     }
   ],
