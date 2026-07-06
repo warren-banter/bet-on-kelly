@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-05T21:55:49.225Z",
+  "updated": "2026-07-06T02:34:08.486Z",
   "summary": {
-    "settled": 160,
+    "settled": 162,
     "won": 110,
-    "lost": 50,
-    "hitRate": 0.6875
+    "lost": 52,
+    "hitRate": 0.6790123456790124
   },
   "singles": [
     {
@@ -2257,7 +2257,9 @@
       "selection": "Brazil to win",
       "probability": 0.613,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-07-05-brazil-norway-other",
@@ -2269,7 +2271,9 @@
       "selection": "No",
       "probability": 0.565,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-07-05-mexico-england-winner",
