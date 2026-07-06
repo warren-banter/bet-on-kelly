@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-06T02:34:08.486Z",
+  "updated": "2026-07-06T07:06:07.340Z",
   "summary": {
-    "settled": 162,
-    "won": 110,
-    "lost": 52,
-    "hitRate": 0.6790123456790124
+    "settled": 164,
+    "won": 111,
+    "lost": 53,
+    "hitRate": 0.676829268292683
   },
   "singles": [
     {
@@ -2285,7 +2285,9 @@
       "selection": "England or Draw",
       "probability": 0.68,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-07-05-mexico-england-other",
@@ -2297,7 +2299,9 @@
       "selection": "No",
       "probability": 0.625,
       "odds": 1.6,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-07-06-portugal-spain-winner",
