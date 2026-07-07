@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-06T22:09:21.475Z",
+  "updated": "2026-07-07T02:29:42.652Z",
   "summary": {
-    "settled": 164,
-    "won": 111,
+    "settled": 168,
+    "won": 115,
     "lost": 53,
-    "hitRate": 0.676829268292683
+    "hitRate": 0.6845238095238095
   },
   "singles": [
     {
@@ -2313,7 +2313,9 @@
       "selection": "Spain or Draw",
       "probability": 0.758,
       "odds": 1.32,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-06-portugal-spain-other",
@@ -2325,7 +2327,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.587,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-06-united-states-belgium-winner",
@@ -2337,7 +2341,9 @@
       "selection": "Belgium or Draw",
       "probability": 0.646,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 4,
+      "result": "won"
     },
     {
       "id": "2026-07-06-united-states-belgium-other",
@@ -2349,7 +2355,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.654,
       "odds": 1.53,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 4,
+      "result": "won"
     }
   ],
   "multis": [
