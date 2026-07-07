@@ -1847,6 +1847,116 @@
       "selection": "Over 1.5 goals",
       "probability": 0.654,
       "odds": 1.53
+    },
+    {
+      "id": "2026-07-07-argentina-egypt-winner",
+      "date": "2026-07-07",
+      "match": "Argentina vs Egypt",
+      "home_team": "Argentina",
+      "away_team": "Egypt",
+      "market": "Match Result",
+      "selection": "Argentina to win",
+      "probability": 0.682,
+      "odds": 1.47
+    },
+    {
+      "id": "2026-07-07-argentina-egypt-other",
+      "date": "2026-07-07",
+      "match": "Argentina vs Egypt",
+      "home_team": "Argentina",
+      "away_team": "Egypt",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.666,
+      "odds": 1.5
+    },
+    {
+      "id": "2026-07-07-switzerland-colombia-winner",
+      "date": "2026-07-07",
+      "match": "Switzerland vs Colombia",
+      "home_team": "Switzerland",
+      "away_team": "Colombia",
+      "market": "Double Chance",
+      "selection": "Colombia or Draw",
+      "probability": 0.771,
+      "odds": 1.3
+    },
+    {
+      "id": "2026-07-07-switzerland-colombia-other",
+      "date": "2026-07-07",
+      "match": "Switzerland vs Colombia",
+      "home_team": "Switzerland",
+      "away_team": "Colombia",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.619,
+      "odds": 1.62
+    },
+    {
+      "id": "2026-07-09-france-morocco-winner",
+      "date": "2026-07-09",
+      "match": "France vs Morocco",
+      "home_team": "France",
+      "away_team": "Morocco",
+      "market": "Double Chance",
+      "selection": "France or Draw",
+      "probability": 0.78,
+      "odds": 1.28
+    },
+    {
+      "id": "2026-07-09-france-morocco-other",
+      "date": "2026-07-09",
+      "match": "France vs Morocco",
+      "home_team": "France",
+      "away_team": "Morocco",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.665,
+      "odds": 1.5
+    },
+    {
+      "id": "2026-07-10-spain-belgium-winner",
+      "date": "2026-07-10",
+      "match": "Spain vs Belgium",
+      "home_team": "Spain",
+      "away_team": "Belgium",
+      "market": "Match Result",
+      "selection": "Spain to win",
+      "probability": 0.579,
+      "odds": 1.73
+    },
+    {
+      "id": "2026-07-10-spain-belgium-other",
+      "date": "2026-07-10",
+      "match": "Spain vs Belgium",
+      "home_team": "Spain",
+      "away_team": "Belgium",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.575,
+      "odds": 1.74
+    },
+    {
+      "id": "2026-07-11-norway-england-winner",
+      "date": "2026-07-11",
+      "match": "Norway vs England",
+      "home_team": "Norway",
+      "away_team": "England",
+      "market": "Match Result",
+      "selection": "England to win",
+      "probability": 0.546,
+      "odds": 1.83
+    },
+    {
+      "id": "2026-07-11-norway-england-other",
+      "date": "2026-07-11",
+      "match": "Norway vs England",
+      "home_team": "Norway",
+      "away_team": "England",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.573,
+      "odds": 1.74
     }
   ],
   "multis": [
