@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-07T17:08:37.815Z",
+  "updated": "2026-07-07T19:46:03.205Z",
   "summary": {
-    "settled": 168,
-    "won": 115,
-    "lost": 53,
-    "hitRate": 0.6845238095238095
+    "settled": 170,
+    "won": 116,
+    "lost": 54,
+    "hitRate": 0.6823529411764706
   },
   "singles": [
     {
@@ -2369,7 +2369,9 @@
       "selection": "Argentina to win",
       "probability": 0.682,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-07-argentina-egypt-other",
@@ -2381,7 +2383,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.666,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-07-07-switzerland-colombia-winner",
