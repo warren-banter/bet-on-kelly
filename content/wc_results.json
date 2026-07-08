@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-07T22:07:01.462Z",
+  "updated": "2026-07-08T02:03:39.547Z",
   "summary": {
-    "settled": 170,
-    "won": 116,
+    "settled": 172,
+    "won": 118,
     "lost": 54,
-    "hitRate": 0.6823529411764706
+    "hitRate": 0.686046511627907
   },
   "singles": [
     {
@@ -2397,7 +2397,9 @@
       "selection": "Colombia or Draw",
       "probability": 0.771,
       "odds": 1.3,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-07-switzerland-colombia-other",
@@ -2409,7 +2411,9 @@
       "selection": "No",
       "probability": 0.619,
       "odds": 1.62,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-09-france-morocco-winner",
