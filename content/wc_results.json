@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-09T22:16:30.947Z",
+  "updated": "2026-07-10T02:23:11.342Z",
   "summary": {
-    "settled": 172,
-    "won": 118,
+    "settled": 174,
+    "won": 120,
     "lost": 54,
-    "hitRate": 0.686046511627907
+    "hitRate": 0.6896551724137931
   },
   "singles": [
     {
@@ -2425,7 +2425,9 @@
       "selection": "France or Draw",
       "probability": 0.78,
       "odds": 1.28,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-09-france-morocco-other",
@@ -2437,7 +2439,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.665,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-10-spain-belgium-winner",
