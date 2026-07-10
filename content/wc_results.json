@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-10T19:19:11.335Z",
+  "updated": "2026-07-10T21:55:14.096Z",
   "summary": {
-    "settled": 174,
-    "won": 120,
-    "lost": 54,
-    "hitRate": 0.6896551724137931
+    "settled": 176,
+    "won": 121,
+    "lost": 55,
+    "hitRate": 0.6875
   },
   "singles": [
     {
@@ -2453,7 +2453,9 @@
       "selection": "Spain to win",
       "probability": 0.579,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-07-10-spain-belgium-other",
@@ -2465,7 +2467,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.575,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-07-11-norway-england-winner",
