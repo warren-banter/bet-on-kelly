@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-11T21:42:26.298Z",
+  "updated": "2026-07-12T02:05:00.003Z",
   "summary": {
-    "settled": 176,
-    "won": 121,
-    "lost": 55,
-    "hitRate": 0.6875
+    "settled": 178,
+    "won": 122,
+    "lost": 56,
+    "hitRate": 0.6853932584269663
   },
   "singles": [
     {
@@ -2481,7 +2481,9 @@
       "selection": "England to win",
       "probability": 0.546,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-11-norway-england-other",
@@ -2493,7 +2495,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.573,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     }
   ],
   "multis": [
