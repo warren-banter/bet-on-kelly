@@ -1957,6 +1957,50 @@
       "selection": "Under 2.5 goals",
       "probability": 0.573,
       "odds": 1.74
+    },
+    {
+      "id": "2026-07-14-france-spain-winner",
+      "date": "2026-07-14",
+      "match": "France vs Spain",
+      "home_team": "France",
+      "away_team": "Spain",
+      "market": "Double Chance",
+      "selection": "Spain or Draw",
+      "probability": 0.647,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-07-14-france-spain-other",
+      "date": "2026-07-14",
+      "match": "France vs Spain",
+      "home_team": "France",
+      "away_team": "Spain",
+      "market": "Total Goals",
+      "selection": "Over 1.5 goals",
+      "probability": 0.663,
+      "odds": 1.51
+    },
+    {
+      "id": "2026-07-15-england-argentina-winner",
+      "date": "2026-07-15",
+      "match": "England vs Argentina",
+      "home_team": "England",
+      "away_team": "Argentina",
+      "market": "Double Chance",
+      "selection": "Argentina or Draw",
+      "probability": 0.679,
+      "odds": 1.47
+    },
+    {
+      "id": "2026-07-15-england-argentina-other",
+      "date": "2026-07-15",
+      "match": "England vs Argentina",
+      "home_team": "England",
+      "away_team": "Argentina",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.615,
+      "odds": 1.63
     }
   ],
   "multis": [
@@ -2278,6 +2322,303 @@
           "away_team": "Australia",
           "market": "Double Chance",
           "selection": "United States or Australia",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.7,
+      "combined_probability": 0.586
+    },
+    {
+      "id": "multi_2026-06-24-canada-switzerland-total-goals-under-3-5-goals-2026-06-24-morocco-haiti-double-chance-morocco-or-draw",
+      "legs": [
+        {
+          "id": "2026-06-24-morocco-haiti-double-chance-morocco-or-draw",
+          "date": "2026-06-24",
+          "match": "Morocco vs Haiti",
+          "home_team": "Morocco",
+          "away_team": "Haiti",
+          "market": "Double Chance",
+          "selection": "Morocco or Draw",
+          "odds": 1.1
+        },
+        {
+          "id": "2026-06-24-canada-switzerland-total-goals-under-3-5-goals",
+          "date": "2026-06-24",
+          "match": "Canada vs Switzerland",
+          "home_team": "Canada",
+          "away_team": "Switzerland",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.36
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.671
+    },
+    {
+      "id": "multi_2026-06-24-south-africa-south-korea-total-goals-under-3-5-goals-2026-06-26-new-zealand-belgium-total-goals-over-1-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-26-new-zealand-belgium-total-goals-over-1-5-goals",
+          "date": "2026-06-26",
+          "match": "New Zealand vs Belgium",
+          "home_team": "New Zealand",
+          "away_team": "Belgium",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.18
+        },
+        {
+          "id": "2026-06-24-south-africa-south-korea-total-goals-under-3-5-goals",
+          "date": "2026-06-24",
+          "match": "South Africa vs South Korea",
+          "home_team": "South Africa",
+          "away_team": "South Korea",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.27
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.671
+    },
+    {
+      "id": "multi_2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals-2026-06-25-tunisia-netherlands-double-chance-draw-or-netherlands",
+      "legs": [
+        {
+          "id": "2026-06-25-tunisia-netherlands-double-chance-draw-or-netherlands",
+          "date": "2026-06-25",
+          "match": "Tunisia vs Netherlands",
+          "home_team": "Tunisia",
+          "away_team": "Netherlands",
+          "market": "Double Chance",
+          "selection": "Draw or Netherlands",
+          "odds": 1.16
+        },
+        {
+          "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
+          "date": "2026-06-24",
+          "match": "Bosnia and Herzegovina vs Qatar",
+          "home_team": "Bosnia and Herzegovina",
+          "away_team": "Qatar",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.29
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.67
+    },
+    {
+      "id": "multi_2026-06-26-cape-verde-saudi-arabia-total-goals-under-3-5-goals-2026-06-26-senegal-iraq-double-chance-senegal-or-draw",
+      "legs": [
+        {
+          "id": "2026-06-26-senegal-iraq-double-chance-senegal-or-draw",
+          "date": "2026-06-26",
+          "match": "Senegal vs Iraq",
+          "home_team": "Senegal",
+          "away_team": "Iraq",
+          "market": "Double Chance",
+          "selection": "Senegal or Draw",
+          "odds": 1.2
+        },
+        {
+          "id": "2026-06-26-cape-verde-saudi-arabia-total-goals-under-3-5-goals",
+          "date": "2026-06-26",
+          "match": "Cape Verde vs Saudi Arabia",
+          "home_team": "Cape Verde",
+          "away_team": "Saudi Arabia",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.25
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.669
+    },
+    {
+      "id": "multi_2026-06-26-senegal-iraq-double-chance-senegal-or-draw-2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+      "legs": [
+        {
+          "id": "2026-06-26-senegal-iraq-double-chance-senegal-or-draw",
+          "date": "2026-06-26",
+          "match": "Senegal vs Iraq",
+          "home_team": "Senegal",
+          "away_team": "Iraq",
+          "market": "Double Chance",
+          "selection": "Senegal or Draw",
+          "odds": 1.2
+        },
+        {
+          "id": "2026-06-26-uruguay-spain-double-chance-draw-or-spain",
+          "date": "2026-06-26",
+          "match": "Uruguay vs Spain",
+          "home_team": "Uruguay",
+          "away_team": "Spain",
+          "market": "Double Chance",
+          "selection": "Draw or Spain",
+          "odds": 1.25
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.668
+    },
+    {
+      "id": "multi_2026-06-24-mexico-czech-republic-double-chance-mexico-or-draw-2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-24-mexico-czech-republic-double-chance-mexico-or-draw",
+          "date": "2026-06-24",
+          "match": "Mexico vs Czech Republic",
+          "home_team": "Mexico",
+          "away_team": "Czech Republic",
+          "market": "Double Chance",
+          "selection": "Mexico or Draw",
+          "odds": 1.18
+        },
+        {
+          "id": "2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
+          "date": "2026-06-25",
+          "match": "United States vs Turkey",
+          "home_team": "United States",
+          "away_team": "Turkey",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.27
+        }
+      ],
+      "combined_odds": 1.5,
+      "combined_probability": 0.666
+    },
+    {
+      "id": "multi_2026-06-25-ecuador-germany-double-chance-draw-or-germany-2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-27-algeria-austria-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Algeria vs Austria",
+          "home_team": "Algeria",
+          "away_team": "Austria",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.22
+        },
+        {
+          "id": "2026-06-25-ecuador-germany-double-chance-draw-or-germany",
+          "date": "2026-06-25",
+          "match": "Ecuador vs Germany",
+          "home_team": "Ecuador",
+          "away_team": "Germany",
+          "market": "Double Chance",
+          "selection": "Draw or Germany",
+          "odds": 1.31
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.628
+    },
+    {
+      "id": "multi_2026-06-24-canada-switzerland-total-goals-under-3-5-goals-2026-06-26-new-zealand-belgium-total-goals-over-1-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-26-new-zealand-belgium-total-goals-over-1-5-goals",
+          "date": "2026-06-26",
+          "match": "New Zealand vs Belgium",
+          "home_team": "New Zealand",
+          "away_team": "Belgium",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.18
+        },
+        {
+          "id": "2026-06-24-canada-switzerland-total-goals-under-3-5-goals",
+          "date": "2026-06-24",
+          "match": "Canada vs Switzerland",
+          "home_team": "Canada",
+          "away_team": "Switzerland",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.36
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.626
+    },
+    {
+      "id": "multi_2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals-2026-06-27-croatia-ghana-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-27-croatia-ghana-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Croatia vs Ghana",
+          "home_team": "Croatia",
+          "away_team": "Ghana",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.24
+        },
+        {
+          "id": "2026-06-24-bosnia-and-herzegovina-qatar-total-goals-over-1-5-goals",
+          "date": "2026-06-24",
+          "match": "Bosnia and Herzegovina vs Qatar",
+          "home_team": "Bosnia and Herzegovina",
+          "away_team": "Qatar",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.29
+        }
+      ],
+      "combined_odds": 1.6,
+      "combined_probability": 0.625
+    },
+    {
+      "id": "multi_2026-06-24-south-africa-south-korea-total-goals-under-3-5-goals-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-24-south-africa-south-korea-total-goals-under-3-5-goals",
+          "date": "2026-06-24",
+          "match": "South Africa vs South Korea",
+          "home_team": "South Africa",
+          "away_team": "South Korea",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.27
+        },
+        {
+          "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Colombia vs Portugal",
+          "home_team": "Colombia",
+          "away_team": "Portugal",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
+          "odds": 1.34
+        }
+      ],
+      "combined_odds": 1.7,
+      "combined_probability": 0.588
+    },
+    {
+      "id": "multi_2026-06-25-united-states-turkey-total-goals-over-1-5-goals-2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+      "legs": [
+        {
+          "id": "2026-06-25-united-states-turkey-total-goals-over-1-5-goals",
+          "date": "2026-06-25",
+          "match": "United States vs Turkey",
+          "home_team": "United States",
+          "away_team": "Turkey",
+          "market": "Total Goals",
+          "selection": "Over 1.5 goals",
+          "odds": 1.27
+        },
+        {
+          "id": "2026-06-27-colombia-portugal-total-goals-under-3-5-goals",
+          "date": "2026-06-27",
+          "match": "Colombia vs Portugal",
+          "home_team": "Colombia",
+          "away_team": "Portugal",
+          "market": "Total Goals",
+          "selection": "Under 3.5 goals",
           "odds": 1.34
         }
       ],
