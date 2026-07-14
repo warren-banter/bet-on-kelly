@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-14T19:08:48.560Z",
+  "updated": "2026-07-14T21:52:12.867Z",
   "summary": {
-    "settled": 178,
-    "won": 122,
+    "settled": 180,
+    "won": 124,
     "lost": 56,
-    "hitRate": 0.6853932584269663
+    "hitRate": 0.6888888888888889
   },
   "singles": [
     {
@@ -2509,7 +2509,9 @@
       "selection": "Spain or Draw",
       "probability": 0.647,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-14-france-spain-other",
@@ -2521,7 +2523,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.663,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-15-england-argentina-winner",
