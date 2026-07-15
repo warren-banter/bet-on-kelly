@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-15T19:00:39.569Z",
+  "updated": "2026-07-15T21:52:23.504Z",
   "summary": {
-    "settled": 180,
-    "won": 124,
-    "lost": 56,
-    "hitRate": 0.6888888888888889
+    "settled": 182,
+    "won": 125,
+    "lost": 57,
+    "hitRate": 0.6868131868131868
   },
   "singles": [
     {
@@ -2537,7 +2537,9 @@
       "selection": "Argentina or Draw",
       "probability": 0.679,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-07-15-england-argentina-other",
@@ -2549,7 +2551,9 @@
       "selection": "No",
       "probability": 0.615,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     }
   ],
   "multis": [
