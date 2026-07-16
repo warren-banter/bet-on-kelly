@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "tournament": "FIFA World Cup 2026",
-  "generated": "2026-07-13",
+  "generated": "2026-07-16",
   "odds_band": [
     1.5,
     2.0
@@ -1569,6 +1569,46 @@
         "selection": "Argentina or Draw",
         "probability": 0.679,
         "odds": 1.47
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "No",
+        "probability": 0.615,
+        "odds": 1.63
+      }
+    },
+    {
+      "id": "2026-07-18-france-england",
+      "date": "2026-07-18",
+      "match": "France vs England",
+      "home_team": "France",
+      "away_team": "England",
+      "stage": "third_place",
+      "winner": {
+        "market": "Double Chance",
+        "selection": "France or Draw",
+        "probability": 0.715,
+        "odds": 1.4
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 2.5 goals",
+        "probability": 0.582,
+        "odds": 1.72
+      }
+    },
+    {
+      "id": "2026-07-19-spain-argentina",
+      "date": "2026-07-19",
+      "match": "Spain vs Argentina",
+      "home_team": "Spain",
+      "away_team": "Argentina",
+      "stage": "final",
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Spain or Draw",
+        "probability": 0.707,
+        "odds": 1.41
       },
       "other": {
         "market": "Both Teams To Score",

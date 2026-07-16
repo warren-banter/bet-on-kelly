@@ -285,8 +285,12 @@ interface RawFeedGame {
   stage?: string;
 }
 
-// Knockout round name for a date, by the 2026 FIFA schedule windows.
-function knockoutRound(date: string): string {
+// Knockout round name for a date, by the 2026 FIFA schedule windows. The feed
+// flags the last two ties explicitly (stage: "third_place" | "final") — those
+// take precedence, since the date windows can't tell the play-off from the final.
+function knockoutRound(date: string, stage?: string): string {
+  if (stage === 'third_place') return 'Third-place play-off';
+  if (stage === 'final') return 'Final';
   if (date <= '2026-07-03') return 'Round of 32';
   if (date <= '2026-07-07') return 'Round of 16';
   if (date <= '2026-07-11') return 'Quarter-final';
@@ -294,9 +298,12 @@ function knockoutRound(date: string): string {
   return 'Final';
 }
 
+// Stages that render as knockout fixtures (anything past the groups).
+const knockoutStages = new Set(['knockout', 'third_place', 'final']);
+
 // Knockout fixtures carry no score or group-stage tip — the pick is in the feed.
 export const knockoutMatches: Match[] = (betsData.games as RawFeedGame[])
-  .filter((g) => g.stage === 'knockout')
+  .filter((g) => knockoutStages.has(g.stage ?? ''))
   .map((g) => ({
     date: g.date,
     home: g.home_team,
@@ -308,7 +315,7 @@ export const knockoutMatches: Match[] = (betsData.games as RawFeedGame[])
     slug: `${g.date}-${slugify(g.home_team)}-vs-${slugify(g.away_team)}`,
     time: 'TBC',
     venue: 'TBC',
-    round: knockoutRound(g.date),
+    round: knockoutRound(g.date, g.stage),
   }))
   .sort((a, b) => a.date.localeCompare(b.date) || a.slug.localeCompare(b.slug));
 

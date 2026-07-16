@@ -18,6 +18,7 @@ const ROUNDS = [
   { key: 'Round of 16', label: 'Round of 16', total: 8 },
   { key: 'Quarter-final', label: 'Quarter-finals', total: 4 },
   { key: 'Semi-final', label: 'Semi-finals', total: 2 },
+  { key: 'Third-place play-off', label: 'Third place', total: 1 },
   { key: 'Final', label: 'Final', total: 1 },
 ];
 
@@ -95,7 +96,7 @@ export default function KnockoutPage() {
               Road to the final
             </h2>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {ROUNDS.map((r) => {
               const live = liveByRound.get(r.key) ?? 0;
               return (
