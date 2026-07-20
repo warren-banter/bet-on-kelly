@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-19T21:44:07.743Z",
+  "updated": "2026-07-20T02:24:02.219Z",
   "summary": {
-    "settled": 184,
-    "won": 125,
+    "settled": 186,
+    "won": 127,
     "lost": 59,
-    "hitRate": 0.6793478260869565
+    "hitRate": 0.6827956989247311
   },
   "singles": [
     {
@@ -2593,7 +2593,9 @@
       "selection": "Spain or Draw",
       "probability": 0.707,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-07-19-spain-argentina-other",
@@ -2605,7 +2607,9 @@
       "selection": "No",
       "probability": 0.615,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     }
   ],
   "multis": [
