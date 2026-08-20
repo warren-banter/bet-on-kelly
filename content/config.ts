@@ -2,7 +2,7 @@
 
 export const SITE_NAME = 'Bet On Kelly';
 
-export const SITE_TAGLINE = 'World Cup 2026 predictions for every game.';
+export const SITE_TAGLINE = 'Premier League predictions for every game.';
 
 // Used for canonical URLs, sitemap and Open Graph. Update to the real domain on deploy.
 export const SITE_URL = 'https://betonkelly.com';

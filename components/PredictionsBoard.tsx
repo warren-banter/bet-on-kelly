@@ -3,7 +3,23 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { type MatchDay } from '@/content/matches';
+import { type Bet } from '@/content/bets';
 import GameCard from './GameCard';
+
+// How a board renders one competition. Bets are passed as a plain slug -> picks
+// object so they survive the server/client boundary (a lookup function would not).
+export interface BoardConfig {
+  eyebrow: string;
+  competition: string;
+  showFlags: boolean;
+  betsBySlug?: Record<string, Bet[]>;
+}
+
+const WORLD_CUP: BoardConfig = {
+  eyebrow: 'World Cup 2026',
+  competition: 'World Cup 2026',
+  showFlags: true,
+};
 
 // --- Local-date helpers (all relative to the visitor's own timezone) -------
 
@@ -38,16 +54,30 @@ function shortDate(iso: string): string {
 
 // --- Small presentational pieces -------------------------------------------
 
-function DaySection({ day }: { day: MatchDay }) {
+function Cards({ day, config }: { day: MatchDay; config: BoardConfig }) {
+  return (
+    <>
+      {day.matches.map((match) => (
+        <GameCard
+          key={match.slug}
+          match={match}
+          bets={config.betsBySlug?.[match.slug]}
+          competition={config.competition}
+          showFlags={config.showFlags}
+        />
+      ))}
+    </>
+  );
+}
+
+function DaySection({ day, config }: { day: MatchDay; config: BoardConfig }) {
   return (
     <div className="mb-7 last:mb-0">
       <h4 className="mb-3 text-sm font-bold uppercase tracking-wide text-ink-soft">
         {day.label}
       </h4>
       <div className="space-y-3">
-        {day.matches.map((match) => (
-          <GameCard key={match.slug} match={match} />
-        ))}
+        <Cards day={day} config={config} />
       </div>
     </div>
   );
@@ -77,12 +107,12 @@ function Group({
   );
 }
 
-function BoardHeader() {
+function BoardHeader({ eyebrow }: { eyebrow: string }) {
   return (
     <div className="mb-8 flex items-end justify-between gap-4">
       <div>
         <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-          World Cup 2026
+          {eyebrow}
         </p>
         <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
           Kelly&rsquo;s predictions
@@ -100,7 +130,13 @@ function BoardHeader() {
 
 // --- Board ------------------------------------------------------------------
 
-export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
+export default function PredictionsBoard({
+  days,
+  config = WORLD_CUP,
+}: {
+  days: MatchDay[];
+  config?: BoardConfig;
+}) {
   // `today` is null until mount, so the server-rendered HTML (and the no-JS
   // fallback) lists every match chronologically — crawlers see all of them.
   const [today, setToday] = useState<string | null>(null);
@@ -116,10 +152,10 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
         id="predictions"
         className="mx-auto max-w-6xl scroll-mt-24 px-4 py-12 sm:px-6"
       >
-        <BoardHeader />
-        <Group eyebrow="Group stage" title="All predictions">
+        <BoardHeader eyebrow={config.eyebrow} />
+        <Group eyebrow={config.eyebrow} title="All predictions">
           {days.map((day) => (
-            <DaySection key={day.date} day={day} />
+            <DaySection key={day.date} day={day} config={config} />
           ))}
         </Group>
       </section>
@@ -176,15 +212,13 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
       id="predictions"
       className="mx-auto max-w-6xl scroll-mt-24 px-4 py-12 sm:px-6"
     >
-      <BoardHeader />
+      <BoardHeader eyebrow={config.eyebrow} />
 
       {/* Today (or next up) */}
       {lead && (
         <Group eyebrow={lead.tag} title={lead.title}>
           <div className="space-y-3">
-            {lead.day.matches.map((match) => (
-              <GameCard key={match.slug} match={match} />
-            ))}
+            <Cards day={lead.day} config={config} />
           </div>
         </Group>
       )}
@@ -193,7 +227,7 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
       {thisWeekDays.length > 0 && (
         <Group eyebrow="This week" title="Rest of this week">
           {thisWeekDays.map((day) => (
-            <DaySection key={day.date} day={day} />
+            <DaySection key={day.date} day={day} config={config} />
           ))}
         </Group>
       )}
@@ -206,7 +240,7 @@ export default function PredictionsBoard({ days }: { days: MatchDay[] }) {
           title={`${shortDate(bucket[0].date)} – ${shortDate(bucket[bucket.length - 1].date)}`}
         >
           {bucket.map((day) => (
-            <DaySection key={day.date} day={day} />
+            <DaySection key={day.date} day={day} config={config} />
           ))}
         </Group>
       ))}

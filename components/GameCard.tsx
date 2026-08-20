@@ -35,11 +35,26 @@ function BetRow({ bet }: { bet: Bet }) {
   );
 }
 
+interface GameCardProps {
+  match: Match;
+  // Picks for this fixture. Omitted for World Cup fixtures, which look
+  // themselves up in the WC feed; passed in for other competitions.
+  bets?: Bet[];
+  competition?: string;
+  // Country flags only make sense for national teams.
+  showFlags?: boolean;
+}
+
 // A single fixture rendered as a full-width row, leading with our top pick.
 // "More info" expands every pick for the fixture plus the match facts.
-export default function GameCard({ match }: { match: Match }) {
+export default function GameCard({
+  match,
+  bets: betsProp,
+  competition = 'World Cup 2026',
+  showFlags = true,
+}: GameCardProps) {
   const [open, setOpen] = useState(false);
-  const bets = getMatchBets(match);
+  const bets = betsProp ?? getMatchBets(match);
   const top = bets[0];
   const panelId = `info-${match.slug}`;
 
@@ -53,7 +68,7 @@ export default function GameCard({ match }: { match: Match }) {
             <span className="truncate text-right text-sm font-semibold text-ink md:text-[15px]">
               {match.home}
             </span>
-            <Flag country={match.home} />
+            {showFlags && <Flag country={match.home} />}
           </div>
 
           <span className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
@@ -61,7 +76,7 @@ export default function GameCard({ match }: { match: Match }) {
           </span>
 
           <div className="flex min-w-0 items-center gap-2.5">
-            <Flag country={match.away} />
+            {showFlags && <Flag country={match.away} />}
             <span className="truncate text-sm font-semibold text-ink md:text-[15px]">
               {match.away}
             </span>
@@ -155,20 +170,22 @@ export default function GameCard({ match }: { match: Match }) {
                 {match.time}
               </dd>
             </div>
-            <div>
-              <dt className="text-[11px] font-semibold uppercase tracking-wider text-ink-soft">
-                Venue
-              </dt>
-              <dd className="mt-0.5 text-sm font-semibold text-ink">
-                {match.venue}
-              </dd>
-            </div>
+            {match.venue && (
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-ink-soft">
+                  Venue
+                </dt>
+                <dd className="mt-0.5 text-sm font-semibold text-ink">
+                  {match.venue}
+                </dd>
+              </div>
+            )}
             <div>
               <dt className="text-[11px] font-semibold uppercase tracking-wider text-ink-soft">
                 Competition
               </dt>
               <dd className="mt-0.5 text-sm font-semibold text-ink">
-                World Cup 2026
+                {competition}
               </dd>
             </div>
           </dl>

@@ -16,10 +16,9 @@ export default function Header() {
         </Link>
         <nav className="-mx-1 flex items-center gap-0.5 overflow-x-auto text-sm font-semibold sm:gap-1">
           {[
-            ['/fixtures/', 'Fixtures'],
             ['/#predictions', 'Predictions'],
-            ['/groups/', 'Groups'],
-            ['/knockout/', 'Knockout'],
+            ['/#track-record', 'Track record'],
+            ['/world-cup/', 'World Cup'],
             ['/methodology/', 'Method'],
           ].map(([href, label]) => (
             <Link

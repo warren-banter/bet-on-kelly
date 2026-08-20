@@ -4,10 +4,13 @@
 //   1. Archive the picks currently in content/wc_bets.json into
 //      content/placed_picks.json (so a pick is kept even after its fixture
 //      drops off the upcoming feed).
-//   2. Fetch finished World Cup fixtures + scores from ESPN's public
-//      scoreboard (no API key required, covers the current tournament).
+//   2. Fetch finished fixtures + scores from ESPN's public scoreboard (no API
+//      key required).
 //   3. Grade every archived pick against the final score.
-//   4. Write content/wc_results.json (graded picks + a summary record).
+//   4. Write content/<competition>_results.json (graded picks + a summary).
+//
+// Runs once per competition in COMPETITIONS below — the World Cup archive and
+// the live Premier League feed each get their own bets/archive/results files.
 //
 // Designed to fail safe: on a fetch error it still archives picks and leaves
 // the existing results file untouched, so the site always builds. Intended to
@@ -25,11 +28,56 @@ import { dirname, join } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const CONTENT = join(ROOT, 'content');
-const BETS_FILE = join(CONTENT, 'wc_bets.json');
 const MATCHES_FILE = join(CONTENT, 'matches.ts');
-const ARCHIVE_FILE = join(CONTENT, 'placed_picks.json');
-const RESULTS_FILE = join(CONTENT, 'wc_results.json');
 const EXCLUDED_FILE = join(CONTENT, 'excluded_picks.json');
+
+// ESPN scoreboard team name (normalised) -> our canonical name. Extend if a
+// fixture fails to match; the script logs any it can't resolve.
+const WC_ALIASES = {
+  bosniaherzegovina: 'Bosnia and Herzegovina',
+  congodr: 'DR Congo',
+  czechia: 'Czech Republic',
+  turkiye: 'Turkey',
+};
+
+// Understat spellings are shorter than ESPN's full club names.
+const EPL_ALIASES = {
+  tottenhamhotspur: 'Tottenham',
+  brightonhovealbion: 'Brighton',
+  brightonandhovealbion: 'Brighton',
+  afcbournemouth: 'Bournemouth',
+  westhamunited: 'West Ham',
+  leedsunited: 'Leeds',
+  ipswichtown: 'Ipswich',
+  wolves: 'Wolverhampton Wanderers',
+  westbromwichalbion: 'West Bromwich Albion',
+};
+
+const COMPETITIONS = [
+  {
+    key: 'World Cup',
+    league: 'fifa.world',
+    bets: join(CONTENT, 'wc_bets.json'),
+    archive: join(CONTENT, 'placed_picks.json'),
+    results: join(CONTENT, 'wc_results.json'),
+    aliases: WC_ALIASES,
+    // Games that predate the betting feed are graded from the tips in matches.ts.
+    historical: true,
+    // Each pair meets at most once, so a team-pair alone identifies a fixture.
+    uniquePairs: true,
+  },
+  {
+    key: 'Premier League',
+    league: 'eng.1',
+    bets: join(CONTENT, 'epl_bets.json'),
+    archive: join(CONTENT, 'epl_placed_picks.json'),
+    results: join(CONTENT, 'epl_results.json'),
+    aliases: EPL_ALIASES,
+    historical: false,
+    // Home and away legs share a team pair — only ever match on the date too.
+    uniquePairs: false,
+  },
+];
 
 // Flatten a feed game into its two picks (winner + other). Ids mirror the
 // scheme in content/bets.ts so exclusion and grading line up across both.
@@ -127,18 +175,9 @@ function selftest() {
 
 // --- ESPN scoreboard ---------------------------------------------------------
 
-// ESPN team name -> our canonical name (normalised keys). Extend if a fixture
-// fails to match (the script logs any it can't resolve).
-const TEAM_ALIASES = {
-  bosniaherzegovina: 'Bosnia and Herzegovina',
-  congodr: 'DR Congo',
-  czechia: 'Czech Republic',
-  turkiye: 'Turkey',
-};
-
-function canonicalApiTeam(name) {
+function canonicalApiTeam(name, aliases) {
   const n = norm(name);
-  if (TEAM_ALIASES[n]) return norm(TEAM_ALIASES[n]);
+  if (aliases[n]) return norm(aliases[n]);
   return n;
 }
 
@@ -154,17 +193,19 @@ function isoToCompact(iso, days = 0) {
 }
 
 // ESPN buckets fixtures by UTC kickoff, so a venue-local date can land a day
-// either side — query a window padded by a day and match on the team pair
-// (each pair meets only once in the group stage).
-async function fetchFinishedFixtures(minDate, maxDate) {
+// either side — query a window padded by a day and match on the team pair.
+// A pair can meet twice in a league season, so the map is keyed by date+pair
+// as well as by pair alone; the dated key wins when both sides are known.
+async function fetchFinishedFixtures(league, aliases, minDate, maxDate) {
   const from = isoToCompact(minDate, -1);
   const to = isoToCompact(maxDate, 1);
-  const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=${from}-${to}&limit=500`;
+  const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${from}-${to}&limit=500`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`ESPN HTTP ${res.status}`);
   const data = await res.json();
 
-  const finished = new Map(); // pairKey -> { hs, as, date }
+  const finished = new Map(); // pairKey and date|pairKey -> { hs, as, date }
+  let count = 0;
   for (const event of data.events || []) {
     if (!event.status?.type?.completed) continue;
     const competitors = event.competitions?.[0]?.competitors || [];
@@ -174,14 +215,16 @@ async function fetchFinishedFixtures(minDate, maxDate) {
     const hs = Number(home.score);
     const as = Number(away.score);
     if (Number.isNaN(hs) || Number.isNaN(as)) continue;
-    finished.set(
-      pairKey(
-        canonicalApiTeam(home.team.displayName),
-        canonicalApiTeam(away.team.displayName),
-      ),
-      { hs, as, date: event.date },
+    const key = pairKey(
+      canonicalApiTeam(home.team.displayName, aliases),
+      canonicalApiTeam(away.team.displayName, aliases),
     );
+    const kickoffDay = String(event.date).slice(0, 10);
+    finished.set(key, { hs, as, date: event.date });
+    finished.set(`${kickoffDay}|${key}`, { hs, as, date: event.date });
+    count++;
   }
+  finished.count = count;
   return finished;
 }
 
@@ -248,11 +291,27 @@ function archivePicks(bets, archive) {
   };
 }
 
-function lookupScore(finished, home, away) {
-  return finished.get(pairKey(norm(home), norm(away)));
+// Match on date + team pair. Falling back to the pair alone is only safe when
+// the two teams meet once all competition — in a league the reverse fixture
+// carries the same pair and would grade the wrong leg.
+function lookupScore(finished, home, away, date, uniquePairs) {
+  const key = pairKey(norm(home), norm(away));
+  if (date) {
+    for (const shift of [0, -1, 1]) {
+      const hit = finished.get(`${isoShift(date, shift)}|${key}`);
+      if (hit) return hit;
+    }
+  }
+  return uniquePairs ? finished.get(key) : undefined;
 }
 
-function gradeArchive(archive, finished, today) {
+function isoShift(iso, days) {
+  const d = new Date(`${iso}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function gradeArchive(archive, finished, today, uniquePairs) {
   const unmatched = new Set();
   // Only flag a missing score as a problem once the fixture is in the past —
   // future fixtures are simply pending, not a matching failure.
@@ -261,7 +320,7 @@ function gradeArchive(archive, finished, today) {
   };
 
   const singles = archive.singles.map((s) => {
-    const score = lookupScore(finished, s.home_team, s.away_team);
+    const score = lookupScore(finished, s.home_team, s.away_team, s.date, uniquePairs);
     if (!score) {
       flagMissing(s.date, s.home_team, s.away_team);
       return { ...s, result: 'pending' };
@@ -278,7 +337,7 @@ function gradeArchive(archive, finished, today) {
     let anyPending = false;
     let anyLost = false;
     const legs = m.legs.map((leg) => {
-      const score = lookupScore(finished, leg.home_team, leg.away_team);
+      const score = lookupScore(finished, leg.home_team, leg.away_team, leg.date, uniquePairs);
       if (!score) {
         anyPending = true;
         flagMissing(leg.date, leg.home_team, leg.away_team);
@@ -307,14 +366,12 @@ function summarise(singles) {
   };
 }
 
-async function main() {
-  if (process.argv.includes('--selftest')) return selftest();
-
-  const bets = await readJson(BETS_FILE, { games: [], multis: [] });
-  const prevArchive = await readJson(ARCHIVE_FILE, { singles: [], multis: [] });
-  const excludedDoc = await readJson(EXCLUDED_FILE, { ids: [] });
-  const excluded = new Set(excludedDoc.ids || []);
+async function runCompetition(comp, excluded) {
+  console.log(`\n=== ${comp.key} ===`);
   const keep = (item) => !excluded.has(item.id);
+
+  const bets = await readJson(comp.bets, { games: [], multis: [] });
+  const prevArchive = await readJson(comp.archive, { singles: [], multis: [] });
 
   const feedSingles = (bets.games || []).flatMap(gameToBets);
 
@@ -324,7 +381,9 @@ async function main() {
     (min, s) => (!min || s.date < min ? s.date : min),
     null,
   );
-  const historical = await historicalPredictions(minBetDate);
+  const historical = comp.historical
+    ? await historicalPredictions(minBetDate)
+    : [];
 
   // Drop excluded picks everywhere, including any already in the archive.
   const archive = archivePicks(
@@ -337,7 +396,7 @@ async function main() {
       multis: prevArchive.multis.filter(keep),
     },
   );
-  await writeFile(ARCHIVE_FILE, JSON.stringify(archive, null, 2) + '\n');
+  await writeFile(comp.archive, JSON.stringify(archive, null, 2) + '\n');
   console.log(
     `archived ${archive.singles.length} singles (${historical.length} historical), ${archive.multis.length} multis`,
   );
@@ -350,18 +409,22 @@ async function main() {
 
   let finished;
   try {
-    finished = await fetchFinishedFixtures(dates[0], dates[dates.length - 1]);
+    finished = await fetchFinishedFixtures(
+      comp.league,
+      comp.aliases,
+      dates[0],
+      dates[dates.length - 1],
+    );
   } catch (err) {
     console.error(`Results fetch failed: ${err.message}. Leaving existing results file unchanged.`);
-    process.exitCode = 0;
     return;
   }
-  console.log(`fetched ${finished.size} finished fixtures`);
+  console.log(`fetched ${finished.count} finished fixtures`);
 
   const today = new Date().toISOString().slice(0, 10);
-  const graded = gradeArchive(archive, finished, today);
+  const graded = gradeArchive(archive, finished, today, comp.uniquePairs);
   if (graded.unmatched.length) {
-    console.warn(`Past fixtures with no matched score (add a TEAM_ALIASES entry?):`);
+    console.warn(`Past fixtures with no matched score (add an alias entry?):`);
     for (const u of graded.unmatched) console.warn(`  - ${u}`);
   }
 
@@ -371,10 +434,26 @@ async function main() {
     singles: graded.singles,
     multis: graded.multis,
   };
-  await writeFile(RESULTS_FILE, JSON.stringify(results, null, 2) + '\n');
+  await writeFile(comp.results, JSON.stringify(results, null, 2) + '\n');
   console.log(
     `wrote results: ${results.summary.won}/${results.summary.settled} singles landed`,
   );
+}
+
+async function main() {
+  if (process.argv.includes('--selftest')) return selftest();
+
+  const excludedDoc = await readJson(EXCLUDED_FILE, { ids: [] });
+  const excluded = new Set(excludedDoc.ids || []);
+
+  // One competition failing must not stop the others — each writes its own files.
+  for (const comp of COMPETITIONS) {
+    try {
+      await runCompetition(comp, excluded);
+    } catch (err) {
+      console.error(`${comp.key} failed: ${err.message}`);
+    }
+  }
 }
 
 main().catch((err) => {

@@ -15,7 +15,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — World Cup 2026 Predictions`,
+    default: `${SITE_NAME} — Premier League Predictions`,
     template: `%s — ${SITE_NAME}`,
   },
   description: SITE_TAGLINE,
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — World Cup 2026 Predictions`,
+    title: `${SITE_NAME} — Premier League Predictions`,
     description: SITE_TAGLINE,
     url: SITE_URL,
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_NAME} — World Cup 2026 Predictions`,
+    title: `${SITE_NAME} — Premier League Predictions`,
     description: SITE_TAGLINE,
   },
 };

@@ -18,18 +18,29 @@ function BallPlaceholder() {
   );
 }
 
-export default function HomeHero() {
+interface HomeHeroProps {
+  eyebrow?: string;
+  blurb?: string;
+  // Past-champions reveal on ball hover. World Cup only — off elsewhere.
+  showChampions?: boolean;
+}
+
+export default function HomeHero({
+  eyebrow = 'World Cup 2026',
+  blurb = 'Data-led predicted scorelines and win probabilities for all 72 group-stage matches. See the call, then make it yourself.',
+  showChampions = true,
+}: HomeHeroProps) {
   const [hovered, setHovered] = useState(false);
   const [index, setIndex] = useState(champions.length - 1); // start on most recent
 
   // While hovering the ball, cycle through past champions.
   useEffect(() => {
-    if (!hovered) return;
+    if (!hovered || !showChampions) return;
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % champions.length);
     }, 1100);
     return () => clearInterval(id);
-  }, [hovered]);
+  }, [hovered, showChampions]);
 
   const champ = champions[index];
 
@@ -44,16 +55,13 @@ export default function HomeHero() {
         {/* Copy */}
         <div className="relative z-10">
           <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-            World Cup 2026
+            {eyebrow}
           </p>
           <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-5xl">
             You miss <span className="text-accent">100%</span> of the shots you
             don&rsquo;t take.
           </h1>
-          <p className="mt-5 max-w-md text-base text-ink-soft">
-            Data-led predicted scorelines and win probabilities for all 72
-            group-stage matches. See the call, then make it yourself.
-          </p>
+          <p className="mt-5 max-w-md text-base text-ink-soft">{blurb}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
               href="#predictions"
@@ -78,6 +86,7 @@ export default function HomeHero() {
             <SoccerBall onHoverChange={setHovered} />
 
             {/* Champions reveal */}
+            {showChampions && (
             <div
               className={`pointer-events-none absolute inset-x-0 bottom-0 flex justify-center transition-all duration-300 ${
                 hovered
@@ -98,15 +107,18 @@ export default function HomeHero() {
                 </span>
               </div>
             </div>
+            )}
           </div>
 
-          <p
-            className={`mt-3 text-center text-xs font-medium uppercase tracking-wider text-ink-soft transition-opacity ${
-              hovered ? 'opacity-0' : 'opacity-100'
-            }`}
-          >
-            Hover the ball for past champions
-          </p>
+          {showChampions && (
+            <p
+              className={`mt-3 text-center text-xs font-medium uppercase tracking-wider text-ink-soft transition-opacity ${
+                hovered ? 'opacity-0' : 'opacity-100'
+              }`}
+            >
+              Hover the ball for past champions
+            </p>
+          )}
         </div>
       </div>
     </section>

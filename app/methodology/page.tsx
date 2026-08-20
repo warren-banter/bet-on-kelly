@@ -5,7 +5,7 @@ import { SITE_NAME, SITE_URL } from '@/content/config';
 export const metadata: Metadata = {
   title: 'How we predict',
   description:
-    'How Bet On Kelly predicts the 2026 World Cup: a Poisson ratings model trained on ~50,000 international results, blended with live prediction-market odds and run through tens of thousands of tournament simulations.',
+    'How Bet On Kelly predicts football: a Dixon-Coles model trained on expected goals for the Premier League, blended with live prediction-market odds. Plus the international model behind our World Cup record.',
   alternates: { canonical: '/methodology/' },
 };
 
@@ -35,7 +35,7 @@ const steps = [
 const faqs = [
   {
     q: 'Do you use expected goals (xG)?',
-    a: "For club football, yes — but xG isn't available for international matches, so the World Cup model is built on actual goals plus the market blend instead.",
+    a: "For the Premier League, yes — the club model is built on xG rather than goals. xG isn't available for international matches, so the World Cup model used actual goals plus the market blend instead.",
   },
   {
     q: 'Do you account for injuries and lineups?',
@@ -72,6 +72,7 @@ const glossary = [
 ];
 
 const toc = [
+  ['premier-league', 'The Premier League model'],
   ['how-it-works', 'How it works'],
   ['the-data', 'The data'],
   ['the-model', 'The rating model'],
@@ -145,12 +146,12 @@ export default function MethodologyPage() {
             Methodology
           </p>
           <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-5xl">
-            How we predict the <span className="text-accent">World Cup</span>
+            How we <span className="text-accent">predict</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">
-            We rate each national team&apos;s true strength from decades of
-            international results, blend that with live prediction-market odds,
-            then simulate the whole tournament tens of thousands of times.
+            Premier League picks come from a shot-quality model blended with the
+            live market. The World Cup ran on a different engine &mdash; national
+            teams have no shot data &mdash; and that method is documented below it.
           </p>
         </div>
       </section>
@@ -179,9 +180,50 @@ export default function MethodologyPage() {
         </nav>
 
         <div className="space-y-12">
+          {/* Premier League */}
+          <section className="space-y-5">
+            <H2 id="premier-league">The Premier League model</H2>
+            <p className="text-ink-soft">
+              Club football has shot data, so the league model does not use goals
+              at all. It uses <strong className="text-ink">expected goals</strong>{' '}
+              &mdash; the quality of the chances a team creates and concedes.
+              Goals are noisy over a season; chance quality is far more stable,
+              and it is the single biggest reason this model is our best one.
+            </p>
+            <p className="text-ink-soft">
+              Every Premier League match since 2019 feeds a Dixon-Coles rating:
+              each club gets an attack and a defence number learned from the xG
+              it generated and allowed, with recent matches weighted much more
+              heavily (a one-year half-life). That produces a probability for
+              every scoreline, which is where the goals and both-teams-to-score
+              picks come from.
+            </p>
+            <p className="text-ink-soft">
+              We then blend that 60/40 with the live Polymarket price &mdash;
+              60% market, 40% model. The market prices injuries, suspensions and
+              team news that the model cannot see; the model supplies a view of
+              underlying strength that the market sometimes lags. Published odds
+              are fair odds: the blended probability inverted, with no margin
+              added.
+            </p>
+            <p className="text-ink-soft">
+              Newly promoted clubs are the exception. Coventry City and Hull City
+              have no top-flight xG history, so there is nothing to rate them
+              from. Their games are priced from the market alone and labelled as
+              such rather than dressed up with a model number we do not have.
+            </p>
+            <p className="text-ink-soft">
+              Tested honestly &mdash; retrained weekly, only ever predicting
+              matches it had not seen &mdash; this model beat a goals-based
+              Dixon-Coles, a Poisson model and an Elo baseline across 10,733
+              matches in five leagues. It still loses to the closing market,
+              which is why we blend rather than ignore it.
+            </p>
+          </section>
+
           {/* How it works */}
           <section className="space-y-5">
-            <H2 id="how-it-works">How it works</H2>
+            <H2 id="how-it-works">How it works: the World Cup model</H2>
             <div className="grid gap-4 sm:grid-cols-2">
               {steps.map((s) => (
                 <div

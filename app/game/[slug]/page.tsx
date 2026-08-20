@@ -11,12 +11,41 @@ import {
   formatProbability,
   formatOdds,
 } from '@/content/bets';
+import {
+  eplMatches,
+  getEplMatchBySlug,
+  getEplBets,
+  COMPETITION as EPL_COMPETITION,
+} from '@/content/epl';
 import { SITE_NAME, SITE_URL } from '@/content/config';
 import Flag from '@/components/Flag';
 import PredictButton from '@/components/PredictButton';
 
 export function generateStaticParams() {
-  return allMatches.map((m) => ({ slug: m.slug }));
+  return [...eplMatches, ...allMatches].map((m) => ({ slug: m.slug }));
+}
+
+// A fixture from either competition, with the picks and labels that go with it.
+function resolve(slug: string) {
+  const epl = getEplMatchBySlug(slug);
+  if (epl) {
+    return {
+      match: epl,
+      bets: getEplBets(slug),
+      competition: EPL_COMPETITION,
+      stage: 'Regular season',
+      showFlags: false,
+    };
+  }
+  const wc = getMatchBySlug(slug);
+  if (!wc) return null;
+  return {
+    match: wc,
+    bets: getMatchBets(wc),
+    competition: 'FIFA World Cup 2026',
+    stage: wc.round ?? 'Group stage',
+    showFlags: true,
+  };
 }
 
 export async function generateMetadata({
@@ -25,14 +54,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const match = getMatchBySlug(slug);
-  if (!match) return {};
+  const found = resolve(slug);
+  if (!found) return {};
+  const { match, bets, competition } = found;
 
-  const top = getMatchBets(match)[0];
+  const top = bets[0];
   const title = `${match.home} vs ${match.away} betting prediction`;
   const description = top
-    ? `Our World Cup 2026 pick for ${match.home} vs ${match.away}: ${top.selection} (${top.market}) at ${formatOdds(top.odds)} — ${formatProbability(top.probability)} probability.`
-    : `World Cup 2026 match details for ${match.home} vs ${match.away}: kick-off time, venue and group-stage information.`;
+    ? `Our ${competition} pick for ${match.home} vs ${match.away}: ${top.selection} (${top.market}) at ${formatOdds(top.odds)} — ${formatProbability(top.probability)} probability.`
+    : `${competition} match details for ${match.home} vs ${match.away}: kick-off time and fixture information.`;
   const url = `/game/${match.slug}/`;
 
   return {
@@ -53,10 +83,10 @@ export async function generateMetadata({
   };
 }
 
-function TeamBlock({ name }: { name: string }) {
+function TeamBlock({ name, showFlag }: { name: string; showFlag: boolean }) {
   return (
     <div className="flex flex-1 flex-col items-center gap-3 text-center">
-      <Flag country={name} className="h-9 w-14" />
+      {showFlag && <Flag country={name} className="h-9 w-14" />}
       <span className="text-lg font-bold leading-tight text-ink">{name}</span>
     </div>
   );
@@ -77,11 +107,11 @@ export default async function GamePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const match = getMatchBySlug(slug);
-  if (!match) notFound();
+  const found = resolve(slug);
+  if (!found) notFound();
+  const { match, bets, competition, stage, showFlags } = found;
 
   const dateLabel = formatMatchDate(match.date);
-  const bets = getMatchBets(match);
   const top = bets[0];
 
   const jsonLd = {
@@ -95,7 +125,7 @@ export default async function GamePage({
       { '@type': 'SportsTeam', name: match.home },
       { '@type': 'SportsTeam', name: match.away },
     ],
-    superEvent: { '@type': 'SportsEvent', name: 'FIFA World Cup 2026' },
+    superEvent: { '@type': 'SportsEvent', name: competition },
   };
 
   return (
@@ -123,11 +153,11 @@ export default async function GamePage({
         {/* Matchup */}
         <div className="mt-6 rounded-2xl border border-line bg-surface p-6 shadow-sm">
           <div className="flex items-center gap-4">
-            <TeamBlock name={match.home} />
+            <TeamBlock name={match.home} showFlag={showFlags} />
             <span className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
               v
             </span>
-            <TeamBlock name={match.away} />
+            <TeamBlock name={match.away} showFlag={showFlags} />
           </div>
 
           {/* Top pick */}
@@ -197,11 +227,11 @@ export default async function GamePage({
         <section className="mt-8">
           <h2 className="mb-2 text-base font-bold text-ink">Match facts</h2>
           <dl className="rounded-2xl border border-line bg-surface px-5 py-2 shadow-sm">
-            <Fact label="Competition" value="FIFA World Cup 2026" />
-            <Fact label="Stage" value={match.round ?? 'Group stage'} />
+            <Fact label="Competition" value={competition} />
+            <Fact label="Stage" value={stage} />
             <Fact label="Date" value={dateLabel} />
             <Fact label="Kick-off" value={match.time} />
-            <Fact label="Venue" value={match.venue} />
+            {match.venue && <Fact label="Venue" value={match.venue} />}
             <Fact label="Home" value={match.home} />
             <Fact label="Away" value={match.away} />
             {top && (

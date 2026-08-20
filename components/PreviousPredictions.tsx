@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { formatMatchDate } from '@/content/matches';
 import {
   type SettledBet,
+  type ResultsSummary,
   settledBets,
   resultsSummary,
-  hasResults,
   formatHitRate,
 } from '@/content/results';
 import { formatOdds, formatProbability } from '@/content/bets';
@@ -59,9 +59,20 @@ function SettledRow({ bet }: { bet: SettledBet }) {
 
 // Front-page track record: how our picks have actually done, graded against
 // real final scores. Shows nothing but a quiet placeholder until results land.
-export default function PreviousPredictions() {
+// Defaults to the World Cup record; pass a feed in for another competition.
+export default function PreviousPredictions({
+  bets = settledBets,
+  summary = resultsSummary,
+  heading = 'How our predictions did',
+  emptyNote = 'We grade every pick against the real result. Outcomes show up here as fixtures finish — check back once the first games are played.',
+}: {
+  bets?: SettledBet[];
+  summary?: ResultsSummary;
+  heading?: string;
+  emptyNote?: string;
+}) {
   const [open, setOpen] = useState(false);
-  const settled = hasResults();
+  const settled = summary.settled > 0;
 
   return (
     <section
@@ -73,23 +84,20 @@ export default function PreviousPredictions() {
           Track record
         </p>
         <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-          How our predictions did
+          {heading}
         </h2>
 
         {!settled ? (
-          <p className="mt-3 max-w-xl text-sm text-ink-soft">
-            We grade every pick against the real result. Outcomes show up here as
-            fixtures finish — check back once the first games are played.
-          </p>
+          <p className="mt-3 max-w-xl text-sm text-ink-soft">{emptyNote}</p>
         ) : (
           <>
             <p className="mt-3 text-base text-ink-soft">
               <span className="font-bold text-ink">
-                {resultsSummary.won} of {resultsSummary.settled}
+                {summary.won} of {summary.settled}
               </span>{' '}
               settled picks landed —{' '}
               <span className="font-bold text-accent">
-                {formatHitRate(resultsSummary.hitRate)}
+                {formatHitRate(summary.hitRate)}
               </span>{' '}
               strike rate.
             </p>
@@ -102,7 +110,7 @@ export default function PreviousPredictions() {
             >
               {open
                 ? 'Hide previous predictions'
-                : `See our previous predictions (${resultsSummary.settled})`}
+                : `See our previous predictions (${summary.settled})`}
               <svg
                 className={`h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`}
                 viewBox="0 0 24 24"
@@ -119,7 +127,7 @@ export default function PreviousPredictions() {
 
             {open && (
               <div className="mt-5 space-y-2">
-                {settledBets.map((bet) => (
+                {bets.map((bet) => (
                   <SettledRow key={bet.id} bet={bet} />
                 ))}
               </div>

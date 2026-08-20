@@ -1,0 +1,225 @@
+{
+  "singles": [
+    {
+      "id": "2026-08-21-arsenal-coventry-city-winner",
+      "date": "2026-08-21",
+      "match": "Arsenal vs Coventry City",
+      "home_team": "Arsenal",
+      "away_team": "Coventry City",
+      "market": "Match Result",
+      "selection": "Arsenal to win",
+      "probability": 0.839,
+      "odds": 1.19
+    },
+    {
+      "id": "2026-08-21-arsenal-coventry-city-other",
+      "date": "2026-08-21",
+      "match": "Arsenal vs Coventry City",
+      "home_team": "Arsenal",
+      "away_team": "Coventry City",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.638,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-08-22-hull-city-manchester-united-winner",
+      "date": "2026-08-22",
+      "match": "Hull City vs Manchester United",
+      "home_team": "Hull City",
+      "away_team": "Manchester United",
+      "market": "Match Result",
+      "selection": "Manchester United to win",
+      "probability": 0.698,
+      "odds": 1.43
+    },
+    {
+      "id": "2026-08-22-hull-city-manchester-united-other",
+      "date": "2026-08-22",
+      "match": "Hull City vs Manchester United",
+      "home_team": "Hull City",
+      "away_team": "Manchester United",
+      "market": "Both Teams To Score",
+      "selection": "No",
+      "probability": 0.6,
+      "odds": 1.67
+    },
+    {
+      "id": "2026-08-22-ipswich-sunderland-winner",
+      "date": "2026-08-22",
+      "match": "Ipswich vs Sunderland",
+      "home_team": "Ipswich",
+      "away_team": "Sunderland",
+      "market": "Double Chance",
+      "selection": "Sunderland or Draw",
+      "probability": 0.673,
+      "odds": 1.49
+    },
+    {
+      "id": "2026-08-22-ipswich-sunderland-other",
+      "date": "2026-08-22",
+      "match": "Ipswich vs Sunderland",
+      "home_team": "Ipswich",
+      "away_team": "Sunderland",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.59,
+      "odds": 1.7
+    },
+    {
+      "id": "2026-08-22-everton-crystal-palace-winner",
+      "date": "2026-08-22",
+      "match": "Everton vs Crystal Palace",
+      "home_team": "Everton",
+      "away_team": "Crystal Palace",
+      "market": "Double Chance",
+      "selection": "Everton or Draw",
+      "probability": 0.685,
+      "odds": 1.46
+    },
+    {
+      "id": "2026-08-22-everton-crystal-palace-other",
+      "date": "2026-08-22",
+      "match": "Everton vs Crystal Palace",
+      "home_team": "Everton",
+      "away_team": "Crystal Palace",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.533,
+      "odds": 1.88
+    },
+    {
+      "id": "2026-08-22-nottingham-forest-leeds-winner",
+      "date": "2026-08-22",
+      "match": "Nottingham Forest vs Leeds",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds",
+      "market": "Double Chance",
+      "selection": "Nottingham Forest or Draw",
+      "probability": 0.667,
+      "odds": 1.5
+    },
+    {
+      "id": "2026-08-22-nottingham-forest-leeds-other",
+      "date": "2026-08-22",
+      "match": "Nottingham Forest vs Leeds",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds",
+      "market": "Total Goals",
+      "selection": "Under 2.5 goals",
+      "probability": 0.543,
+      "odds": 1.84
+    },
+    {
+      "id": "2026-08-22-brentford-tottenham-winner",
+      "date": "2026-08-22",
+      "match": "Brentford vs Tottenham",
+      "home_team": "Brentford",
+      "away_team": "Tottenham",
+      "market": "Double Chance",
+      "selection": "Brentford or Draw",
+      "probability": 0.681,
+      "odds": 1.47
+    },
+    {
+      "id": "2026-08-22-brentford-tottenham-other",
+      "date": "2026-08-22",
+      "match": "Brentford vs Tottenham",
+      "home_team": "Brentford",
+      "away_team": "Tottenham",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.576,
+      "odds": 1.74
+    },
+    {
+      "id": "2026-08-23-manchester-city-bournemouth-winner",
+      "date": "2026-08-23",
+      "match": "Manchester City vs Bournemouth",
+      "home_team": "Manchester City",
+      "away_team": "Bournemouth",
+      "market": "Match Result",
+      "selection": "Manchester City to win",
+      "probability": 0.644,
+      "odds": 1.55
+    },
+    {
+      "id": "2026-08-23-manchester-city-bournemouth-other",
+      "date": "2026-08-23",
+      "match": "Manchester City vs Bournemouth",
+      "home_team": "Manchester City",
+      "away_team": "Bournemouth",
+      "market": "Total Goals",
+      "selection": "Over 2.5 goals",
+      "probability": 0.65,
+      "odds": 1.54
+    },
+    {
+      "id": "2026-08-23-brighton-aston-villa-winner",
+      "date": "2026-08-23",
+      "match": "Brighton vs Aston Villa",
+      "home_team": "Brighton",
+      "away_team": "Aston Villa",
+      "market": "Double Chance",
+      "selection": "Brighton or Draw",
+      "probability": 0.691,
+      "odds": 1.45
+    },
+    {
+      "id": "2026-08-23-brighton-aston-villa-other",
+      "date": "2026-08-23",
+      "match": "Brighton vs Aston Villa",
+      "home_team": "Brighton",
+      "away_team": "Aston Villa",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.566,
+      "odds": 1.77
+    },
+    {
+      "id": "2026-08-23-newcastle-united-liverpool-winner",
+      "date": "2026-08-23",
+      "match": "Newcastle United vs Liverpool",
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "market": "Double Chance",
+      "selection": "Liverpool or Draw",
+      "probability": 0.704,
+      "odds": 1.42
+    },
+    {
+      "id": "2026-08-23-newcastle-united-liverpool-other",
+      "date": "2026-08-23",
+      "match": "Newcastle United vs Liverpool",
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "market": "Total Goals",
+      "selection": "Under 3.5 goals",
+      "probability": 0.636,
+      "odds": 1.57
+    },
+    {
+      "id": "2026-08-24-fulham-chelsea-winner",
+      "date": "2026-08-24",
+      "match": "Fulham vs Chelsea",
+      "home_team": "Fulham",
+      "away_team": "Chelsea",
+      "market": "Double Chance",
+      "selection": "Chelsea or Draw",
+      "probability": 0.712,
+      "odds": 1.41
+    },
+    {
+      "id": "2026-08-24-fulham-chelsea-other",
+      "date": "2026-08-24",
+      "match": "Fulham vs Chelsea",
+      "home_team": "Fulham",
+      "away_team": "Chelsea",
+      "market": "Both Teams To Score",
+      "selection": "Yes",
+      "probability": 0.571,
+      "odds": 1.75
+    }
+  ],
+  "multis": []
+}

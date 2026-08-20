@@ -1,11 +1,12 @@
 import type { MetadataRoute } from 'next';
 import { allMatches, allTeams, teamSlug } from '@/content/matches';
+import { eplMatches } from '@/content/epl';
 import { SITE_URL } from '@/content/config';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const games = allMatches.map((m) => ({
+  const games = [...eplMatches, ...allMatches].map((m) => ({
     url: `${SITE_URL}/game/${m.slug}/`,
     changeFrequency: 'weekly' as const,
     priority: 0.7,
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages = [
     { path: '/', priority: 1, freq: 'daily' as const },
+    { path: '/world-cup/', priority: 0.8, freq: 'monthly' as const },
     { path: '/fixtures/', priority: 0.9, freq: 'daily' as const },
     { path: '/groups/', priority: 0.8, freq: 'weekly' as const },
     { path: '/knockout/', priority: 0.7, freq: 'weekly' as const },
