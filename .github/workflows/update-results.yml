@@ -32,7 +32,8 @@ jobs:
         run: |
           git config user.name "results-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add content/wc_results.json content/placed_picks.json
+          git add content/wc_results.json content/placed_picks.json \
+                  content/epl_results.json content/epl_placed_picks.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
