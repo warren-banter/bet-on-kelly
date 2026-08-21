@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-21T18:26:36.175Z",
+  "updated": "2026-08-21T21:16:55.845Z",
   "summary": {
-    "settled": 0,
-    "won": 0,
+    "settled": 2,
+    "won": 2,
     "lost": 0,
-    "hitRate": 0
+    "hitRate": 1
   },
   "singles": [
     {
@@ -17,7 +17,9 @@
       "selection": "Arsenal to win",
       "probability": 0.839,
       "odds": 1.19,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-21-arsenal-coventry-city-other",
@@ -29,7 +31,9 @@
       "selection": "No",
       "probability": 0.638,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-22-hull-city-manchester-united-winner",
