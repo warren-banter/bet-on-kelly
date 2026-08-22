@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-22T18:18:44.751Z",
+  "updated": "2026-08-22T21:14:48.212Z",
   "summary": {
-    "settled": 4,
-    "won": 3,
-    "lost": 1,
-    "hitRate": 0.75
+    "settled": 10,
+    "won": 6,
+    "lost": 4,
+    "hitRate": 0.6
   },
   "singles": [
     {
@@ -73,7 +73,9 @@
       "selection": "Sunderland or Draw",
       "probability": 0.673,
       "odds": 1.49,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-08-22-ipswich-sunderland-other",
@@ -85,7 +87,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.59,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-08-22-everton-crystal-palace-winner",
@@ -97,7 +101,9 @@
       "selection": "Everton or Draw",
       "probability": 0.685,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-22-everton-crystal-palace-other",
@@ -109,7 +115,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.533,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-22-nottingham-forest-leeds-winner",
@@ -121,7 +129,9 @@
       "selection": "Nottingham Forest or Draw",
       "probability": 0.667,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-08-22-nottingham-forest-leeds-other",
@@ -133,7 +143,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.543,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-22-brentford-tottenham-winner",
