@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-23T12:25:02.155Z",
+  "updated": "2026-08-23T15:14:59.130Z",
   "summary": {
-    "settled": 12,
-    "won": 7,
-    "lost": 5,
-    "hitRate": 0.5833333333333334
+    "settled": 16,
+    "won": 10,
+    "lost": 6,
+    "hitRate": 0.625
   },
   "singles": [
     {
@@ -185,7 +185,9 @@
       "selection": "Manchester City to win",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-23-manchester-city-bournemouth-other",
@@ -197,7 +199,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.65,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-23-brighton-aston-villa-winner",
@@ -209,7 +213,9 @@
       "selection": "Brighton or Draw",
       "probability": 0.691,
       "odds": 1.45,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-23-brighton-aston-villa-other",
@@ -221,7 +227,9 @@
       "selection": "Yes",
       "probability": 0.566,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-08-23-newcastle-united-liverpool-winner",
