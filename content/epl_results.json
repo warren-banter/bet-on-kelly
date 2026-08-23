@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-23T18:18:44.822Z",
+  "updated": "2026-08-23T21:14:17.721Z",
   "summary": {
-    "settled": 16,
-    "won": 10,
-    "lost": 6,
-    "hitRate": 0.625
+    "settled": 18,
+    "won": 11,
+    "lost": 7,
+    "hitRate": 0.6111111111111112
   },
   "singles": [
     {
@@ -241,7 +241,9 @@
       "selection": "Liverpool or Draw",
       "probability": 0.704,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-08-23-newcastle-united-liverpool-other",
@@ -253,7 +255,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.636,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-08-24-fulham-chelsea-winner",
