@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-22T21:14:48.212Z",
+  "updated": "2026-08-23T00:55:14.628Z",
   "summary": {
-    "settled": 10,
-    "won": 6,
-    "lost": 4,
-    "hitRate": 0.6
+    "settled": 12,
+    "won": 7,
+    "lost": 5,
+    "hitRate": 0.5833333333333334
   },
   "singles": [
     {
@@ -157,7 +157,9 @@
       "selection": "Brentford or Draw",
       "probability": 0.681,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-22-brentford-tottenham-other",
@@ -169,7 +171,9 @@
       "selection": "Yes",
       "probability": 0.576,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-08-23-manchester-city-bournemouth-winner",
