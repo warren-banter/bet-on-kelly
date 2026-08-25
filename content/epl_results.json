@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-24T21:21:52.505Z",
+  "updated": "2026-08-25T00:53:23.987Z",
   "summary": {
-    "settled": 18,
-    "won": 11,
+    "settled": 20,
+    "won": 13,
     "lost": 7,
-    "hitRate": 0.6111111111111112
+    "hitRate": 0.65
   },
   "singles": [
     {
@@ -269,7 +269,9 @@
       "selection": "Chelsea or Draw",
       "probability": 0.712,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-08-24-fulham-chelsea-other",
@@ -281,7 +283,9 @@
       "selection": "Yes",
       "probability": 0.571,
       "odds": 1.75,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-08-28-crystal-palace-manchester-city-winner",
