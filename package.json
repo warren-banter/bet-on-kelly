@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update-results": "node scripts/update-results.mjs"
+    "update-results": "node scripts/update-results.mjs",
+    "prebuild": "node scripts/make-csv.mjs",
+    "make-csv": "node scripts/make-csv.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
