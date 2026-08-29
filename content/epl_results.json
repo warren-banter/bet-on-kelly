@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-29T12:05:13.478Z",
+  "updated": "2026-08-29T18:05:57.478Z",
   "summary": {
-    "settled": 22,
-    "won": 14,
-    "lost": 8,
-    "hitRate": 0.6363636363636364
+    "settled": 28,
+    "won": 17,
+    "lost": 11,
+    "hitRate": 0.6071428571428571
   },
   "singles": [
     {
@@ -325,7 +325,9 @@
       "selection": "Liverpool to win",
       "probability": 0.656,
       "odds": 1.53,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-08-29-liverpool-nottingham-forest-other",
@@ -337,7 +339,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.644,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-08-29-bournemouth-everton-winner",
@@ -349,7 +353,9 @@
       "selection": "Bournemouth or Draw",
       "probability": 0.746,
       "odds": 1.34,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-29-bournemouth-everton-other",
@@ -361,7 +367,9 @@
       "selection": "Yes",
       "probability": 0.523,
       "odds": 1.91,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-29-coventry-city-hull-city-winner",
@@ -373,7 +381,9 @@
       "selection": "Coventry City to win",
       "probability": 0.518,
       "odds": 1.93,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-08-29-coventry-city-hull-city-other",
@@ -385,7 +395,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.596,
       "odds": 1.68,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-29-tottenham-newcastle-united-winner",
