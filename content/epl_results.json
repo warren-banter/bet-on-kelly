@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-29T18:05:57.478Z",
+  "updated": "2026-08-29T22:56:48.164Z",
   "summary": {
-    "settled": 28,
+    "settled": 30,
     "won": 17,
-    "lost": 11,
-    "hitRate": 0.6071428571428571
+    "lost": 13,
+    "hitRate": 0.5666666666666667
   },
   "singles": [
     {
@@ -409,7 +409,9 @@
       "selection": "Tottenham or Draw",
       "probability": 0.663,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-08-29-tottenham-newcastle-united-other",
@@ -421,7 +423,9 @@
       "selection": "Yes",
       "probability": 0.565,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-08-30-chelsea-brighton-winner",
