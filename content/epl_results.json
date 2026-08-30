@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-30T14:15:52.452Z",
+  "updated": "2026-08-30T18:20:36.258Z",
   "summary": {
-    "settled": 30,
-    "won": 17,
-    "lost": 13,
-    "hitRate": 0.5666666666666667
+    "settled": 38,
+    "won": 24,
+    "lost": 14,
+    "hitRate": 0.631578947368421
   },
   "singles": [
     {
@@ -437,7 +437,9 @@
       "selection": "Chelsea or Draw",
       "probability": 0.728,
       "odds": 1.37,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-08-30-chelsea-brighton-other",
@@ -449,7 +451,9 @@
       "selection": "Yes",
       "probability": 0.562,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-08-30-sunderland-fulham-winner",
@@ -461,7 +465,9 @@
       "selection": "Sunderland or Draw",
       "probability": 0.657,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-08-30-sunderland-fulham-other",
@@ -473,7 +479,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.665,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-08-30-leeds-brentford-winner",
@@ -485,7 +493,9 @@
       "selection": "Leeds or Draw",
       "probability": 0.65,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-30-leeds-brentford-other",
@@ -497,7 +507,9 @@
       "selection": "Yes",
       "probability": 0.553,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-30-manchester-united-ipswich-winner",
@@ -509,7 +521,9 @@
       "selection": "Manchester United to win",
       "probability": 0.711,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-08-30-manchester-united-ipswich-other",
@@ -521,7 +535,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.62,
       "odds": 1.61,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-08-31-aston-villa-arsenal-winner",
