@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-31T18:34:38.373Z",
+  "updated": "2026-09-01T00:17:07.604Z",
   "summary": {
-    "settled": 38,
-    "won": 24,
+    "settled": 40,
+    "won": 26,
     "lost": 14,
-    "hitRate": 0.631578947368421
+    "hitRate": 0.65
   },
   "singles": [
     {
@@ -549,7 +549,9 @@
       "selection": "Arsenal to win",
       "probability": 0.589,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-08-31-aston-villa-arsenal-other",
@@ -561,7 +563,9 @@
       "selection": "No",
       "probability": 0.509,
       "odds": 1.97,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-04-ipswich-liverpool-winner",
