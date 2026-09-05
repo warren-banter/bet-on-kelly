@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-04T22:42:07.999Z",
+  "updated": "2026-09-05T02:24:16.779Z",
   "summary": {
-    "settled": 40,
-    "won": 26,
+    "settled": 42,
+    "won": 28,
     "lost": 14,
-    "hitRate": 0.65
+    "hitRate": 0.6666666666666666
   },
   "singles": [
     {
@@ -577,7 +577,9 @@
       "selection": "Liverpool to win",
       "probability": 0.636,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-04-ipswich-liverpool-other",
@@ -589,7 +591,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.646,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-05-newcastle-united-bournemouth-winner",
