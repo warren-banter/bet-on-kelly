@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-05T17:02:58.335Z",
+  "updated": "2026-09-05T19:47:02.547Z",
   "summary": {
-    "settled": 44,
-    "won": 29,
-    "lost": 15,
-    "hitRate": 0.6590909090909091
+    "settled": 54,
+    "won": 34,
+    "lost": 20,
+    "hitRate": 0.6296296296296297
   },
   "singles": [
     {
@@ -633,7 +633,9 @@
       "selection": "Fulham or Draw",
       "probability": 0.68,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-fulham-crystal-palace-other",
@@ -645,7 +647,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.554,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-nottingham-forest-tottenham-winner",
@@ -657,7 +661,9 @@
       "selection": "Nottingham Forest or Draw",
       "probability": 0.638,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-05-nottingham-forest-tottenham-other",
@@ -669,7 +675,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.531,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-05-brentford-sunderland-winner",
@@ -681,7 +689,9 @@
       "selection": "Brentford to win",
       "probability": 0.568,
       "odds": 1.76,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-brentford-sunderland-other",
@@ -693,7 +703,9 @@
       "selection": "No",
       "probability": 0.508,
       "odds": 1.97,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-brighton-leeds-winner",
@@ -705,7 +717,9 @@
       "selection": "Brighton to win",
       "probability": 0.52,
       "odds": 1.92,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-brighton-leeds-other",
@@ -717,7 +731,9 @@
       "selection": "Yes",
       "probability": 0.522,
       "odds": 1.91,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-05-manchester-city-coventry-city-winner",
@@ -729,7 +745,9 @@
       "selection": "Manchester City to win",
       "probability": 0.795,
       "odds": 1.26,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-05-manchester-city-coventry-city-other",
@@ -741,7 +759,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.521,
       "odds": 1.92,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-05-hull-city-aston-villa-winner",
