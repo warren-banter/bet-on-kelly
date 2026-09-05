@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-05T12:15:49.750Z",
+  "updated": "2026-09-05T17:02:58.335Z",
   "summary": {
-    "settled": 42,
-    "won": 28,
-    "lost": 14,
-    "hitRate": 0.6666666666666666
+    "settled": 44,
+    "won": 29,
+    "lost": 15,
+    "hitRate": 0.6590909090909091
   },
   "singles": [
     {
@@ -605,7 +605,9 @@
       "selection": "Newcastle United or Draw",
       "probability": 0.677,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-05-newcastle-united-bournemouth-other",
@@ -617,7 +619,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.665,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-05-fulham-crystal-palace-winner",
