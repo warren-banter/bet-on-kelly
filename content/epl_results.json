@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-06T19:51:01.698Z",
+  "updated": "2026-09-06T22:37:11.682Z",
   "summary": {
-    "settled": 58,
-    "won": 36,
-    "lost": 22,
-    "hitRate": 0.6206896551724138
+    "settled": 60,
+    "won": 37,
+    "lost": 23,
+    "hitRate": 0.6166666666666667
   },
   "singles": [
     {
@@ -829,7 +829,9 @@
       "selection": "Arsenal to win",
       "probability": 0.59,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-06-arsenal-chelsea-other",
@@ -841,7 +843,9 @@
       "selection": "No",
       "probability": 0.513,
       "odds": 1.95,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     }
   ],
   "multis": []
