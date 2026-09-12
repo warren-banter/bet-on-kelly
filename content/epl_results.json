@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-12T19:59:15.529Z",
+  "updated": "2026-09-12T22:44:44.545Z",
   "summary": {
-    "settled": 72,
-    "won": 41,
+    "settled": 74,
+    "won": 43,
     "lost": 31,
-    "hitRate": 0.5694444444444444
+    "hitRate": 0.581081081081081
   },
   "singles": [
     {
@@ -1025,7 +1025,9 @@
       "selection": "Arsenal to win",
       "probability": 0.636,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-12-sunderland-arsenal-other",
@@ -1037,7 +1039,9 @@
       "selection": "No",
       "probability": 0.573,
       "odds": 1.75,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-13-coventry-city-brighton-winner",
