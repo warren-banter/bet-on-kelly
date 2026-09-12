@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-12T12:33:15.490Z",
+  "updated": "2026-09-12T17:36:21.779Z",
   "summary": {
-    "settled": 60,
-    "won": 37,
-    "lost": 23,
-    "hitRate": 0.6166666666666667
+    "settled": 70,
+    "won": 39,
+    "lost": 31,
+    "hitRate": 0.5571428571428572
   },
   "singles": [
     {
@@ -857,7 +857,9 @@
       "selection": "Chelsea to win",
       "probability": 0.789,
       "odds": 1.27,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-chelsea-hull-city-other",
@@ -869,7 +871,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.655,
       "odds": 1.53,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-liverpool-fulham-winner",
@@ -881,7 +885,9 @@
       "selection": "Liverpool to win",
       "probability": 0.666,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-liverpool-fulham-other",
@@ -893,7 +899,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.624,
       "odds": 1.6,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-bournemouth-brentford-winner",
@@ -905,7 +913,9 @@
       "selection": "Bournemouth or Draw",
       "probability": 0.665,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-09-12-bournemouth-brentford-other",
@@ -917,7 +927,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.669,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-crystal-palace-ipswich-winner",
@@ -929,7 +941,9 @@
       "selection": "Crystal Palace to win",
       "probability": 0.588,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-crystal-palace-ipswich-other",
@@ -941,7 +955,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.549,
       "odds": 1.82,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-09-12-aston-villa-nottingham-forest-winner",
@@ -953,7 +969,9 @@
       "selection": "Aston Villa or Draw",
       "probability": 0.738,
       "odds": 1.36,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-aston-villa-nottingham-forest-other",
@@ -965,7 +983,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.527,
       "odds": 1.9,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-09-12-tottenham-everton-winner",
