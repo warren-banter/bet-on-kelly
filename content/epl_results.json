@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-12T17:36:21.779Z",
+  "updated": "2026-09-12T19:59:15.529Z",
   "summary": {
-    "settled": 70,
-    "won": 39,
+    "settled": 72,
+    "won": 41,
     "lost": 31,
-    "hitRate": 0.5571428571428572
+    "hitRate": 0.5694444444444444
   },
   "singles": [
     {
@@ -997,7 +997,9 @@
       "selection": "Tottenham or Draw",
       "probability": 0.726,
       "odds": 1.38,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-12-tottenham-everton-other",
@@ -1009,7 +1011,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.519,
       "odds": 1.93,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-12-sunderland-arsenal-winner",
