@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-13T13:34:19.601Z",
+  "updated": "2026-09-13T17:49:30.966Z",
   "summary": {
-    "settled": 74,
-    "won": 43,
-    "lost": 31,
-    "hitRate": 0.581081081081081
+    "settled": 78,
+    "won": 46,
+    "lost": 32,
+    "hitRate": 0.5897435897435898
   },
   "singles": [
     {
@@ -1053,7 +1053,9 @@
       "selection": "Brighton to win",
       "probability": 0.522,
       "odds": 1.91,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 5,
+      "result": "won"
     },
     {
       "id": "2026-09-13-coventry-city-brighton-other",
@@ -1065,7 +1067,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.544,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 5,
+      "result": "lost"
     },
     {
       "id": "2026-09-13-manchester-united-manchester-city-winner",
@@ -1077,7 +1081,9 @@
       "selection": "Manchester City or Draw",
       "probability": 0.685,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-13-manchester-united-manchester-city-other",
@@ -1089,7 +1095,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.63,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-14-leeds-newcastle-united-winner",
