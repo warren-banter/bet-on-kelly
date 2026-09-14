@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-14T15:32:45.211Z",
+  "updated": "2026-09-14T21:16:22.391Z",
   "summary": {
-    "settled": 78,
-    "won": 46,
+    "settled": 80,
+    "won": 48,
     "lost": 32,
-    "hitRate": 0.5897435897435898
+    "hitRate": 0.6
   },
   "singles": [
     {
@@ -1109,7 +1109,9 @@
       "selection": "Leeds or Draw",
       "probability": 0.661,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-14-leeds-newcastle-united-other",
@@ -1121,7 +1123,9 @@
       "selection": "Yes",
       "probability": 0.549,
       "odds": 1.82,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-18-brentford-chelsea-winner",
