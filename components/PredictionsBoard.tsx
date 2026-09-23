@@ -214,6 +214,24 @@ export default function PredictionsBoard({
     >
       <BoardHeader eyebrow={config.eyebrow} />
 
+      {/* Nothing ahead — an international break, or the feed is between
+          matchweeks. Say so rather than leaving the board blank. */}
+      {!lead && thisWeekDays.length === 0 && weekBuckets.length === 0 && (
+        <div className="rounded-2xl border border-line bg-surface/60 p-6 sm:p-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+            No fixtures scheduled
+          </p>
+          <h3 className="mt-1 text-xl font-extrabold tracking-tight text-ink">
+            Picks are back when the league is
+          </h3>
+          <p className="mt-2 max-w-xl text-sm text-ink-soft">
+            The league is on a break. New predictions go up as soon as the next
+            round of fixtures is priced &mdash; usually a week or so before
+            kick-off. The track record below is unaffected.
+          </p>
+        </div>
+      )}
+
       {/* Today (or next up) */}
       {lead && (
         <Group eyebrow={lead.tag} title={lead.title}>

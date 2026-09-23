@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "update-results": "node scripts/update-results.mjs",
-    "prebuild": "node scripts/make-csv.mjs",
-    "make-csv": "node scripts/make-csv.mjs"
+    "prebuild": "node scripts/make-csv.mjs && node scripts/make-schedule-csv.mjs",
+    "make-csv": "node scripts/make-csv.mjs && node scripts/make-schedule-csv.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
