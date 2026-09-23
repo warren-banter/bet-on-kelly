@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-15T14:04:21.633Z",
+  "updated": "2026-09-23T12:32:46.389Z",
   "summary": {
-    "settled": 80,
-    "won": 48,
-    "lost": 32,
-    "hitRate": 0.6
+    "settled": 100,
+    "won": 61,
+    "lost": 39,
+    "hitRate": 0.61
   },
   "singles": [
     {
@@ -1137,7 +1137,9 @@
       "selection": "Brentford or Draw",
       "probability": 0.622,
       "odds": 1.61,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-18-brentford-chelsea-other",
@@ -1149,7 +1151,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.645,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-19-tottenham-aston-villa-winner",
@@ -1161,7 +1165,9 @@
       "selection": "Tottenham or Draw",
       "probability": 0.705,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-09-19-tottenham-aston-villa-other",
@@ -1173,7 +1179,9 @@
       "selection": "Yes",
       "probability": 0.546,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-09-19-brighton-arsenal-winner",
@@ -1185,7 +1193,9 @@
       "selection": "Arsenal to win",
       "probability": 0.519,
       "odds": 1.93,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-19-brighton-arsenal-other",
@@ -1197,7 +1207,9 @@
       "selection": "Yes",
       "probability": 0.511,
       "odds": 1.96,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-19-newcastle-united-hull-city-winner",
@@ -1209,7 +1221,9 @@
       "selection": "Newcastle United to win",
       "probability": 0.657,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-19-newcastle-united-hull-city-other",
@@ -1221,7 +1235,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.543,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-19-everton-ipswich-winner",
@@ -1233,7 +1249,9 @@
       "selection": "Everton to win",
       "probability": 0.579,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-19-everton-ipswich-other",
@@ -1245,7 +1263,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.505,
       "odds": 1.98,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-19-nottingham-forest-coventry-city-winner",
@@ -1257,7 +1277,9 @@
       "selection": "Nottingham Forest to win",
       "probability": 0.54,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-09-19-nottingham-forest-coventry-city-other",
@@ -1269,7 +1291,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.533,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-20-manchester-city-sunderland-winner",
@@ -1281,7 +1305,9 @@
       "selection": "Manchester City to win",
       "probability": 0.744,
       "odds": 1.34,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-09-20-manchester-city-sunderland-other",
@@ -1293,7 +1319,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.612,
       "odds": 1.63,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-09-20-leeds-crystal-palace-winner",
@@ -1305,7 +1333,9 @@
       "selection": "Leeds or Draw",
       "probability": 0.715,
       "odds": 1.4,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-09-20-leeds-crystal-palace-other",
@@ -1317,7 +1347,9 @@
       "selection": "Yes",
       "probability": 0.528,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-09-20-bournemouth-liverpool-winner",
@@ -1329,7 +1361,9 @@
       "selection": "Liverpool or Draw",
       "probability": 0.677,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-20-bournemouth-liverpool-other",
@@ -1341,7 +1375,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.636,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-20-fulham-manchester-united-winner",
@@ -1353,7 +1389,9 @@
       "selection": "Manchester United or Draw",
       "probability": 0.698,
       "odds": 1.43,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-09-20-fulham-manchester-united-other",
@@ -1365,7 +1403,9 @@
       "selection": "Yes",
       "probability": 0.577,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     }
   ],
   "multis": []

@@ -51,6 +51,11 @@ const EPL_ALIASES = {
   ipswichtown: 'Ipswich',
   wolves: 'Wolverhampton Wanderers',
   westbromwichalbion: 'West Bromwich Albion',
+  // Promoted 2026/27. Our own picks said "Coventry City" / "Hull City" before
+  // the feed was renamed to match the ratings data, so these entries also
+  // fold those archived spellings onto the current name (see canonicalTeam).
+  coventrycity: 'Coventry',
+  hullcity: 'Hull',
 };
 
 const COMPETITIONS = [
@@ -175,7 +180,10 @@ function selftest() {
 
 // --- ESPN scoreboard ---------------------------------------------------------
 
-function canonicalApiTeam(name, aliases) {
+// Fold a team name onto its canonical form. Applied to BOTH the scoreboard's
+// spelling and our own stored one, so a pick archived under an older spelling
+// still matches the fixture it was made on.
+function canonicalTeam(name, aliases) {
   const n = norm(name);
   if (aliases[n]) return norm(aliases[n]);
   return n;
@@ -193,16 +201,37 @@ function isoToCompact(iso, days = 0) {
 }
 
 // ESPN buckets fixtures by UTC kickoff, so a venue-local date can land a day
-// either side — query a window padded by a day and match on the team pair.
+// either side — query each pick date padded by a day and match on the team pair.
 // A pair can meet twice in a league season, so the map is keyed by date+pair
 // as well as by pair alone; the dated key wins when both sides are known.
-async function fetchFinishedFixtures(league, aliases, minDate, maxDate) {
-  const from = isoToCompact(minDate, -1);
-  const to = isoToCompact(maxDate, 1);
-  const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${from}-${to}&limit=500`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`ESPN HTTP ${res.status}`);
-  const data = await res.json();
+//
+// One request per date: ESPN rejects ranged `dates=A-B` queries with a 400, so
+// we ask only for the days we actually hold picks on.
+async function fetchFinishedFixtures(league, aliases, pickDates) {
+  const wanted = new Set();
+  for (const d of pickDates) {
+    for (const shift of [-1, 0, 1]) wanted.add(isoToCompact(d, shift));
+  }
+
+  const events = [];
+  let failures = 0;
+  for (const day of [...wanted].sort()) {
+    const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${day}&limit=500`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const body = await res.json();
+      events.push(...(body.events || []));
+    } catch (err) {
+      failures++;
+      console.warn(`  ${day}: ${err.message}`);
+    }
+  }
+  // Every single day failing means the source is down, not that nothing is
+  // finished — throw so the caller leaves the existing results untouched.
+  if (failures === wanted.size) throw new Error(`ESPN unreachable (${failures} dates)`);
+
+  const data = { events };
 
   const finished = new Map(); // pairKey and date|pairKey -> { hs, as, date }
   let count = 0;
@@ -216,8 +245,8 @@ async function fetchFinishedFixtures(league, aliases, minDate, maxDate) {
     const as = Number(away.score);
     if (Number.isNaN(hs) || Number.isNaN(as)) continue;
     const key = pairKey(
-      canonicalApiTeam(home.team.displayName, aliases),
-      canonicalApiTeam(away.team.displayName, aliases),
+      canonicalTeam(home.team.displayName, aliases),
+      canonicalTeam(away.team.displayName, aliases),
     );
     const kickoffDay = String(event.date).slice(0, 10);
     finished.set(key, { hs, as, date: event.date });
@@ -294,8 +323,8 @@ function archivePicks(bets, archive) {
 // Match on date + team pair. Falling back to the pair alone is only safe when
 // the two teams meet once all competition — in a league the reverse fixture
 // carries the same pair and would grade the wrong leg.
-function lookupScore(finished, home, away, date, uniquePairs) {
-  const key = pairKey(norm(home), norm(away));
+function lookupScore(finished, home, away, date, uniquePairs, aliases) {
+  const key = pairKey(canonicalTeam(home, aliases), canonicalTeam(away, aliases));
   if (date) {
     for (const shift of [0, -1, 1]) {
       const hit = finished.get(`${isoShift(date, shift)}|${key}`);
@@ -311,7 +340,7 @@ function isoShift(iso, days) {
   return d.toISOString().slice(0, 10);
 }
 
-function gradeArchive(archive, finished, today, uniquePairs) {
+function gradeArchive(archive, finished, today, uniquePairs, aliases) {
   const unmatched = new Set();
   // Only flag a missing score as a problem once the fixture is in the past —
   // future fixtures are simply pending, not a matching failure.
@@ -320,7 +349,7 @@ function gradeArchive(archive, finished, today, uniquePairs) {
   };
 
   const singles = archive.singles.map((s) => {
-    const score = lookupScore(finished, s.home_team, s.away_team, s.date, uniquePairs);
+    const score = lookupScore(finished, s.home_team, s.away_team, s.date, uniquePairs, aliases);
     if (!score) {
       flagMissing(s.date, s.home_team, s.away_team);
       return { ...s, result: 'pending' };
@@ -337,7 +366,7 @@ function gradeArchive(archive, finished, today, uniquePairs) {
     let anyPending = false;
     let anyLost = false;
     const legs = m.legs.map((leg) => {
-      const score = lookupScore(finished, leg.home_team, leg.away_team, leg.date, uniquePairs);
+      const score = lookupScore(finished, leg.home_team, leg.away_team, leg.date, uniquePairs, aliases);
       if (!score) {
         anyPending = true;
         flagMissing(leg.date, leg.home_team, leg.away_team);
@@ -412,8 +441,7 @@ async function runCompetition(comp, excluded) {
     finished = await fetchFinishedFixtures(
       comp.league,
       comp.aliases,
-      dates[0],
-      dates[dates.length - 1],
+      [...new Set(dates)],
     );
   } catch (err) {
     console.error(`Results fetch failed: ${err.message}. Leaving existing results file unchanged.`);
@@ -422,7 +450,7 @@ async function runCompetition(comp, excluded) {
   console.log(`fetched ${finished.count} finished fixtures`);
 
   const today = new Date().toISOString().slice(0, 10);
-  const graded = gradeArchive(archive, finished, today, comp.uniquePairs);
+  const graded = gradeArchive(archive, finished, today, comp.uniquePairs, comp.aliases);
   if (graded.unmatched.length) {
     console.warn(`Past fixtures with no matched score (add an alias entry?):`);
     for (const u of graded.unmatched) console.warn(`  - ${u}`);
