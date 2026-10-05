@@ -1,42 +1,339 @@
 {
   "schema_version": 1,
   "sport": "EPL",
-  "generated": "2026-09-07",
+  "generated": "2026-10-05",
   "odds_band": [
     1.5,
     2.0
   ],
   "blend": 0.6,
   "model": "Dixon-Coles on xG (Understat), blended 0.60 with Polymarket 3-way",
-  "note": "DC-on-xG (Understat) blended with the live Polymarket moneyline. One winner pick + one other bet per game; odds are fair (1/probability). p_model / p_market / p_blend exposed per game. Games marked pricing='market-only' involve a club with no top-5 xG history (newly promoted): the market sets the result probabilities and p_model is null.",
-  "fixtures": 20,
-  "market_only": 4,
+  "note": "DC-on-xG (Understat) blended with the live Polymarket moneyline. One winner pick + one other bet per game; odds are fair (1/probability). p_model / p_market / p_blend exposed per game. Games marked pricing='market-only' involve a club with fewer than 10 matches of xG history (typically newly promoted): the market sets the result probabilities and p_model is null.",
+  "fixtures": 19,
+  "market_only": 3,
+  "min_games": 10,
   "games": [
     {
-      "id": "2026-09-12-chelsea-hull-city",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T14:00:00+00:00",
-      "match": "Chelsea vs Hull City",
-      "home_team": "Chelsea",
-      "away_team": "Hull City",
+      "id": "2026-10-10-arsenal-leeds",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T11:30:00+00:00",
+      "match": "Arsenal vs Leeds",
+      "home_team": "Arsenal",
+      "away_team": "Leeds",
       "stage": "regular",
-      "pricing": "market-only",
-      "p_model": null,
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.649,
+        "D": 0.201,
+        "A": 0.151
+      },
       "p_market": {
-        "H": 0.789,
-        "D": 0.146,
-        "A": 0.065
+        "H": 0.701,
+        "D": 0.184,
+        "A": 0.114
       },
       "p_blend": {
-        "H": 0.789,
-        "D": 0.146,
-        "A": 0.065
+        "H": 0.68,
+        "D": 0.191,
+        "A": 0.129
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Arsenal to win",
+        "probability": 0.68,
+        "odds": 1.47
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.66,
+        "odds": 1.52
+      }
+    },
+    {
+      "id": "2026-10-10-sunderland-brighton",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T14:00:00+00:00",
+      "match": "Sunderland vs Brighton",
+      "home_team": "Sunderland",
+      "away_team": "Brighton",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.343,
+        "D": 0.244,
+        "A": 0.413
+      },
+      "p_market": {
+        "H": 0.323,
+        "D": 0.274,
+        "A": 0.403
+      },
+      "p_blend": {
+        "H": 0.331,
+        "D": 0.262,
+        "A": 0.407
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Brighton or Draw",
+        "probability": 0.669,
+        "odds": 1.5
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "Yes",
+        "probability": 0.531,
+        "odds": 1.88
+      }
+    },
+    {
+      "id": "2026-10-10-ipswich-fulham",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T14:00:00+00:00",
+      "match": "Ipswich vs Fulham",
+      "home_team": "Ipswich",
+      "away_team": "Fulham",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.298,
+        "D": 0.238,
+        "A": 0.464
+      },
+      "p_market": {
+        "H": 0.357,
+        "D": 0.266,
+        "A": 0.377
+      },
+      "p_blend": {
+        "H": 0.333,
+        "D": 0.255,
+        "A": 0.412
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Fulham or Draw",
+        "probability": 0.667,
+        "odds": 1.5
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "Yes",
+        "probability": 0.554,
+        "odds": 1.8
+      }
+    },
+    {
+      "id": "2026-10-10-aston-villa-brentford",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T14:00:00+00:00",
+      "match": "Aston Villa vs Brentford",
+      "home_team": "Aston Villa",
+      "away_team": "Brentford",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.406,
+        "D": 0.232,
+        "A": 0.363
+      },
+      "p_market": {
+        "H": 0.353,
+        "D": 0.274,
+        "A": 0.373
+      },
+      "p_blend": {
+        "H": 0.374,
+        "D": 0.257,
+        "A": 0.369
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Aston Villa or Draw",
+        "probability": 0.631,
+        "odds": 1.58
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "Yes",
+        "probability": 0.553,
+        "odds": 1.81
+      }
+    },
+    {
+      "id": "2026-10-10-chelsea-bournemouth",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T14:00:00+00:00",
+      "match": "Chelsea vs Bournemouth",
+      "home_team": "Chelsea",
+      "away_team": "Bournemouth",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.478,
+        "D": 0.217,
+        "A": 0.305
+      },
+      "p_market": {
+        "H": 0.562,
+        "D": 0.234,
+        "A": 0.204
+      },
+      "p_blend": {
+        "H": 0.529,
+        "D": 0.227,
+        "A": 0.244
       },
       "winner": {
         "market": "Match Result",
         "selection": "Chelsea to win",
-        "probability": 0.789,
-        "odds": 1.27
+        "probability": 0.529,
+        "odds": 1.89
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.637,
+        "odds": 1.57
+      }
+    },
+    {
+      "id": "2026-10-10-manchester-united-tottenham",
+      "date": "2026-10-10",
+      "kickoff": "2026-10-10T16:30:00+00:00",
+      "match": "Manchester United vs Tottenham",
+      "home_team": "Manchester United",
+      "away_team": "Tottenham",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.547,
+        "D": 0.217,
+        "A": 0.236
+      },
+      "p_market": {
+        "H": 0.567,
+        "D": 0.222,
+        "A": 0.212
+      },
+      "p_blend": {
+        "H": 0.559,
+        "D": 0.22,
+        "A": 0.221
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Manchester United to win",
+        "probability": 0.559,
+        "odds": 1.79
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.628,
+        "odds": 1.59
+      }
+    },
+    {
+      "id": "2026-10-11-hull-everton",
+      "date": "2026-10-11",
+      "kickoff": "2026-10-11T13:00:00+00:00",
+      "match": "Hull vs Everton",
+      "home_team": "Hull",
+      "away_team": "Everton",
+      "stage": "regular",
+      "pricing": "market-only",
+      "p_model": null,
+      "p_market": {
+        "H": 0.254,
+        "D": 0.284,
+        "A": 0.463
+      },
+      "p_blend": {
+        "H": 0.254,
+        "D": 0.284,
+        "A": 0.463
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Everton or Draw",
+        "probability": 0.746,
+        "odds": 1.34
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Over 1.5 goals",
+        "probability": 0.643,
+        "odds": 1.55
+      }
+    },
+    {
+      "id": "2026-10-11-crystal-palace-nottingham-forest",
+      "date": "2026-10-11",
+      "kickoff": "2026-10-11T13:00:00+00:00",
+      "match": "Crystal Palace vs Nottingham Forest",
+      "home_team": "Crystal Palace",
+      "away_team": "Nottingham Forest",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.485,
+        "D": 0.237,
+        "A": 0.278
+      },
+      "p_market": {
+        "H": 0.363,
+        "D": 0.284,
+        "A": 0.353
+      },
+      "p_blend": {
+        "H": 0.412,
+        "D": 0.265,
+        "A": 0.323
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Crystal Palace or Draw",
+        "probability": 0.677,
+        "odds": 1.48
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 2.5 goals",
+        "probability": 0.529,
+        "odds": 1.89
+      }
+    },
+    {
+      "id": "2026-10-11-liverpool-manchester-city",
+      "date": "2026-10-11",
+      "kickoff": "2026-10-11T15:30:00+00:00",
+      "match": "Liverpool vs Manchester City",
+      "home_team": "Liverpool",
+      "away_team": "Manchester City",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.412,
+        "D": 0.227,
+        "A": 0.361
+      },
+      "p_market": {
+        "H": 0.367,
+        "D": 0.256,
+        "A": 0.377
+      },
+      "p_blend": {
+        "H": 0.385,
+        "D": 0.245,
+        "A": 0.371
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Liverpool or Draw",
+        "probability": 0.629,
+        "odds": 1.59
       },
       "other": {
         "market": "Total Goals",
@@ -46,694 +343,365 @@
       }
     },
     {
-      "id": "2026-09-12-liverpool-fulham",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T14:00:00+00:00",
-      "match": "Liverpool vs Fulham",
-      "home_team": "Liverpool",
-      "away_team": "Fulham",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.643,
-        "D": 0.191,
-        "A": 0.166
-      },
-      "p_market": {
-        "H": 0.682,
-        "D": 0.184,
-        "A": 0.134
-      },
-      "p_blend": {
-        "H": 0.666,
-        "D": 0.187,
-        "A": 0.147
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Liverpool to win",
-        "probability": 0.666,
-        "odds": 1.5
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Over 2.5 goals",
-        "probability": 0.624,
-        "odds": 1.6
-      }
-    },
-    {
-      "id": "2026-09-12-bournemouth-brentford",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T14:00:00+00:00",
-      "match": "Bournemouth vs Brentford",
-      "home_team": "Bournemouth",
-      "away_team": "Brentford",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.472,
-        "D": 0.22,
-        "A": 0.307
-      },
-      "p_market": {
-        "H": 0.383,
-        "D": 0.264,
-        "A": 0.353
-      },
-      "p_blend": {
-        "H": 0.419,
-        "D": 0.246,
-        "A": 0.335
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Bournemouth or Draw",
-        "probability": 0.665,
-        "odds": 1.5
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 3.5 goals",
-        "probability": 0.669,
-        "odds": 1.5
-      }
-    },
-    {
-      "id": "2026-09-12-crystal-palace-ipswich",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T14:00:00+00:00",
-      "match": "Crystal Palace vs Ipswich",
-      "home_team": "Crystal Palace",
-      "away_team": "Ipswich",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.7,
-        "D": 0.172,
-        "A": 0.128
-      },
-      "p_market": {
-        "H": 0.512,
-        "D": 0.254,
-        "A": 0.234
-      },
-      "p_blend": {
-        "H": 0.588,
-        "D": 0.221,
-        "A": 0.191
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Crystal Palace to win",
-        "probability": 0.588,
-        "odds": 1.7
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Over 2.5 goals",
-        "probability": 0.549,
-        "odds": 1.82
-      }
-    },
-    {
-      "id": "2026-09-12-aston-villa-nottingham-forest",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T14:00:00+00:00",
-      "match": "Aston Villa vs Nottingham Forest",
-      "home_team": "Aston Villa",
-      "away_team": "Nottingham Forest",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.522,
-        "D": 0.233,
-        "A": 0.245
-      },
-      "p_market": {
-        "H": 0.453,
-        "D": 0.274,
-        "A": 0.274
-      },
-      "p_blend": {
-        "H": 0.48,
-        "D": 0.257,
-        "A": 0.262
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Aston Villa or Draw",
-        "probability": 0.738,
-        "odds": 1.36
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 2.5 goals",
-        "probability": 0.527,
-        "odds": 1.9
-      }
-    },
-    {
-      "id": "2026-09-12-tottenham-everton",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T16:30:00+00:00",
-      "match": "Tottenham vs Everton",
-      "home_team": "Tottenham",
-      "away_team": "Everton",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.464,
-        "D": 0.247,
-        "A": 0.289
-      },
-      "p_market": {
-        "H": 0.473,
-        "D": 0.264,
-        "A": 0.264
-      },
-      "p_blend": {
-        "H": 0.469,
-        "D": 0.257,
-        "A": 0.274
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Tottenham or Draw",
-        "probability": 0.726,
-        "odds": 1.38
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 2.5 goals",
-        "probability": 0.519,
-        "odds": 1.93
-      }
-    },
-    {
-      "id": "2026-09-12-sunderland-arsenal",
-      "date": "2026-09-12",
-      "kickoff": "2026-09-12T19:00:00+00:00",
-      "match": "Sunderland vs Arsenal",
-      "home_team": "Sunderland",
-      "away_team": "Arsenal",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.169,
-        "D": 0.229,
-        "A": 0.601
-      },
-      "p_market": {
-        "H": 0.124,
-        "D": 0.218,
-        "A": 0.658
-      },
-      "p_blend": {
-        "H": 0.142,
-        "D": 0.222,
-        "A": 0.636
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Arsenal to win",
-        "probability": 0.636,
-        "odds": 1.57
-      },
-      "other": {
-        "market": "Both Teams To Score",
-        "selection": "No",
-        "probability": 0.573,
-        "odds": 1.75
-      }
-    },
-    {
-      "id": "2026-09-13-coventry-city-brighton",
-      "date": "2026-09-13",
-      "kickoff": "2026-09-13T13:00:00+00:00",
-      "match": "Coventry City vs Brighton",
-      "home_team": "Coventry City",
-      "away_team": "Brighton",
+      "id": "2026-10-12-coventry-newcastle-united",
+      "date": "2026-10-12",
+      "kickoff": "2026-10-12T19:00:00+00:00",
+      "match": "Coventry vs Newcastle United",
+      "home_team": "Coventry",
+      "away_team": "Newcastle United",
       "stage": "regular",
       "pricing": "market-only",
       "p_model": null,
       "p_market": {
-        "H": 0.224,
-        "D": 0.254,
-        "A": 0.522
+        "H": 0.29,
+        "D": 0.265,
+        "A": 0.445
       },
       "p_blend": {
-        "H": 0.224,
-        "D": 0.254,
-        "A": 0.522
+        "H": 0.29,
+        "D": 0.265,
+        "A": 0.445
       },
       "winner": {
-        "market": "Match Result",
-        "selection": "Brighton to win",
-        "probability": 0.522,
-        "odds": 1.91
+        "market": "Double Chance",
+        "selection": "Newcastle United or Draw",
+        "probability": 0.71,
+        "odds": 1.41
       },
       "other": {
         "market": "Total Goals",
         "selection": "Under 2.5 goals",
-        "probability": 0.544,
-        "odds": 1.84
+        "probability": 0.541,
+        "odds": 1.85
       }
     },
     {
-      "id": "2026-09-13-manchester-united-manchester-city",
-      "date": "2026-09-13",
-      "kickoff": "2026-09-13T15:30:00+00:00",
-      "match": "Manchester United vs Manchester City",
-      "home_team": "Manchester United",
-      "away_team": "Manchester City",
+      "id": "2026-10-17-everton-chelsea",
+      "date": "2026-10-17",
+      "kickoff": "2026-10-17T11:30:00+00:00",
+      "match": "Everton vs Chelsea",
+      "home_team": "Everton",
+      "away_team": "Chelsea",
       "stage": "regular",
       "pricing": "model+market",
       "p_model": {
-        "H": 0.323,
-        "D": 0.229,
-        "A": 0.448
+        "H": 0.338,
+        "D": 0.237,
+        "A": 0.425
       },
       "p_market": {
-        "H": 0.31,
-        "D": 0.241,
-        "A": 0.448
-      },
-      "p_blend": {
-        "H": 0.315,
-        "D": 0.236,
-        "A": 0.448
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Manchester City or Draw",
-        "probability": 0.685,
-        "odds": 1.46
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 3.5 goals",
-        "probability": 0.63,
-        "odds": 1.59
-      }
-    },
-    {
-      "id": "2026-09-14-leeds-newcastle-united",
-      "date": "2026-09-14",
-      "kickoff": "2026-09-14T19:00:00+00:00",
-      "match": "Leeds vs Newcastle United",
-      "home_team": "Leeds",
-      "away_team": "Newcastle United",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.404,
-        "D": 0.232,
-        "A": 0.364
-      },
-      "p_market": {
-        "H": 0.403,
-        "D": 0.274,
-        "A": 0.323
-      },
-      "p_blend": {
-        "H": 0.404,
+        "H": 0.337,
         "D": 0.257,
-        "A": 0.339
+        "A": 0.406
+      },
+      "p_blend": {
+        "H": 0.337,
+        "D": 0.249,
+        "A": 0.414
       },
       "winner": {
         "market": "Double Chance",
-        "selection": "Leeds or Draw",
-        "probability": 0.661,
+        "selection": "Chelsea or Draw",
+        "probability": 0.663,
         "odds": 1.51
       },
       "other": {
         "market": "Both Teams To Score",
         "selection": "Yes",
-        "probability": 0.549,
-        "odds": 1.82
+        "probability": 0.575,
+        "odds": 1.74
       }
     },
     {
-      "id": "2026-09-18-brentford-chelsea",
-      "date": "2026-09-18",
-      "kickoff": "2026-09-18T19:00:00+00:00",
-      "match": "Brentford vs Chelsea",
+      "id": "2026-10-17-brentford-liverpool",
+      "date": "2026-10-17",
+      "kickoff": "2026-10-17T14:00:00+00:00",
+      "match": "Brentford vs Liverpool",
       "home_team": "Brentford",
-      "away_team": "Chelsea",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.415,
-        "D": 0.222,
-        "A": 0.363
-      },
-      "p_market": {
-        "H": 0.357,
-        "D": 0.256,
-        "A": 0.387
-      },
-      "p_blend": {
-        "H": 0.38,
-        "D": 0.243,
-        "A": 0.378
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Brentford or Draw",
-        "probability": 0.622,
-        "odds": 1.61
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 3.5 goals",
-        "probability": 0.645,
-        "odds": 1.55
-      }
-    },
-    {
-      "id": "2026-09-19-tottenham-aston-villa",
-      "date": "2026-09-19",
-      "kickoff": "2026-09-19T11:30:00+00:00",
-      "match": "Tottenham vs Aston Villa",
-      "home_team": "Tottenham",
-      "away_team": "Aston Villa",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.408,
-        "D": 0.243,
-        "A": 0.35
-      },
-      "p_market": {
-        "H": 0.483,
-        "D": 0.259,
-        "A": 0.259
-      },
-      "p_blend": {
-        "H": 0.453,
-        "D": 0.252,
-        "A": 0.295
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Tottenham or Draw",
-        "probability": 0.705,
-        "odds": 1.42
-      },
-      "other": {
-        "market": "Both Teams To Score",
-        "selection": "Yes",
-        "probability": 0.546,
-        "odds": 1.83
-      }
-    },
-    {
-      "id": "2026-09-19-brighton-arsenal",
-      "date": "2026-09-19",
-      "kickoff": "2026-09-19T14:00:00+00:00",
-      "match": "Brighton vs Arsenal",
-      "home_team": "Brighton",
-      "away_team": "Arsenal",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.256,
-        "D": 0.244,
-        "A": 0.5
-      },
-      "p_market": {
-        "H": 0.219,
-        "D": 0.249,
-        "A": 0.532
-      },
-      "p_blend": {
-        "H": 0.234,
-        "D": 0.247,
-        "A": 0.519
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Arsenal to win",
-        "probability": 0.519,
-        "odds": 1.93
-      },
-      "other": {
-        "market": "Both Teams To Score",
-        "selection": "Yes",
-        "probability": 0.511,
-        "odds": 1.96
-      }
-    },
-    {
-      "id": "2026-09-19-newcastle-united-hull-city",
-      "date": "2026-09-19",
-      "kickoff": "2026-09-19T14:00:00+00:00",
-      "match": "Newcastle United vs Hull City",
-      "home_team": "Newcastle United",
-      "away_team": "Hull City",
-      "stage": "regular",
-      "pricing": "market-only",
-      "p_model": null,
-      "p_market": {
-        "H": 0.657,
-        "D": 0.202,
-        "A": 0.141
-      },
-      "p_blend": {
-        "H": 0.657,
-        "D": 0.202,
-        "A": 0.141
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Newcastle United to win",
-        "probability": 0.657,
-        "odds": 1.52
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Over 2.5 goals",
-        "probability": 0.543,
-        "odds": 1.84
-      }
-    },
-    {
-      "id": "2026-09-19-everton-ipswich",
-      "date": "2026-09-19",
-      "kickoff": "2026-09-19T14:00:00+00:00",
-      "match": "Everton vs Ipswich",
-      "home_team": "Everton",
-      "away_team": "Ipswich",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.626,
-        "D": 0.209,
-        "A": 0.166
-      },
-      "p_market": {
-        "H": 0.548,
-        "D": 0.246,
-        "A": 0.206
-      },
-      "p_blend": {
-        "H": 0.579,
-        "D": 0.231,
-        "A": 0.19
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Everton to win",
-        "probability": 0.579,
-        "odds": 1.73
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Over 2.5 goals",
-        "probability": 0.505,
-        "odds": 1.98
-      }
-    },
-    {
-      "id": "2026-09-19-nottingham-forest-coventry-city",
-      "date": "2026-09-19",
-      "kickoff": "2026-09-19T16:30:00+00:00",
-      "match": "Nottingham Forest vs Coventry City",
-      "home_team": "Nottingham Forest",
-      "away_team": "Coventry City",
-      "stage": "regular",
-      "pricing": "market-only",
-      "p_model": null,
-      "p_market": {
-        "H": 0.54,
-        "D": 0.247,
-        "A": 0.212
-      },
-      "p_blend": {
-        "H": 0.54,
-        "D": 0.247,
-        "A": 0.212
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Nottingham Forest to win",
-        "probability": 0.54,
-        "odds": 1.85
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 2.5 goals",
-        "probability": 0.533,
-        "odds": 1.88
-      }
-    },
-    {
-      "id": "2026-09-20-manchester-city-sunderland",
-      "date": "2026-09-20",
-      "kickoff": "2026-09-20T13:00:00+00:00",
-      "match": "Manchester City vs Sunderland",
-      "home_team": "Manchester City",
-      "away_team": "Sunderland",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.704,
-        "D": 0.177,
-        "A": 0.119
-      },
-      "p_market": {
-        "H": 0.77,
-        "D": 0.15,
-        "A": 0.08
-      },
-      "p_blend": {
-        "H": 0.744,
-        "D": 0.161,
-        "A": 0.096
-      },
-      "winner": {
-        "market": "Match Result",
-        "selection": "Manchester City to win",
-        "probability": 0.744,
-        "odds": 1.34
-      },
-      "other": {
-        "market": "Total Goals",
-        "selection": "Under 3.5 goals",
-        "probability": 0.612,
-        "odds": 1.63
-      }
-    },
-    {
-      "id": "2026-09-20-leeds-crystal-palace",
-      "date": "2026-09-20",
-      "kickoff": "2026-09-20T13:00:00+00:00",
-      "match": "Leeds vs Crystal Palace",
-      "home_team": "Leeds",
-      "away_team": "Crystal Palace",
-      "stage": "regular",
-      "pricing": "model+market",
-      "p_model": {
-        "H": 0.442,
-        "D": 0.235,
-        "A": 0.323
-      },
-      "p_market": {
-        "H": 0.47,
-        "D": 0.27,
-        "A": 0.26
-      },
-      "p_blend": {
-        "H": 0.459,
-        "D": 0.256,
-        "A": 0.285
-      },
-      "winner": {
-        "market": "Double Chance",
-        "selection": "Leeds or Draw",
-        "probability": 0.715,
-        "odds": 1.4
-      },
-      "other": {
-        "market": "Both Teams To Score",
-        "selection": "Yes",
-        "probability": 0.528,
-        "odds": 1.89
-      }
-    },
-    {
-      "id": "2026-09-20-bournemouth-liverpool",
-      "date": "2026-09-20",
-      "kickoff": "2026-09-20T13:00:00+00:00",
-      "match": "Bournemouth vs Liverpool",
-      "home_team": "Bournemouth",
       "away_team": "Liverpool",
       "stage": "regular",
       "pricing": "model+market",
       "p_model": {
-        "H": 0.351,
-        "D": 0.223,
-        "A": 0.426
+        "H": 0.354,
+        "D": 0.224,
+        "A": 0.422
       },
       "p_market": {
-        "H": 0.303,
-        "D": 0.249,
-        "A": 0.448
+        "H": 0.345,
+        "D": 0.255,
+        "A": 0.4
       },
       "p_blend": {
-        "H": 0.323,
-        "D": 0.238,
-        "A": 0.439
+        "H": 0.349,
+        "D": 0.242,
+        "A": 0.409
       },
       "winner": {
         "market": "Double Chance",
         "selection": "Liverpool or Draw",
-        "probability": 0.677,
-        "odds": 1.48
+        "probability": 0.651,
+        "odds": 1.54
       },
       "other": {
         "market": "Total Goals",
         "selection": "Under 3.5 goals",
-        "probability": 0.636,
-        "odds": 1.57
+        "probability": 0.647,
+        "odds": 1.54
       }
     },
     {
-      "id": "2026-09-20-fulham-manchester-united",
-      "date": "2026-09-20",
-      "kickoff": "2026-09-20T15:30:00+00:00",
-      "match": "Fulham vs Manchester United",
+      "id": "2026-10-17-fulham-hull",
+      "date": "2026-10-17",
+      "kickoff": "2026-10-17T14:00:00+00:00",
+      "match": "Fulham vs Hull",
       "home_team": "Fulham",
-      "away_team": "Manchester United",
+      "away_team": "Hull",
+      "stage": "regular",
+      "pricing": "market-only",
+      "p_model": null,
+      "p_market": {
+        "H": 0.57,
+        "D": 0.24,
+        "A": 0.19
+      },
+      "p_blend": {
+        "H": 0.57,
+        "D": 0.24,
+        "A": 0.19
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Fulham to win",
+        "probability": 0.57,
+        "odds": 1.75
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 2.5 goals",
+        "probability": 0.53,
+        "odds": 1.89
+      }
+    },
+    {
+      "id": "2026-10-17-manchester-city-ipswich",
+      "date": "2026-10-17",
+      "kickoff": "2026-10-17T14:00:00+00:00",
+      "match": "Manchester City vs Ipswich",
+      "home_team": "Manchester City",
+      "away_team": "Ipswich",
       "stage": "regular",
       "pricing": "model+market",
       "p_model": {
-        "H": 0.35,
-        "D": 0.243,
-        "A": 0.406
+        "H": 0.815,
+        "D": 0.115,
+        "A": 0.07
       },
       "p_market": {
-        "H": 0.27,
-        "D": 0.245,
-        "A": 0.485
+        "H": 0.801,
+        "D": 0.129,
+        "A": 0.07
       },
       "p_blend": {
-        "H": 0.302,
-        "D": 0.244,
-        "A": 0.454
+        "H": 0.807,
+        "D": 0.124,
+        "A": 0.07
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Manchester City to win",
+        "probability": 0.807,
+        "odds": 1.24
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.508,
+        "odds": 1.97
+      }
+    },
+    {
+      "id": "2026-10-17-newcastle-united-aston-villa",
+      "date": "2026-10-17",
+      "kickoff": "2026-10-17T16:30:00+00:00",
+      "match": "Newcastle United vs Aston Villa",
+      "home_team": "Newcastle United",
+      "away_team": "Aston Villa",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.49,
+        "D": 0.226,
+        "A": 0.284
+      },
+      "p_market": {
+        "H": 0.46,
+        "D": 0.25,
+        "A": 0.29
+      },
+      "p_blend": {
+        "H": 0.472,
+        "D": 0.24,
+        "A": 0.288
       },
       "winner": {
         "market": "Double Chance",
-        "selection": "Manchester United or Draw",
-        "probability": 0.698,
-        "odds": 1.43
+        "selection": "Newcastle United or Draw",
+        "probability": 0.712,
+        "odds": 1.4
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.663,
+        "odds": 1.51
+      }
+    },
+    {
+      "id": "2026-10-18-brighton-crystal-palace",
+      "date": "2026-10-18",
+      "kickoff": "2026-10-18T13:00:00+00:00",
+      "match": "Brighton vs Crystal Palace",
+      "home_team": "Brighton",
+      "away_team": "Crystal Palace",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.503,
+        "D": 0.223,
+        "A": 0.274
+      },
+      "p_market": {
+        "H": 0.59,
+        "D": 0.22,
+        "A": 0.19
+      },
+      "p_blend": {
+        "H": 0.555,
+        "D": 0.221,
+        "A": 0.223
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Brighton to win",
+        "probability": 0.555,
+        "odds": 1.8
+      },
+      "other": {
+        "market": "Total Goals",
+        "selection": "Under 3.5 goals",
+        "probability": 0.633,
+        "odds": 1.58
+      }
+    },
+    {
+      "id": "2026-10-18-bournemouth-sunderland",
+      "date": "2026-10-18",
+      "kickoff": "2026-10-18T13:00:00+00:00",
+      "match": "Bournemouth vs Sunderland",
+      "home_team": "Bournemouth",
+      "away_team": "Sunderland",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.549,
+        "D": 0.222,
+        "A": 0.229
+      },
+      "p_market": {
+        "H": 0.477,
+        "D": 0.261,
+        "A": 0.261
+      },
+      "p_blend": {
+        "H": 0.506,
+        "D": 0.246,
+        "A": 0.248
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Bournemouth to win",
+        "probability": 0.506,
+        "odds": 1.98
       },
       "other": {
         "market": "Both Teams To Score",
         "selection": "Yes",
-        "probability": 0.577,
-        "odds": 1.73
+        "probability": 0.531,
+        "odds": 1.88
+      }
+    },
+    {
+      "id": "2026-10-18-leeds-manchester-united",
+      "date": "2026-10-18",
+      "kickoff": "2026-10-18T13:00:00+00:00",
+      "match": "Leeds vs Manchester United",
+      "home_team": "Leeds",
+      "away_team": "Manchester United",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.395,
+        "D": 0.237,
+        "A": 0.368
+      },
+      "p_market": {
+        "H": 0.337,
+        "D": 0.257,
+        "A": 0.406
+      },
+      "p_blend": {
+        "H": 0.36,
+        "D": 0.249,
+        "A": 0.391
+      },
+      "winner": {
+        "market": "Double Chance",
+        "selection": "Manchester United or Draw",
+        "probability": 0.64,
+        "odds": 1.56
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "Yes",
+        "probability": 0.58,
+        "odds": 1.72
+      }
+    },
+    {
+      "id": "2026-10-18-nottingham-forest-arsenal",
+      "date": "2026-10-18",
+      "kickoff": "2026-10-18T15:30:00+00:00",
+      "match": "Nottingham Forest vs Arsenal",
+      "home_team": "Nottingham Forest",
+      "away_team": "Arsenal",
+      "stage": "regular",
+      "pricing": "model+market",
+      "p_model": {
+        "H": 0.201,
+        "D": 0.234,
+        "A": 0.566
+      },
+      "p_market": {
+        "H": 0.153,
+        "D": 0.246,
+        "A": 0.601
+      },
+      "p_blend": {
+        "H": 0.172,
+        "D": 0.241,
+        "A": 0.587
+      },
+      "winner": {
+        "market": "Match Result",
+        "selection": "Arsenal to win",
+        "probability": 0.587,
+        "odds": 1.7
+      },
+      "other": {
+        "market": "Both Teams To Score",
+        "selection": "No",
+        "probability": 0.563,
+        "odds": 1.78
       }
     }
   ]
