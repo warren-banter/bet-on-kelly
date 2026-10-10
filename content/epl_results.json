@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-10T16:45:06.648Z",
+  "updated": "2026-10-10T20:59:23.149Z",
   "summary": {
-    "settled": 110,
-    "won": 68,
-    "lost": 42,
-    "hitRate": 0.6181818181818182
+    "settled": 112,
+    "won": 69,
+    "lost": 43,
+    "hitRate": 0.6160714285714286
   },
   "singles": [
     {
@@ -1557,7 +1557,9 @@
       "selection": "Manchester United to win",
       "probability": 0.559,
       "odds": 1.79,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-10-manchester-united-tottenham-other",
@@ -1569,7 +1571,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.628,
       "odds": 1.59,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-11-hull-everton-winner",
