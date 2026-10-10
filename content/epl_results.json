@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-10T11:42:56.194Z",
+  "updated": "2026-10-10T16:45:06.648Z",
   "summary": {
-    "settled": 100,
-    "won": 61,
-    "lost": 39,
-    "hitRate": 0.61
+    "settled": 110,
+    "won": 68,
+    "lost": 42,
+    "hitRate": 0.6181818181818182
   },
   "singles": [
     {
@@ -1417,7 +1417,9 @@
       "selection": "Arsenal to win",
       "probability": 0.68,
       "odds": 1.47,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-10-arsenal-leeds-other",
@@ -1429,7 +1431,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.66,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-10-sunderland-brighton-winner",
@@ -1441,7 +1445,9 @@
       "selection": "Brighton or Draw",
       "probability": 0.669,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-10-sunderland-brighton-other",
@@ -1453,7 +1459,9 @@
       "selection": "Yes",
       "probability": 0.531,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-10-ipswich-fulham-winner",
@@ -1465,7 +1473,9 @@
       "selection": "Fulham or Draw",
       "probability": 0.667,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-10-ipswich-fulham-other",
@@ -1477,7 +1487,9 @@
       "selection": "Yes",
       "probability": 0.554,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-10-aston-villa-brentford-winner",
@@ -1489,7 +1501,9 @@
       "selection": "Aston Villa or Draw",
       "probability": 0.631,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-10-aston-villa-brentford-other",
@@ -1501,7 +1515,9 @@
       "selection": "Yes",
       "probability": 0.553,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-10-chelsea-bournemouth-winner",
@@ -1513,7 +1529,9 @@
       "selection": "Chelsea to win",
       "probability": 0.529,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-10-chelsea-bournemouth-other",
@@ -1525,7 +1543,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.637,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-10-manchester-united-tottenham-winner",
