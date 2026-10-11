@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-11T09:33:48.766Z",
+  "updated": "2026-10-11T17:10:41.260Z",
   "summary": {
-    "settled": 112,
-    "won": 69,
-    "lost": 43,
-    "hitRate": 0.6160714285714286
+    "settled": 116,
+    "won": 72,
+    "lost": 44,
+    "hitRate": 0.6206896551724138
   },
   "singles": [
     {
@@ -1585,7 +1585,9 @@
       "selection": "Everton or Draw",
       "probability": 0.746,
       "odds": 1.34,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-11-hull-everton-other",
@@ -1597,7 +1599,9 @@
       "selection": "Over 1.5 goals",
       "probability": 0.643,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-11-crystal-palace-nottingham-forest-winner",
@@ -1609,7 +1613,9 @@
       "selection": "Crystal Palace or Draw",
       "probability": 0.677,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-11-crystal-palace-nottingham-forest-other",
@@ -1621,7 +1627,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.529,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-11-liverpool-manchester-city-winner",
