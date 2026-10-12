@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-12T14:06:25.965Z",
+  "updated": "2026-10-12T22:20:42.914Z",
   "summary": {
-    "settled": 118,
+    "settled": 120,
     "won": 73,
-    "lost": 45,
-    "hitRate": 0.6186440677966102
+    "lost": 47,
+    "hitRate": 0.6083333333333333
   },
   "singles": [
     {
@@ -1669,7 +1669,9 @@
       "selection": "Newcastle United or Draw",
       "probability": 0.71,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-12-coventry-newcastle-united-other",
@@ -1681,7 +1683,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.541,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-17-everton-chelsea-winner",
