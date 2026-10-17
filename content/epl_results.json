@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-17T12:37:12.652Z",
+  "updated": "2026-10-17T17:40:54.867Z",
   "summary": {
-    "settled": 120,
-    "won": 73,
-    "lost": 47,
-    "hitRate": 0.6083333333333333
+    "settled": 128,
+    "won": 79,
+    "lost": 49,
+    "hitRate": 0.6171875
   },
   "singles": [
     {
@@ -1697,7 +1697,9 @@
       "selection": "Chelsea or Draw",
       "probability": 0.663,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-17-everton-chelsea-other",
@@ -1709,7 +1711,9 @@
       "selection": "Yes",
       "probability": 0.575,
       "odds": 1.74,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-17-brentford-liverpool-winner",
@@ -1721,7 +1725,9 @@
       "selection": "Liverpool or Draw",
       "probability": 0.651,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-17-brentford-liverpool-other",
@@ -1733,7 +1739,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.647,
       "odds": 1.54,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-17-fulham-hull-winner",
@@ -1745,7 +1753,9 @@
       "selection": "Fulham to win",
       "probability": 0.57,
       "odds": 1.75,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-17-fulham-hull-other",
@@ -1757,7 +1767,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.53,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-17-manchester-city-ipswich-winner",
@@ -1769,7 +1781,9 @@
       "selection": "Manchester City to win",
       "probability": 0.807,
       "odds": 1.24,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-17-manchester-city-ipswich-other",
@@ -1781,7 +1795,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.508,
       "odds": 1.97,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-17-newcastle-united-aston-villa-winner",
