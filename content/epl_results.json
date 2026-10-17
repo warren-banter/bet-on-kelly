@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-17T17:40:54.867Z",
+  "updated": "2026-10-17T19:56:24.448Z",
   "summary": {
-    "settled": 128,
-    "won": 79,
-    "lost": 49,
-    "hitRate": 0.6171875
+    "settled": 130,
+    "won": 80,
+    "lost": 50,
+    "hitRate": 0.6153846153846154
   },
   "singles": [
     {
@@ -1809,7 +1809,9 @@
       "selection": "Newcastle United or Draw",
       "probability": 0.712,
       "odds": 1.4,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-17-newcastle-united-aston-villa-other",
@@ -1821,7 +1823,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.663,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-18-brighton-crystal-palace-winner",
