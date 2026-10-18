@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-18T12:54:53.636Z",
+  "updated": "2026-10-18T17:42:40.360Z",
   "summary": {
-    "settled": 130,
-    "won": 80,
-    "lost": 50,
-    "hitRate": 0.6153846153846154
+    "settled": 138,
+    "won": 86,
+    "lost": 52,
+    "hitRate": 0.6231884057971014
   },
   "singles": [
     {
@@ -1837,7 +1837,9 @@
       "selection": "Brighton to win",
       "probability": 0.555,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-18-brighton-crystal-palace-other",
@@ -1849,7 +1851,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.633,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 5,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-10-18-bournemouth-sunderland-winner",
@@ -1861,7 +1865,9 @@
       "selection": "Bournemouth to win",
       "probability": 0.506,
       "odds": 1.98,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-18-bournemouth-sunderland-other",
@@ -1873,7 +1879,9 @@
       "selection": "Yes",
       "probability": 0.531,
       "odds": 1.88,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-10-18-leeds-manchester-united-winner",
@@ -1885,7 +1893,9 @@
       "selection": "Manchester United or Draw",
       "probability": 0.64,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-18-leeds-manchester-united-other",
@@ -1897,7 +1907,9 @@
       "selection": "Yes",
       "probability": 0.58,
       "odds": 1.72,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-18-nottingham-forest-arsenal-winner",
@@ -1909,7 +1921,9 @@
       "selection": "Arsenal to win",
       "probability": 0.587,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-18-nottingham-forest-arsenal-other",
@@ -1921,7 +1935,9 @@
       "selection": "No",
       "probability": 0.563,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     }
   ],
   "multis": []
