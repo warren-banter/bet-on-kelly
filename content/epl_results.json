@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-19T16:04:52.332Z",
+  "updated": "2026-10-19T21:54:52.614Z",
   "summary": {
-    "settled": 138,
-    "won": 86,
+    "settled": 140,
+    "won": 88,
     "lost": 52,
-    "hitRate": 0.6231884057971014
+    "hitRate": 0.6285714285714286
   },
   "singles": [
     {
@@ -1949,7 +1949,9 @@
       "selection": "Tottenham to win",
       "probability": 0.638,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-19-tottenham-coventry-other",
@@ -1961,7 +1963,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.555,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-23-ipswich-nottingham-forest-winner",
