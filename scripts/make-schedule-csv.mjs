@@ -28,8 +28,10 @@ const FEED = join(ROOT, 'content', 'epl_bets.json');
 const OUT_DIR = join(ROOT, 'public');
 const OUT = join(OUT_DIR, 'epl-schedule-sast.csv');
 
-// Order matters: the first post of a day lands on the first entry.
-const SLOTS = ['18:00', '12:00', '15:00', '09:00', '20:00'];
+// Nothing posts later than 13:00. Order matters: the first post of a day takes
+// the first entry, so a single post lands on the 13:00 cap and extra posts
+// fill backwards through the morning.
+const SLOTS = ['13:00', '11:00', '09:00', '12:00', '10:00'];
 
 // How many weekdays a Saturday slate spreads over, and how many of those take
 // exactly one post before the last day starts absorbing the rest.
