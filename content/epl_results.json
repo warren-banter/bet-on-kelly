@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-23T18:49:19.487Z",
+  "updated": "2026-10-23T23:42:08.800Z",
   "summary": {
-    "settled": 140,
-    "won": 88,
+    "settled": 142,
+    "won": 90,
     "lost": 52,
-    "hitRate": 0.6285714285714286
+    "hitRate": 0.6338028169014085
   },
   "singles": [
     {
@@ -1977,7 +1977,9 @@
       "selection": "Nottingham Forest or Draw",
       "probability": 0.703,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-23-ipswich-nottingham-forest-other",
@@ -1989,7 +1991,9 @@
       "selection": "Yes",
       "probability": 0.522,
       "odds": 1.92,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-24-aston-villa-manchester-city-winner",
