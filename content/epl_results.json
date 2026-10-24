@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-24T17:44:39.507Z",
+  "updated": "2026-10-24T20:02:58.241Z",
   "summary": {
-    "settled": 148,
-    "won": 95,
-    "lost": 53,
-    "hitRate": 0.6418918918918919
+    "settled": 150,
+    "won": 96,
+    "lost": 54,
+    "hitRate": 0.64
   },
   "singles": [
     {
@@ -2089,7 +2089,9 @@
       "selection": "Chelsea to win",
       "probability": 0.554,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-24-chelsea-tottenham-other",
@@ -2101,7 +2103,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.615,
       "odds": 1.62,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-25-crystal-palace-newcastle-united-winner",
