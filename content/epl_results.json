@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-24T13:01:46.601Z",
+  "updated": "2026-10-24T17:44:39.507Z",
   "summary": {
-    "settled": 142,
-    "won": 90,
-    "lost": 52,
-    "hitRate": 0.6338028169014085
+    "settled": 148,
+    "won": 95,
+    "lost": 53,
+    "hitRate": 0.6418918918918919
   },
   "singles": [
     {
@@ -2005,7 +2005,9 @@
       "selection": "Manchester City to win",
       "probability": 0.543,
       "odds": 1.84,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-24-aston-villa-manchester-city-other",
@@ -2017,7 +2019,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.623,
       "odds": 1.61,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-24-arsenal-everton-winner",
@@ -2029,7 +2033,9 @@
       "selection": "Arsenal to win",
       "probability": 0.691,
       "odds": 1.45,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-24-arsenal-everton-other",
@@ -2041,7 +2047,9 @@
       "selection": "No",
       "probability": 0.601,
       "odds": 1.66,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-24-coventry-fulham-winner",
@@ -2053,7 +2061,9 @@
       "selection": "Fulham or Draw",
       "probability": 0.677,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-24-coventry-fulham-other",
@@ -2065,7 +2075,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.563,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-24-chelsea-tottenham-winner",
