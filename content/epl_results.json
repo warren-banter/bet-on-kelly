@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-25T18:00:51.466Z",
+  "updated": "2026-10-25T22:58:23.821Z",
   "summary": {
-    "settled": 158,
-    "won": 101,
+    "settled": 160,
+    "won": 103,
     "lost": 57,
-    "hitRate": 0.6392405063291139
+    "hitRate": 0.64375
   },
   "singles": [
     {
@@ -2229,7 +2229,9 @@
       "selection": "Leeds or Draw",
       "probability": 0.659,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-25-sunderland-leeds-other",
@@ -2241,7 +2243,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.589,
       "odds": 1.7,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-chelsea-manchester-united-winner",
