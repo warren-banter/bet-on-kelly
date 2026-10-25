@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-25T13:29:04.601Z",
+  "updated": "2026-10-25T18:00:51.466Z",
   "summary": {
-    "settled": 150,
-    "won": 96,
-    "lost": 54,
-    "hitRate": 0.64
+    "settled": 158,
+    "won": 101,
+    "lost": 57,
+    "hitRate": 0.6392405063291139
   },
   "singles": [
     {
@@ -2117,7 +2117,9 @@
       "selection": "Newcastle United or Draw",
       "probability": 0.642,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-25-crystal-palace-newcastle-united-other",
@@ -2129,7 +2131,9 @@
       "selection": "Yes",
       "probability": 0.565,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-25-liverpool-brighton-winner",
@@ -2141,7 +2145,9 @@
       "selection": "Liverpool or Draw",
       "probability": 0.717,
       "odds": 1.39,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-25-liverpool-brighton-other",
@@ -2153,7 +2159,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.632,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-25-manchester-united-bournemouth-winner",
@@ -2165,7 +2173,9 @@
       "selection": "Manchester United or Draw",
       "probability": 0.724,
       "odds": 1.38,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-10-25-manchester-united-bournemouth-other",
@@ -2177,7 +2187,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.656,
       "odds": 1.52,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-10-25-hull-brentford-winner",
@@ -2189,7 +2201,9 @@
       "selection": "Brentford to win",
       "probability": 0.545,
       "odds": 1.83,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-25-hull-brentford-other",
@@ -2201,7 +2215,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.525,
       "odds": 1.9,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-25-sunderland-leeds-winner",
