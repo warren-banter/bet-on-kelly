@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-31T16:39:02.331Z",
+  "updated": "2026-10-31T20:51:42.267Z",
   "summary": {
-    "settled": 162,
-    "won": 105,
-    "lost": 57,
-    "hitRate": 0.6481481481481481
+    "settled": 174,
+    "won": 111,
+    "lost": 63,
+    "hitRate": 0.6379310344827587
   },
   "singles": [
     {
@@ -2285,7 +2285,9 @@
       "selection": "Sunderland or Draw",
       "probability": 0.665,
       "odds": 1.5,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-coventry-sunderland-other",
@@ -2297,7 +2299,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.566,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-manchester-city-brighton-winner",
@@ -2309,7 +2313,9 @@
       "selection": "Manchester City to win",
       "probability": 0.577,
       "odds": 1.73,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-manchester-city-brighton-other",
@@ -2321,7 +2327,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.634,
       "odds": 1.58,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-10-31-hull-ipswich-winner",
@@ -2333,7 +2341,9 @@
       "selection": "Ipswich or Draw",
       "probability": 0.643,
       "odds": 1.55,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-10-31-hull-ipswich-other",
@@ -2345,7 +2355,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.569,
       "odds": 1.76,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 2,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-bournemouth-leeds-winner",
@@ -2357,7 +2369,9 @@
       "selection": "Bournemouth or Draw",
       "probability": 0.711,
       "odds": 1.41,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-bournemouth-leeds-other",
@@ -2369,7 +2383,9 @@
       "selection": "Yes",
       "probability": 0.53,
       "odds": 1.89,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-brentford-nottingham-forest-winner",
@@ -2381,7 +2397,9 @@
       "selection": "Brentford to win",
       "probability": 0.5,
       "odds": 2,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-brentford-nottingham-forest-other",
@@ -2393,7 +2411,9 @@
       "selection": "Yes",
       "probability": 0.565,
       "odds": 1.77,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-10-31-tottenham-crystal-palace-winner",
@@ -2405,7 +2425,9 @@
       "selection": "Tottenham to win",
       "probability": 0.523,
       "odds": 1.91,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-tottenham-crystal-palace-other",
@@ -2417,7 +2439,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.64,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-aston-villa-fulham-winner",
