@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-31T11:31:10.292Z",
+  "updated": "2026-10-31T16:39:02.331Z",
   "summary": {
-    "settled": 160,
-    "won": 103,
+    "settled": 162,
+    "won": 105,
     "lost": 57,
-    "hitRate": 0.64375
+    "hitRate": 0.6481481481481481
   },
   "singles": [
     {
@@ -2257,7 +2257,9 @@
       "selection": "Chelsea or Draw",
       "probability": 0.719,
       "odds": 1.39,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-chelsea-manchester-united-other",
@@ -2269,7 +2271,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.625,
       "odds": 1.6,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-10-31-coventry-sunderland-winner",
