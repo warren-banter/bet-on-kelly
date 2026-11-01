@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-01T12:28:31.668Z",
+  "updated": "2026-11-01T19:18:15.358Z",
   "summary": {
-    "settled": 176,
-    "won": 113,
-    "lost": 63,
-    "hitRate": 0.6420454545454546
+    "settled": 178,
+    "won": 114,
+    "lost": 64,
+    "hitRate": 0.6404494382022472
   },
   "singles": [
     {
@@ -2481,7 +2481,9 @@
       "selection": "Arsenal or Draw",
       "probability": 0.683,
       "odds": 1.46,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-11-01-liverpool-arsenal-other",
@@ -2493,7 +2495,9 @@
       "selection": "Yes",
       "probability": 0.553,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 0,
+      "awayScore": 1,
+      "result": "lost"
     }
   ],
   "multis": []
