@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-06T18:44:53.331Z",
+  "updated": "2026-11-07T00:32:33.260Z",
   "summary": {
-    "settled": 178,
-    "won": 114,
-    "lost": 64,
-    "hitRate": 0.6404494382022472
+    "settled": 180,
+    "won": 115,
+    "lost": 65,
+    "hitRate": 0.6388888888888888
   },
   "singles": [
     {
@@ -2509,7 +2509,9 @@
       "selection": "Everton to win",
       "probability": 0.562,
       "odds": 1.78,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-11-06-everton-coventry-other",
@@ -2521,7 +2523,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.539,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-11-07-leeds-tottenham-winner",
