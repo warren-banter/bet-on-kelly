@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-07T09:29:48.333Z",
+  "updated": "2026-11-07T17:15:36.146Z",
   "summary": {
-    "settled": 180,
-    "won": 115,
-    "lost": 65,
-    "hitRate": 0.6388888888888888
+    "settled": 186,
+    "won": 120,
+    "lost": 66,
+    "hitRate": 0.6451612903225806
   },
   "singles": [
     {
@@ -2537,7 +2537,9 @@
       "selection": "Leeds or Draw",
       "probability": 0.677,
       "odds": 1.48,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-11-07-leeds-tottenham-other",
@@ -2549,7 +2551,9 @@
       "selection": "Under 2.5 goals",
       "probability": 0.537,
       "odds": 1.86,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-11-07-arsenal-hull-winner",
@@ -2561,7 +2565,9 @@
       "selection": "Arsenal to win",
       "probability": 0.839,
       "odds": 1.19,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-11-07-arsenal-hull-other",
@@ -2573,7 +2579,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.64,
       "odds": 1.56,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-11-07-fulham-newcastle-united-winner",
@@ -2585,7 +2593,9 @@
       "selection": "Fulham or Draw",
       "probability": 0.688,
       "odds": 1.45,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-11-07-fulham-newcastle-united-other",
@@ -2597,7 +2607,9 @@
       "selection": "Yes",
       "probability": 0.557,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-11-07-nottingham-forest-manchester-city-winner",
