@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-07T17:15:36.146Z",
+  "updated": "2026-11-07T21:17:45.667Z",
   "summary": {
-    "settled": 186,
-    "won": 120,
-    "lost": 66,
-    "hitRate": 0.6451612903225806
+    "settled": 188,
+    "won": 121,
+    "lost": 67,
+    "hitRate": 0.6436170212765957
   },
   "singles": [
     {
@@ -2621,7 +2621,9 @@
       "selection": "Manchester City to win",
       "probability": 0.554,
       "odds": 1.81,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "lost"
     },
     {
       "id": "2026-11-07-nottingham-forest-manchester-city-other",
@@ -2633,7 +2635,9 @@
       "selection": "Over 2.5 goals",
       "probability": 0.535,
       "odds": 1.87,
-      "result": "pending"
+      "homeScore": 3,
+      "awayScore": 1,
+      "result": "won"
     },
     {
       "id": "2026-11-08-crystal-palace-liverpool-winner",
