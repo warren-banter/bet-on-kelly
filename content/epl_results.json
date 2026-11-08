@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-08T12:34:49.601Z",
+  "updated": "2026-11-08T19:16:17.196Z",
   "summary": {
-    "settled": 188,
-    "won": 121,
-    "lost": 67,
-    "hitRate": 0.6436170212765957
+    "settled": 198,
+    "won": 128,
+    "lost": 70,
+    "hitRate": 0.6464646464646465
   },
   "singles": [
     {
@@ -2649,7 +2649,9 @@
       "selection": "Liverpool to win",
       "probability": 0.556,
       "odds": 1.8,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "won"
     },
     {
       "id": "2026-11-08-crystal-palace-liverpool-other",
@@ -2661,7 +2663,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.638,
       "odds": 1.57,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 3,
+      "result": "lost"
     },
     {
       "id": "2026-11-08-ipswich-bournemouth-winner",
@@ -2673,7 +2677,9 @@
       "selection": "Bournemouth to win",
       "probability": 0.537,
       "odds": 1.86,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-11-08-ipswich-bournemouth-other",
@@ -2685,7 +2691,9 @@
       "selection": "Yes",
       "probability": 0.54,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 2,
+      "result": "won"
     },
     {
       "id": "2026-11-08-sunderland-chelsea-winner",
@@ -2697,7 +2705,9 @@
       "selection": "Chelsea or Draw",
       "probability": 0.722,
       "odds": 1.38,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-11-08-sunderland-chelsea-other",
@@ -2709,7 +2719,9 @@
       "selection": "Yes",
       "probability": 0.541,
       "odds": 1.85,
-      "result": "pending"
+      "homeScore": 1,
+      "awayScore": 0,
+      "result": "lost"
     },
     {
       "id": "2026-11-08-brighton-brentford-winner",
@@ -2721,7 +2733,9 @@
       "selection": "Brighton or Draw",
       "probability": 0.727,
       "odds": 1.38,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-11-08-brighton-brentford-other",
@@ -2733,7 +2747,9 @@
       "selection": "Under 3.5 goals",
       "probability": 0.663,
       "odds": 1.51,
-      "result": "pending"
+      "homeScore": 2,
+      "awayScore": 0,
+      "result": "won"
     },
     {
       "id": "2026-11-08-manchester-united-aston-villa-winner",
@@ -2745,7 +2761,9 @@
       "selection": "Manchester United or Draw",
       "probability": 0.702,
       "odds": 1.42,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 4,
+      "result": "won"
     },
     {
       "id": "2026-11-08-manchester-united-aston-villa-other",
@@ -2757,7 +2775,9 @@
       "selection": "Yes",
       "probability": 0.572,
       "odds": 1.75,
-      "result": "pending"
+      "homeScore": 4,
+      "awayScore": 4,
+      "result": "won"
     }
   ],
   "multis": []
